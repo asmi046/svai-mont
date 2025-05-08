@@ -1,0 +1,13 @@
+.top_navigation_section {
+    background-color: $gray_bg_color;
+    padding: 5px 0;
+
+    .col{
+        display: flex;
+        gap:20px
+    }
+
+    .right {
+        justify-content: end;
+    }
+}

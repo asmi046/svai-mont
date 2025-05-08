@@ -22,7 +22,12 @@
     ])
 </head>
 <body>
+    @include("allicon")
     <main id="main">
+        <x-top_navigation_section></x-top_navigation_section>
+        <x-top_logo_section></x-top_logo_section>
+
+
         @yield('main')
     </main>
 </body>
