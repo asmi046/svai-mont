@@ -5,12 +5,14 @@ declare(strict_types=1);
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use MoonShine\Contracts\Core\DependencyInjection\ConfiguratorContract;
-use MoonShine\Contracts\Core\DependencyInjection\CoreContract;
-use MoonShine\Laravel\DependencyInjection\MoonShine;
-use MoonShine\Laravel\DependencyInjection\MoonShineConfigurator;
+use App\MoonShine\Resources\MenuResource;
 use App\MoonShine\Resources\MoonShineUserResource;
+use MoonShine\Laravel\DependencyInjection\MoonShine;
 use App\MoonShine\Resources\MoonShineUserRoleResource;
+use MoonShine\Contracts\Core\DependencyInjection\CoreContract;
+use MoonShine\Laravel\DependencyInjection\MoonShineConfigurator;
+use MoonShine\Contracts\Core\DependencyInjection\ConfiguratorContract;
+use App\MoonShine\Resources\ContactResource;
 
 class MoonShineServiceProvider extends ServiceProvider
 {
@@ -25,8 +27,10 @@ class MoonShineServiceProvider extends ServiceProvider
 
         $core
             ->resources([
+                MenuResource::class,
                 MoonShineUserResource::class,
                 MoonShineUserRoleResource::class,
+                ContactResource::class,
             ])
             ->pages([
                 ...$config->getPages(),

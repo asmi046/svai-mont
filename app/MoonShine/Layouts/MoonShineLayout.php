@@ -4,8 +4,12 @@ declare(strict_types=1);
 
 namespace App\MoonShine\Layouts;
 
+use MoonShine\MenuManager\MenuItem;
+use MoonShine\MenuManager\MenuGroup;
 use MoonShine\Laravel\Layouts\AppLayout;
 use MoonShine\ColorManager\ColorManager;
+use App\MoonShine\Resources\MenuResource;
+
 use MoonShine\Contracts\ColorManager\ColorManagerContract;
 use MoonShine\Laravel\Components\Layout\{Locales, Notifications, Profile, Search};
 use MoonShine\UI\Components\{Breadcrumbs,
@@ -30,6 +34,7 @@ use MoonShine\UI\Components\{Breadcrumbs,
     Layout\TopBar,
     Layout\Wrapper,
     When};
+use App\MoonShine\Resources\ContactResource;
 
 final class MoonShineLayout extends AppLayout
 {
@@ -43,7 +48,10 @@ final class MoonShineLayout extends AppLayout
     protected function menu(): array
     {
         return [
+            MenuItem::make('Меню', MenuResource::class)->icon('bars-3-bottom-left'),
+            MenuItem::make('Контакты', ContactResource::class)->icon('chat-bubble-bottom-center-text'),
             ...parent::menu(),
+
         ];
     }
 
