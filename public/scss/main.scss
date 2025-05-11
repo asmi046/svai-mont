@@ -23,6 +23,14 @@ section{
     padding-bottom: $section_space;
 }
 
+.green_section {
+    background-color: $main_color;
+}
+
+.gray_section {
+    background-color: $gray_bg_color;
+}
+
 .container{
     width:100%;
     max-width: $conteiner_max_w;
@@ -66,6 +74,10 @@ img {
 
 // Иконка бургера
 // @import "burger-icon";
-@import "top_navigation_section";
 @import "text_icon";
 @import "cols";
+
+@import "top_navigation_section";
+@import "top_logo_section";
+@import "main_menu_section";
+

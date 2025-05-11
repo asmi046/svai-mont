@@ -1,0 +1,33 @@
+.top_logo_section {
+    .colls {
+        justify-content: space-between;
+    }
+    .right {
+        margin-right: auto;
+        flex: unset;
+    }
+    .logo {
+        width:300px;
+        object-fit: contain;
+    }
+
+    .top_contacts {
+        display: flex;
+        flex-direction: column;
+        .phone {
+            font-size: 22px;
+            font-family: "Russo One", sans-serif
+        }
+
+        .messenger {
+            display: flex;
+            gap:10px;
+            justify-content: end;
+
+            .msg_icon .sprite_icon{
+                width:30px;
+                height: 30px;
+            }
+        }
+    }
+}

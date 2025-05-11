@@ -21,8 +21,8 @@ use MoonShine\Laravel\Pages\ProfilePage;
 
 return [
     'title' => env('MOONSHINE_TITLE', 'MoonShine'),
-    'logo' => 'vendor/moonshine/logo.svg',
-    'logo_small' => 'vendor/moonshine/logo-small.svg',
+    'logo' => 'img/logo-ms.svg',
+    'logo_small' => 'img/logo-ms-mini.svg',
 
 
     // Default flags
@@ -92,7 +92,7 @@ return [
     ],
 
     // Localizations
-    'locale' => 'en',
+    'locale' => 'ru',
     'locale_key' => ChangeLocale::KEY,
     'locales' => [
         // en
