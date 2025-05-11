@@ -9,6 +9,6 @@
 @section('description', $description)
 
 @section('main')
-
+    <x-main-banner></x-main-banner>
 @endsection
 

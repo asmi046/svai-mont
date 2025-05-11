@@ -22,6 +22,7 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             UserSeeder::class,
+            ParametrSeeder::class,
             ContactSeeder::class,
             MenuSeeder::class,
         ]);

@@ -7,6 +7,16 @@ if (!function_exists("header_seo")) {
     }
 }
 
+if (!function_exists("get_collection_array")) {
+    function get_collection_array($data):array {
+        $result = [];
+        foreach ($data as $item) {
+            $result[$item->str_id] = $item;
+        }
+        return $result;
+    }
+}
+
 // Месяц текстом
 if (!function_exists("get_month")) {
     function get_month($date) {
