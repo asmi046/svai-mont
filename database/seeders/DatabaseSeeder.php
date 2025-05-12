@@ -25,6 +25,7 @@ class DatabaseSeeder extends Seeder
             ParametrSeeder::class,
             ContactSeeder::class,
             MenuSeeder::class,
+            QuestionSeeder::class,
         ]);
     }
 }
