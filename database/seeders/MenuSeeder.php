@@ -79,5 +79,76 @@ class MenuSeeder extends Seeder
 
         DB::table("menus")->insert($data);
 
+        $footer_menu = [
+            [
+                'menu_name' => 'Меню в подвале',
+                'title' => 'О компании',
+                'order' => 1,
+                'lnk' => "#",
+            ],
+            [
+                'menu_name' => 'Меню в подвале',
+                'title' => 'Цены',
+                'order' => 2,
+                'lnk' => "#",
+            ],
+            [
+                'menu_name' => 'Меню в подвале',
+                'title' => 'Сваи',
+                'order' => 3,
+                'lnk' => "#",
+            ],
+            [
+                'menu_name' => 'Меню в подвале',
+                'title' => 'Галерея',
+                'order' => 4,
+                'lnk' => "#",
+            ],
+            [
+                'menu_name' => 'Меню в подвале',
+                'title' => 'FAQ',
+                'order' => 7,
+                'lnk' => "#",
+            ],
+        ];
+
+        DB::table("menus")->insert($footer_menu);
+
+
+        $footer_menu_2 = [
+
+            [
+                'menu_name' => 'Полезная информация',
+                'title' => 'Акции',
+                'order' => 5,
+                'lnk' => "#",
+            ],
+            [
+                'menu_name' => 'Полезная информация',
+                'title' => 'Отзывы',
+                'order' => 6,
+                'lnk' => "#",
+            ],
+            [
+                'menu_name' => 'Полезная информация',
+                'title' => 'Оплата и доставка',
+                'order' => 8,
+                'lnk' => "#",
+            ],
+            [
+                'menu_name' => 'Полезная информация',
+                'title' => 'Сертификаты',
+                'order' => 9,
+                'lnk' => "#",
+            ],
+            [
+                'menu_name' => 'Полезная информация',
+                'title' => 'Контакты',
+                'order' => 10,
+                'lnk' => "#",
+            ],
+        ];
+
+        DB::table("menus")->insert($footer_menu_2);
     }
 }

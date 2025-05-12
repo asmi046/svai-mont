@@ -22,7 +22,7 @@ class MainBanner extends Component
         $parametrs = Cache::rememberForever('main_banner', function () {
             $src = Parametr::where('section', 'Баннер на главной')->get();
 
-            return get_collection_array($src);
+            return get_collection_array($src, 'str_id');
         });
 
         $this->img = $parametrs['banner_img']->img;

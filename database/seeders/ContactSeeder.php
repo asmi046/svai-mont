@@ -39,6 +39,24 @@ class ContactSeeder extends Seeder
                     'title' => 'Ссылка  на WhatsApp',
                     'value' => '#',
                 ],
+
+                [
+                    'name' => 'adress',
+                    'title' => 'Адрес компании',
+                    'value' => '628414,Россия, Ханты-Мансийский автономный округ, Сургут, ул. Западная, 16',
+                ],
+
+                [
+                    'name' => 'work_time',
+                    'title' => 'Время работы',
+                    'value' => 'Пн-Пт 09:00 - 18:00 Сб-Вс 10:00 - 15:00',
+                ],
+
+                [
+                    'name' => 'email',
+                    'title' => 'E-mail',
+                    'value' => 'info@master.ru',
+                ],
             ]
         );
     }

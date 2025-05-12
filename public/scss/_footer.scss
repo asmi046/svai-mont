@@ -3,6 +3,20 @@ footer {
     color: white;
     border-radius: 10px 10px 0 0;
     margin-top: auto;
+    a {
+        color:white;
+    }
+
+    .logo {
+        width:240px;
+        height: auto;
+    }
+
+    h4 {
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.55);
+        margin-bottom: 20px;
+    }
 
     .container {
         display: flex;
@@ -13,11 +27,56 @@ footer {
             justify-content: space-between;
             padding-bottom: 20px;
 
+            .bottom_phone {
+                display: flex;
+                gap: 20px;
+
+                .phone {
+                    font-size: 22px;
+                    font-family: "Russo One", sans-serif;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                }
+
+                .messenger {
+                    display: flex;
+                    gap: 10px;
+
+                    .msg_icon {
+                        margin-top: auto;
+                        margin-bottom: auto;
+                    }
+
+                    .sprite_icon {
+                        width: 24px;
+                        height: 24px;
+
+                    }
+                }
+            }
         }
 
         .body {
             border-top:1px solid #FFFFFF0A;
             border-bottom:1px solid #FFFFFF3A;
+            display: flex;
+            padding: 20px 0;
+
+            .coll {
+                flex:1;
+            }
+
+            .contacts {
+                p {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
         }
     }
 }
