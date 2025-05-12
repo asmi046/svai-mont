@@ -24,7 +24,7 @@
 <body>
     @include("allicon")
     <main id="main">
-        <x-top_navigation_section></x-top_navigation_section>
+        <x-top-navigation-section></x-top-navigation-section>
         <x-top_logo_section></x-top_logo_section>
         <x-main-menu></x-main-menu>
 

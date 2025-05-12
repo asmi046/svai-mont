@@ -10,5 +10,7 @@
 
 @section('main')
     <x-main-banner></x-main-banner>
+    <x-adv-section></x-adv-section>
+    <x-pay-methods></x-pay-methods>
 @endsection
 

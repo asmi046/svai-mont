@@ -22,7 +22,7 @@
                     <svg class="sprite_icon">
                         <use xlink:href="#ti_time"></use>
                     </svg>
-                    <span class="text">Пн-Пт 09:00 - 18:00 Сб-Вс 10:00 - 15:00</span>
+                    <span class="text">{{ $contacts['work_time']->value }}</span>
                 </div>
             </div>
         </div>

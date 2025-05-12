@@ -3,17 +3,14 @@
 namespace App\View\Components;
 
 use Closure;
-use App\Models\Menu;
-use App\Models\Contact;
 use Illuminate\View\Component;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Cache;
+use App\Models\Contact;
 
-class Footer extends Component
+class TopNavigationSection extends Component
 {
     public array $contacts;
-    public $menu_1;
-    public $menu_2;
     /**
      * Create a new component instance.
      */
@@ -22,14 +19,6 @@ class Footer extends Component
         $this->contacts = Cache::rememberForever('all_contacts', function () {
             return get_collection_array(Contact::all(), 'name');
         });
-
-        $this->menu_1 = Cache::rememberForever('footer_menu_1', function () {
-            return Menu::where('menu_name', 'Меню в подвале')->get();
-        });
-
-        $this->menu_2 = Cache::rememberForever('footer_menu_2', function () {
-            return Menu::where('menu_name', 'Полезная информация')->get();
-        });
     }
 
     /**
@@ -37,6 +26,6 @@ class Footer extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.footer');
+        return view('components.top-navigation-section');
     }
 }

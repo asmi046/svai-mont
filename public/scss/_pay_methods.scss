@@ -1,0 +1,27 @@
+.pay_methods_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    gap:40px;
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 30px;
+        flex:1;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin-top: 20px;
+        text-transform: uppercase;
+        font-family: 'Russo One', sans-serif;
+    }
+
+    .icon {
+        width: 68px;
+        height: 68px;
+        margin: auto;
+    }
+}

@@ -26,6 +26,14 @@ section{
     padding-bottom: $section_space;
 }
 
+.section_h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0 30px 0;
+    font-family: 'Russo One', sans-serif;
+}
+
 .green_section {
     background-color: $main_color;
 }
@@ -84,6 +92,8 @@ img {
 @import "top_logo_section";
 @import "main_menu_section";
 @import "main-banner";
+@import "adv_section";
+@import "pay_methods";
 
 
 @import "footer";
