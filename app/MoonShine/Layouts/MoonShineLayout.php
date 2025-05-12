@@ -36,6 +36,7 @@ use MoonShine\UI\Components\{Breadcrumbs,
     When};
 use App\MoonShine\Resources\ContactResource;
 use App\MoonShine\Resources\ParametrResource;
+use App\MoonShine\Resources\QuestionResource;
 
 final class MoonShineLayout extends AppLayout
 {
@@ -52,7 +53,10 @@ final class MoonShineLayout extends AppLayout
             MenuItem::make('Меню', MenuResource::class)->icon('bars-3-bottom-left'),
             MenuItem::make('Контакты', ContactResource::class)->icon('chat-bubble-bottom-center-text'),
             MenuItem::make('Параметры сайта', ParametrResource::class)->icon('cube'),
+            MenuItem::make('FAQ', QuestionResource::class)->icon('fire'),
+
             ...parent::menu(),
+
 
 
         ];
