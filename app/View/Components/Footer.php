@@ -8,7 +8,7 @@ use Illuminate\View\Component;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Cache;
 
-class TopContacts extends Component
+class Footer extends Component
 {
     public $phone;
     public $site_name;
@@ -19,22 +19,23 @@ class TopContacts extends Component
      */
     public function __construct()
     {
-        $this->phone = Cache::rememberForever('top_contacts_phone', function () {
+        $this->phone = Cache::rememberForever('footer_contacts_phone', function () {
             $elem = Contact::where('name', 'phone')->first();
             return $elem->value;
         });
-        $this->site_name = Cache::rememberForever('top_contacts_site_name', function () {
+        $this->site_name = Cache::rememberForever('footer_contacts_site_name', function () {
             $elem = Contact::where('name', 'site_name')->first();
             return $elem->value;
         });
-        $this->tg_lnk = Cache::rememberForever('top_contacts_tg_lnk', function () {
+        $this->tg_lnk = Cache::rememberForever('footer_contacts_tg_lnk', function () {
             $elem = Contact::where('name',  'tg_lnk')->first();
             return $elem->value;
         });
-        $this->ws_lnk = Cache::rememberForever('top_contacts_ws_lnk', function () {
+        $this->ws_lnk = Cache::rememberForever('footer_contacts_ws_lnk', function () {
             $elem = Contact::where('name', 'ws_lnk')->first();
             return $elem->value;
         });
+
     }
 
     /**
@@ -42,6 +43,6 @@ class TopContacts extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.top-contacts');
+        return view('components.footer');
     }
 }

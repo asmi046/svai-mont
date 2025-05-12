@@ -1,3 +1,23 @@
 footer {
-    
+    background-color: #1A1A1A;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    margin-top: auto;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 20px;
+
+        }
+
+        .body {
+            border-top:1px solid #FFFFFF0A;
+            border-bottom:1px solid #FFFFFF3A;
+        }
+    }
 }

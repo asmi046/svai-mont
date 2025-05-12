@@ -28,8 +28,9 @@
         <x-top_logo_section></x-top_logo_section>
         <x-main-menu></x-main-menu>
 
-
         @yield('main')
     </main>
+
+    <x-footer></x-footer>
 </body>
 </html>
