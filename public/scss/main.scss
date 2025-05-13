@@ -69,6 +69,11 @@ img {
     }
 }
 
+swiper-slide {
+    display: flex;
+    height: auto;
+}
+
 @media (max-width: 1440px) {
     .container {
         width: 96%;
@@ -95,6 +100,7 @@ img {
 @import "adv_section";
 @import "pay_methods";
 @import "faq";
+@import "review";
 
 
 @import "footer";

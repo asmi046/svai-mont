@@ -20,6 +20,12 @@
         'resources/js/app.js',
         'public/scss/main.scss'
     ])
+
+    <script>
+        window.asset = "{{ asset('') }}";
+        window.storage = "{{ asset('storage') }}";
+        window.isMobile = window.innerWidth < 768;
+    </script>
 </head>
 <body>
     @include("allicon")

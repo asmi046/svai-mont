@@ -51,6 +51,18 @@
         <path d="M14.7099 14.18L11.6099 12.33C11.0699 12.01 10.6299 11.24 10.6299 10.61V6.51" stroke="#E7C873" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
 
+    <symbol id="arrow_slide_left" viewBox="0 0 35 35" fill="none">
+        <rect x="35" y="35" width="35" height="35" rx="5" transform="rotate(-180 35 35)" fill="#E7C873"/>
+        <path d="M21 9.16L14.48 15.68C13.71 16.45 13.71 17.71 14.48 18.48L21 25" fill="#E7C873"/>
+        <path d="M21 9.16L14.48 15.68C13.71 16.45 13.71 17.71 14.48 18.48L21 25" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="arrow_slide_right" viewBox="0 0 35 35" fill="none">
+        <rect width="35" height="35" rx="5" fill="#E7C873"/>
+        <path d="M14 25.84L20.52 19.32C21.29 18.55 21.29 17.29 20.52 16.52L14 10" fill="#E7C873"/>
+        <path d="M14 25.84L20.52 19.32C21.29 18.55 21.29 17.29 20.52 16.52L14 10" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
 
 
   </svg>
