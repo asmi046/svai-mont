@@ -15,6 +15,7 @@ use MoonShine\Contracts\Core\DependencyInjection\ConfiguratorContract;
 use App\MoonShine\Resources\ContactResource;
 use App\MoonShine\Resources\ParametrResource;
 use App\MoonShine\Resources\QuestionResource;
+use App\MoonShine\Resources\ReviewResource;
 
 class MoonShineServiceProvider extends ServiceProvider
 {
@@ -35,6 +36,7 @@ class MoonShineServiceProvider extends ServiceProvider
                 ContactResource::class,
                 ParametrResource::class,
                 QuestionResource::class,
+                ReviewResource::class,
             ])
             ->pages([
                 ...$config->getPages(),
