@@ -13,6 +13,10 @@
     <x-adv-section></x-adv-section>
     <x-faq-in-main></x-faq-in-main>
     <x-pay-methods></x-pay-methods>
+    <x-galery-in-main></x-galery-in-main>
+
+
+
     <section class="rew_section">
         <div class="container" id="review_app">
             <review></review>

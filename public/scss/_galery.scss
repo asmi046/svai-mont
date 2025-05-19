@@ -1,0 +1,33 @@
+.galery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // align-items: center;
+    gap: 20px;
+
+
+    .galery_item {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        flex:1;
+        overflow: hidden;
+        border-radius: $border_rad;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+
+        .img_wrapper {
+            width: 260px;
+            height: 170px;
+            margin: 20px auto;
+            border-radius: $border_rad;
+            overflow: hidden;
+        }
+
+        .galery_title {
+            text-align: center;
+            margin: auto 0 10px 0;
+            padding: 0 10px;
+        }
+
+    }
+}
