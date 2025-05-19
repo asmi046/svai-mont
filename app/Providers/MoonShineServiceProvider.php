@@ -17,6 +17,9 @@ use App\MoonShine\Resources\ParametrResource;
 use App\MoonShine\Resources\QuestionResource;
 use App\MoonShine\Resources\ReviewResource;
 use App\MoonShine\Resources\GaleryResource;
+use App\MoonShine\Resources\CertificatResource;
+use App\MoonShine\Resources\ProductResource;
+use App\MoonShine\Resources\ServiceResource;
 
 class MoonShineServiceProvider extends ServiceProvider
 {
@@ -39,6 +42,9 @@ class MoonShineServiceProvider extends ServiceProvider
                 QuestionResource::class,
                 ReviewResource::class,
                 GaleryResource::class,
+                CertificatResource::class,
+                ProductResource::class,
+                ServiceResource::class,
             ])
             ->pages([
                 ...$config->getPages(),

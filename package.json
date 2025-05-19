@@ -16,6 +16,7 @@
     },
     "dependencies": {
         "@vitejs/plugin-vue": "^5.2.3",
+        "fslightbox": "^3.6.0",
         "swiper": "^11.2.6",
         "vue-axios": "^3.5.2",
         "vue3-star-ratings": "^3.0.5"

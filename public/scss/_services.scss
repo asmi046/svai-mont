@@ -1,0 +1,41 @@
+.services {
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .cervice_item {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: white;
+        border-radius: $border_rad;
+        max-width: 26%;
+        padding: 15px 30px;
+        width:100%;
+
+        .order {
+            font-family: 'Russo One', sans-serif;
+            font-size: 24px;
+            color: $sub_color;
+        }
+
+        h3 {
+            font-family: 'Russo One', sans-serif;
+            font-size: 18px;
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
+
+        .subtitle{
+            line-height: 1.2;
+            font-size: 14px;
+            margin-top: auto;
+        }
+
+        .more {
+            color: $main_color;
+            margin-top: 20px;
+        }
+    }
+}

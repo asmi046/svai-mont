@@ -39,6 +39,9 @@ use App\MoonShine\Resources\ParametrResource;
 use App\MoonShine\Resources\QuestionResource;
 use App\MoonShine\Resources\ReviewResource;
 use App\MoonShine\Resources\GaleryResource;
+use App\MoonShine\Resources\CertificatResource;
+use App\MoonShine\Resources\ProductResource;
+use App\MoonShine\Resources\ServiceResource;
 
 final class MoonShineLayout extends AppLayout
 {
@@ -52,14 +55,22 @@ final class MoonShineLayout extends AppLayout
     protected function menu(): array
     {
         return [
+            MenuGroup::make('Контент', [
+                MenuItem::make('Параметры сайта', ParametrResource::class)->icon('cube'),
+                MenuItem::make('FAQ', QuestionResource::class)->icon('fire'),
+                MenuItem::make('Отзывы', ReviewResource::class)->icon('identification'),
+                MenuItem::make('Галерея', GaleryResource::class)->icon('photo'),
+                MenuItem::make('Сертификаты', CertificatResource::class)->icon('clipboard-document-check'),
+            ])->icon('folder-open'),
+
             MenuItem::make('Меню', MenuResource::class)->icon('bars-3-bottom-left'),
             MenuItem::make('Контакты', ContactResource::class)->icon('chat-bubble-bottom-center-text'),
-            MenuItem::make('Параметры сайта', ParametrResource::class)->icon('cube'),
-            MenuItem::make('FAQ', QuestionResource::class)->icon('fire'),
-            MenuItem::make('Отзывы', ReviewResource::class)->icon('identification'),
-            MenuItem::make('Галерея', GaleryResource::class)->icon('photo'),
+
+            MenuItem::make('Продукция', ProductResource::class)->icon('archive-box'),
+            MenuItem::make('Услсги', ServiceResource::class)->icon('users'),
 
             ...parent::menu(),
+
 
         ];
     }
