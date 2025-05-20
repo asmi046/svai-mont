@@ -32,6 +32,7 @@ class ServiceSeeder extends Seeder
                 'img' => "services/s_1.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/serv/s_1/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/serv/s_1/main.html')),
+                'price' => file_get_contents(public_path('tmp_data/serv/s_1/price.html')),
 
             ],
             [
@@ -41,6 +42,7 @@ class ServiceSeeder extends Seeder
                 'img' => "services/s_2.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/serv/s_2/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/serv/s_2/main.html')),
+                'price' => file_get_contents(public_path('tmp_data/serv/s_2/price.html')),
             ],
             [
                 'order' => 3,
@@ -49,6 +51,7 @@ class ServiceSeeder extends Seeder
                 'img' => "services/s_3.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/serv/s_3/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/serv/s_3/main.html')),
+                'price' => file_get_contents(public_path('tmp_data/serv/s_3/price.html')),
             ],
             [
                 'order' => 4,
@@ -57,6 +60,7 @@ class ServiceSeeder extends Seeder
                 'img' => "services/s_4.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/serv/s_4/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/serv/s_4/main.html')),
+                'price' => file_get_contents(public_path('tmp_data/serv/s_4/price.html')),
             ],
 
             [
@@ -66,6 +70,7 @@ class ServiceSeeder extends Seeder
                 'img' => "services/s_5.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/serv/s_5/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/serv/s_5/main.html')),
+                'price' => file_get_contents(public_path('tmp_data/serv/s_5/price.html')),
             ],
             [
                 'order' => 6,
@@ -74,6 +79,7 @@ class ServiceSeeder extends Seeder
                 'img' => "services/s_6.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/serv/s_6/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/serv/s_6/main.html')),
+                'price' => file_get_contents(public_path('tmp_data/serv/s_6/price.html')),
             ],
             [
                 'order' => 7,
@@ -82,6 +88,7 @@ class ServiceSeeder extends Seeder
                 'img' => "services/s_6.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/serv/s_6/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/serv/s_6/main.html')),
+                'price' => file_get_contents(public_path('tmp_data/serv/s_7/price.html')),
             ],
             [
                 'order' => 8,
@@ -90,6 +97,7 @@ class ServiceSeeder extends Seeder
                 'img' => "services/s_7.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/serv/s_7/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/serv/s_7/main.html')),
+                'price' => file_get_contents(public_path('tmp_data/serv/s_8/price.html')),
             ],
         ];
         DB::table("services")->insert($data);
