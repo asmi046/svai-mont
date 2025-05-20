@@ -4,14 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Product extends Model
+class PriceVidget extends Model
 {
     public $fillable = [
-        'title',
+        'size',
         'order',
         'img',
-        'top_description',
-        'description',
-        'price'
+        'price',
+        'price_mont',
     ];
 }

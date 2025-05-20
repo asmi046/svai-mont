@@ -23,44 +23,14 @@ class ProductSeeder extends Seeder
                 'img' => "products/product_1.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_1/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_1/main.html')),
-                'price' => json_encode([
-                    [
-                        'name' => 'Закручивающаяся опора лопастная СВЛ-57-1500',
-                        'wall' => '3.5',
-                        'lopost' => '205',
-                        'price' => '932',
-                        'montage_price' => '1398',
-                    ],
-                    [
-                        'name' => 'Закручивающаяся опора лопастная СВЛ-57-2000',
-                        'wall' => '3.5',
-                        'lopost' => '205',
-                        'price' => '981',
-                        'montage_price' => '1471',
-                    ],
-                ]),
+                'price' =>  file_get_contents(public_path('tmp_data/prod/pr_1/price.html')),
             ],
             [
                 'title' => "Винтовые сваи 60 мм в Сургуте",
                 'img' => "products/product_2.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_2/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_2/main.html')),
-                'price' => json_encode([
-                    [
-                        'name' => 'Закручивающаяся опора лопастная СВЛ-57-1600',
-                        'wall' => '4.5',
-                        'lopost' => '205',
-                        'price' => '1324',
-                        'montage_price' => '1986',
-                    ],
-                    [
-                        'name' => 'Закручивающаяся опора лопастная СВЛ-60-2000',
-                        'wall' => '4.5',
-                        'lopost' => '205',
-                        'price' => '1496',
-                        'montage_price' => '2243',
-                    ],
-                ]),
+                'price' => file_get_contents(public_path('tmp_data/prod/pr_2/price.html')),
             ],
 
         ];

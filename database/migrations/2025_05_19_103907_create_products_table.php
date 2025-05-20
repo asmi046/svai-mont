@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('img', 550)->comment('Ссылка на изображение');
             $table->text('top_description')->nullable()->comment('Описание верхнее');
             $table->longText('description')->nullable()->comment('Описание основное');
-            $table->json('price')->nullable()->comment('Цены');
+            $table->text('price')->nullable()->comment('Цены');
         });
     }
 

@@ -42,6 +42,7 @@ use App\MoonShine\Resources\GaleryResource;
 use App\MoonShine\Resources\CertificatResource;
 use App\MoonShine\Resources\ProductResource;
 use App\MoonShine\Resources\ServiceResource;
+use App\MoonShine\Resources\PriceVidgetResource;
 
 final class MoonShineLayout extends AppLayout
 {
@@ -69,7 +70,10 @@ final class MoonShineLayout extends AppLayout
             MenuItem::make('Продукция', ProductResource::class)->icon('archive-box'),
             MenuItem::make('Услсги', ServiceResource::class)->icon('users'),
 
+            MenuItem::make('Цены на главной', PriceVidgetResource::class)->icon('shopping-bag'),
+
             ...parent::menu(),
+
 
 
         ];
