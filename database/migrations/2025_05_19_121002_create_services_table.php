@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('title')->comment('Название');
+            $table->string('slug')->unique()->comment('Слаг');
             $table->string('sub_title')->comment('Название');
             $table->integer('order')->default(0)->comment('Порядок вывода');
             $table->string('img', 550)->comment('Ссылка на изображение');

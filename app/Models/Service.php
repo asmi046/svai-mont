@@ -8,6 +8,7 @@ class Service extends Model
 {
         public $fillable = [
         'title',
+        'slug',
         'sub_title',
         'order',
         'img',

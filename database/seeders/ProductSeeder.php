@@ -2,11 +2,12 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use Illuminate\Database\Seeder;
-
 use DB;
+use Illuminate\Support\Str;
+
+use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class ProductSeeder extends Seeder
 {
@@ -20,6 +21,7 @@ class ProductSeeder extends Seeder
         $data = [
             [
                 'title' => "Винтовые сваи 57 мм купить в Сургуте",
+                'slug' => Str::slug("Винтовые сваи 57 мм купить в Сургуте"),
                 'img' => "products/product_1.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_1/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_1/main.html')),
@@ -27,6 +29,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'title' => "Винтовые сваи 60 мм в Сургуте",
+                'slug' => Str::slug("Винтовые сваи 60 мм в Сургуте"),
                 'img' => "products/product_2.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_2/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_2/main.html')),
