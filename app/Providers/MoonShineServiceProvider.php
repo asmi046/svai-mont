@@ -21,6 +21,7 @@ use App\MoonShine\Resources\CertificatResource;
 use App\MoonShine\Resources\ProductResource;
 use App\MoonShine\Resources\ServiceResource;
 use App\MoonShine\Resources\PriceVidgetResource;
+use App\MoonShine\Resources\PageResource;
 
 class MoonShineServiceProvider extends ServiceProvider
 {
@@ -47,6 +48,7 @@ class MoonShineServiceProvider extends ServiceProvider
                 ProductResource::class,
                 ServiceResource::class,
                 PriceVidgetResource::class,
+                PageResource::class
             ])
             ->pages([
                 ...$config->getPages(),

@@ -12,6 +12,9 @@
     <x-main-banner></x-main-banner>
     <x-adv-section></x-adv-section>
     <x-service-in-main/>
+    <x-price-in-main/>
+
+
     <x-faq-in-main></x-faq-in-main>
     <x-pay-methods></x-pay-methods>
     <x-galery-in-main></x-galery-in-main>

@@ -1,0 +1,42 @@
+.price_in_main_wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    .price_in_main_item{
+        width:18%;
+        position: relative;
+        box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.02);
+        border-radius: $border_rad;
+        border: 1px solid #D9D9D9;
+        padding: 20px 30px;
+
+        .label {
+            font-size: 14px;
+        }
+
+        .size {
+            font-size: 28px;
+            color: $main_color;
+            font-family: 'Russo One', sans-serif;
+            line-height: 1;
+            margin-bottom: 5px;
+        }
+
+        .price{
+            font-size: 16px;
+            font-family: 'Russo One', sans-serif;
+            line-height: 1;
+            margin: 5px 0;
+        }
+
+        img {
+            position: absolute;
+            width: 40px;
+            height: auto;
+            right: 20px;
+            top: 0;
+        }
+    }
+}
