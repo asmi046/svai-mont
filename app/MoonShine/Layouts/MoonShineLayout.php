@@ -9,6 +9,7 @@ use MoonShine\MenuManager\MenuGroup;
 use MoonShine\Laravel\Layouts\AppLayout;
 use MoonShine\ColorManager\ColorManager;
 use App\MoonShine\Resources\MenuResource;
+use App\MoonShine\Resources\PageResource;
 
 use MoonShine\Contracts\ColorManager\ColorManagerContract;
 use MoonShine\Laravel\Components\Layout\{Locales, Notifications, Profile, Search};
@@ -63,7 +64,7 @@ final class MoonShineLayout extends AppLayout
                 MenuItem::make('Галерея', GaleryResource::class)->icon('photo'),
                 MenuItem::make('Сертификаты', CertificatResource::class)->icon('clipboard-document-check'),
             ])->icon('folder-open'),
-
+            MenuItem::make("Страницы", PageResource::class)->icon('document-text'),
             MenuItem::make('Меню', MenuResource::class)->icon('bars-3-bottom-left'),
             MenuItem::make('Контакты', ContactResource::class)->icon('chat-bubble-bottom-center-text'),
 

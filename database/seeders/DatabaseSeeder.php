@@ -31,6 +31,7 @@ class DatabaseSeeder extends Seeder
             ContactSeeder::class,
             MenuSeeder::class,
             QuestionSeeder::class,
+            PageSeeder::class,
             ReviewSeeder::class
         ]);
     }
