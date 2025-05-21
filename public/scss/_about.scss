@@ -1,0 +1,27 @@
+.about_in_main .colls{
+    gap:40px;
+
+    .pictures{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: start;
+        flex-direction: column;
+
+        .pw {
+            overflow: hidden;
+            border-radius: $border_rad;
+        }
+
+        .smile_photos {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+
+        }
+    }
+
+    .text p:first-child {
+            margin-top: 0;
+    }
+}

@@ -9,15 +9,17 @@
 @section('description', $description)
 
 @section('main')
-    <x-main-banner></x-main-banner>
-    <x-adv-section></x-adv-section>
+    <x-main-banner/>
+    <x-adv-section/>
+    <x-about-in-main/>
+
     <x-service-in-main/>
     <x-price-in-main/>
 
 
-    <x-faq-in-main></x-faq-in-main>
-    <x-pay-methods></x-pay-methods>
-    <x-galery-in-main></x-galery-in-main>
+    <x-faq-in-main/>
+    <x-pay-methods/>
+    <x-galery-in-main/>
 
 
 
