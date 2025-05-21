@@ -16,7 +16,7 @@
                 </div>
             </div>
             <div class="col text text_styles">
-                {!! $page->description !!}
+                {!! get_city_text($page->description) !!}
             </div>
         </div>
     </div>

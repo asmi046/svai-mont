@@ -22,6 +22,7 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             UserSeeder::class,
+            CitySeeder::class,
             PriceVidgetSeeder::class,
             CertificatSeeder::class,
             ServiceSeeder::class,
@@ -32,6 +33,7 @@ class DatabaseSeeder extends Seeder
             MenuSeeder::class,
             QuestionSeeder::class,
             PageSeeder::class,
+            FondationSeeder::class,
             ReviewSeeder::class
         ]);
     }

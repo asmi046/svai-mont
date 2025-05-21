@@ -1,6 +1,18 @@
 <?php
 use App\Services\SeoServices;
 
+if (!function_exists("get_city_text")) {
+    function get_city_text($text):string {
+        $replacements = [
+            '[city|name]' => app('current_city_name'),
+            '[city|pp]'   => app('current_city_pp'),
+            '[city|rp]'   => app('current_city_rp'),
+        ];
+
+        return strtr($text, $replacements);
+    }
+}
+
 if (!function_exists("header_seo")) {
     function seo_data():SeoServices {
         return app(SeoServices::class);
