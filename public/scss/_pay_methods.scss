@@ -25,3 +25,33 @@
         margin: auto;
     }
 }
+
+@media (max-width: 1024px) {
+    .pay_methods_wrapper {
+        flex-wrap: wrap;
+        .box {
+            width: 20%;
+            flex:unset;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .pay_methods_wrapper {
+        column-gap: 20px;
+
+        .icon {
+            width: 28px;
+            height: 28px;
+        }
+
+        h3 {
+            font-size: 12px;
+        }
+
+        .box {
+            width: 20%;
+            padding: 10px;
+        }
+    }
+}

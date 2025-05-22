@@ -40,3 +40,16 @@
         }
     }
 }
+
+
+@media (max-width: 1024px) {
+    .price_in_main_wrapper .price_in_main_item {
+        width: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    .price_in_main_wrapper .price_in_main_item {
+        width: 100%;
+    }
+}

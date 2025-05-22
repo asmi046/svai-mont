@@ -39,3 +39,16 @@
         }
     }
 }
+
+
+@media (max-width: 1024px) {
+    .services .cervice_item {
+        max-width: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    .services .cervice_item {
+        max-width:100%;
+    }
+}

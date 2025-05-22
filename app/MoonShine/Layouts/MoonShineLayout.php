@@ -46,6 +46,7 @@ use App\MoonShine\Resources\ServiceResource;
 use App\MoonShine\Resources\PriceVidgetResource;
 use App\MoonShine\Resources\FondationResource;
 use App\MoonShine\Resources\SeoDataResource;
+use App\MoonShine\Resources\CityResource;
 
 final class MoonShineLayout extends AppLayout
 {
@@ -78,8 +79,10 @@ final class MoonShineLayout extends AppLayout
             MenuItem::make('Меню', MenuResource::class)->icon('bars-3-bottom-left'),
             MenuItem::make('Контакты', ContactResource::class)->icon('chat-bubble-bottom-center-text'),
             MenuItem::make('SEO', SeoDataResource::class,)->icon('chart-bar-square'),
+            MenuItem::make('Города', CityResource::class)->icon('map-pin'),
 
             ...parent::menu(),
+
 
         ];
     }

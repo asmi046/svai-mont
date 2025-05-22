@@ -8,6 +8,12 @@
                 <div class="content">
                     <x-breadcrumbs.main title="Сертификаты"></x-breadcrumbs.main>
                     <h1>Сертификаты соответствия</h1>
+
+                    <div class="certificates_list">
+                        @foreach ($certificates as $item)
+                            <x-cards.certificat :item="$item" />
+                        @endforeach
+                    </div>
                 </div>
             </div>
         </div>

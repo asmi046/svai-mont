@@ -25,3 +25,10 @@
             margin-top: 0;
     }
 }
+
+
+@media (max-width: 768px) {
+    .about_in_main .colls {
+        flex-direction: column;
+    }
+}

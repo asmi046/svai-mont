@@ -24,6 +24,7 @@ use App\MoonShine\Resources\PriceVidgetResource;
 use App\MoonShine\Resources\PageResource;
 use App\MoonShine\Resources\FondationResource;
 use App\MoonShine\Resources\SeoDataResource;
+use App\MoonShine\Resources\CityResource;
 
 class MoonShineServiceProvider extends ServiceProvider
 {
@@ -53,6 +54,7 @@ class MoonShineServiceProvider extends ServiceProvider
                 PriceVidgetResource::class,
                 PageResource::class,
                 FondationResource::class,
+                CityResource::class,
             ])
             ->pages([
                 ...$config->getPages(),

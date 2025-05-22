@@ -31,3 +31,28 @@
         }
     }
 }
+
+
+@media (max-width: 480px) {
+    .top_logo_section {
+        .logo {
+            width:170px;
+        }
+        .top_contacts {
+            flex-direction: row-reverse;
+            gap:10px;
+            .phone {
+                font-size: 12px;
+            }
+
+            .messenger .msg_icon {
+                display: flex;
+                .sprite_icon {
+                    width: 15px;
+                    height: 15px;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}

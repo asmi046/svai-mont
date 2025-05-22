@@ -53,6 +53,7 @@ class ProductResource extends ModelResource
                 ID::make(),
                 Number::make('Порядок сортировки', 'order'),
                 Text::make('Наименование', 'title'),
+                Text::make('Короткое название', 'short_title'),
                 Text::make('Ссылка', 'slug'),
                 Image::make('Изображение', 'img')->dir('products'),
                 TinyMce::make('Описание верхнее', 'top_description'),
@@ -71,6 +72,7 @@ class ProductResource extends ModelResource
             ID::make(),
             Number::make('Порядок сортировки', 'order'),
             Text::make('Наименование', 'title'),
+            Text::make('Короткое название', 'short_title'),
             Text::make('Ссылка', 'slug'),
             Image::make('Изображение', 'img')->dir('products'),
             TinyMce::make('Описание верхнее', 'top_description'),
@@ -90,6 +92,7 @@ class ProductResource extends ModelResource
     {
         return [
             'title' => ['required'],
+            'short_title' => ['required'],
             'img' =>($item->img === "")?['required']:[],
         ];
     }

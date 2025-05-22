@@ -45,3 +45,25 @@
         }
     }
 }
+
+
+@media (max-width: 1024px) {
+    .fondation_wrapper .fondation_card {
+        width: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    .fondation_wrapper .fondation_card {
+        width: 100%;
+
+        .icon {
+            width:50px;
+            height:50px;
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}

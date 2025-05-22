@@ -8,3 +8,14 @@
         color: white;
     }
 }
+
+@media (max-width: 768px) {
+    .main_menu_section {
+        border-top: 1px solid $gray_border_color;
+        padding: 0;
+        .container,
+        nav {
+            display: none;
+        }
+    }
+}

@@ -5,6 +5,7 @@
     h1 {
         font-size: 32px;
         font-family: "Russo One", sans-serif;
+        line-height: 1.2;
     }
 
     .sidebar {
@@ -25,5 +26,21 @@
     }
     .content {
         flex:3;
+    }
+}
+
+@media (max-width: 768px) {
+    .page_content {
+        flex-direction: column-reverse;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .page_content {
+
+        h1 {
+            font-size: 24px;
+        }
     }
 }

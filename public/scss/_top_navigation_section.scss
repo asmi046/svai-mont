@@ -11,3 +11,14 @@
         justify-content: end;
     }
 }
+
+@media (max-width: 480px) {
+    .top_navigation_section {
+        .text_icon .text {
+            font-size: 12px;
+        }
+        .right {
+            display: none;
+        }
+    }
+}

@@ -69,3 +69,31 @@
         }
     }
 }
+
+@media (max-width: 480px) {
+    .hiro {
+        height: 240px;
+        h1 {
+            font-size: 22px;
+            left: 25px;
+            top: 10%;
+        }
+
+        .bn_ch {
+            width:100%;
+            padding: 0;
+            background-image: none;
+            background-color: $main_color;
+            right:0;
+            justify-content: center;
+            gap: 20px;
+
+            .ch {
+                text-align: center;
+                .c {
+                    font-size:20px
+                }
+            }
+        }
+    }
+}

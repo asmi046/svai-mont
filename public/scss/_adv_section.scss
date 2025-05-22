@@ -30,3 +30,36 @@
         margin: 0;
     }
 }
+
+@media (max-width: 1024px) {
+    .adv_wrapper{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .box {
+            width: 40%;
+            flex:unset;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .adv_wrapper  {
+        row-gap: 20px;
+        column-gap: unset;
+
+        .icon {
+            width: 50px;
+            height: 50px;
+        }
+
+        h3{
+            font-size: 14px;
+        }
+        p {
+            font-size: 12px;
+        }
+        .box {
+            padding: 10px;
+        }
+    }
+}

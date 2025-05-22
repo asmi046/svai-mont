@@ -31,3 +31,17 @@
 
     }
 }
+
+
+@media (max-width: 768px) {
+    .galery .galery_item {
+        flex:unset;
+        width:40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .galery .galery_item {
+        width: 85%;
+    }
+}

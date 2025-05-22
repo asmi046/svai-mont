@@ -86,6 +86,13 @@ swiper-slide {
     }
 }
 
+@media (max-width: 480px) {
+    .section_h2 {
+        margin-top: 0;
+        font-size: 20px;
+    }
+}
+
 .breadcrumbs {
     font-size: 14px;
     a {
@@ -121,6 +128,7 @@ swiper-slide {
 @import "about";
 @import "fondation";
 @import "page";
+@import "certificates";
 
 
 @import "footer";
