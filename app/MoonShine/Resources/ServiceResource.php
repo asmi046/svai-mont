@@ -51,11 +51,12 @@ class ServiceResource extends ModelResource
                 ID::make(),
                 Number::make('Порядок сортировки', 'order'),
                 Text::make('Наименование', 'title'),
+                Text::make('Ссылка', 'slug'),
                 Text::make('Подзаголовок', 'sub_title'),
                 Image::make('Изображение', 'img')->dir('services'),
                 TinyMce::make('Описание верхнее', 'top_description'),
                 TinyMce::make('Описание основное', 'description'),
-                Text::make('Цена', 'price')
+                TinyMce::make('Цены', 'price'),
             ])
         ];
     }
@@ -69,11 +70,12 @@ class ServiceResource extends ModelResource
             ID::make(),
             Number::make('Порядок сортировки', 'order'),
             Text::make('Наименование', 'title'),
+            Text::make('Ссылка', 'slug'),
             Text::make('Подзаголовок', 'sub_title'),
             Image::make('Изображение', 'img')->dir('services'),
             TinyMce::make('Описание верхнее', 'top_description'),
             TinyMce::make('Описание основное', 'description'),
-            Text::make('Цена', 'price')
+            TinyMce::make('Цены', 'price'),
         ];
     }
 

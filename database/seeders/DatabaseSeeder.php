@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         $this->call([
+            SeoDataSeeder::class,
             UserSeeder::class,
             CitySeeder::class,
             PriceVidgetSeeder::class,

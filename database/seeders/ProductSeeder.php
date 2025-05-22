@@ -49,6 +49,7 @@ class ProductSeeder extends Seeder
         $data = [
             [
                 'title' => "Винтовые сваи 57 мм купить в ЯНАО",
+                'short_title' => "Винтовые сваи 57 мм",
                 'slug' => Str::slug("Винтовые сваи 57 мм купить в ЯНАО"),
                 'img' => "products/product_1.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_1/top.html')),
@@ -57,6 +58,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'title' => "Винтовые сваи 60 мм в ЯНАО",
+                'short_title' => "Винтовые сваи 60 мм",
                 'slug' => Str::slug("Винтовые сваи 60 мм в ЯНАО"),
                 'img' => "products/product_2.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_2/top.html')),
@@ -65,6 +67,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'title' => "Винтовые сваи 73 мм в ЯНАО",
+                'short_title' => "Винтовые сваи 73 мм",
                 'slug' => Str::slug("Винтовые сваи 73 мм в ЯНАО"),
                 'img' => "products/product_3.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_3/top.html')),
@@ -73,6 +76,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'title' => "Винтовые сваи 76 мм в ЯНАО",
+                'short_title' => "Винтовые сваи 76 мм",
                 'slug' => Str::slug("Винтовые сваи 76 мм в ЯНАО"),
                 'img' => "products/product_4.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_4/top.html')),
@@ -81,6 +85,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'title' => "Винтовые сваи 89 мм в ЯНАО",
+                'short_title' => "Винтовые сваи 89 мм",
                 'slug' => Str::slug("Винтовые сваи 89 мм в ЯНАО"),
                 'img' => "products/product_5.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_5/top.html')),
@@ -89,6 +94,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'title' => "Винтовые сваи 102 мм в ЯНАО",
+                'short_title' => "Винтовые сваи 102 мм",
                 'slug' => Str::slug("Винтовые сваи 102 мм в ЯНАО"),
                 'img' => "products/product_6.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_6/top.html')),
@@ -97,6 +103,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'title' => "Винтовые сваи 108 мм в ЯНАО",
+                'short_title' => "Винтовые сваи 108 мм",
                 'slug' => Str::slug("Винтовые сваи 108 мм в ЯНАО"),
                 'img' => "products/product_7.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_7/top.html')),
@@ -105,6 +112,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'title' => "Винтовые сваи 133 мм в ЯНАО",
+                'short_title' => "Винтовые сваи 133 мм",
                 'slug' => Str::slug("Винтовые сваи 133 мм в ЯНАО"),
                 'img' => "products/product_8.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_8/top.html')),
@@ -113,6 +121,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'title' => "Винтовые сваи 159 мм в ЯНАО",
+                'short_title' => "Винтовые сваи 159 мм",
                 'slug' => Str::slug("Винтовые сваи 159 мм в ЯНАО"),
                 'img' => "products/product_9.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_9/top.html')),
@@ -121,6 +130,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'title' => "Винтовые сваи 219 мм в ЯНАО",
+                'short_title' => "Винтовые сваи 219 мм",
                 'slug' => Str::slug("Винтовые сваи 219 мм в ЯНАО"),
                 'img' => "products/product_10.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_10/top.html')),
@@ -129,6 +139,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'title' => "Винтовые сваи 325 мм в ЯНАО",
+                'short_title' => "Винтовые сваи 325 мм",
                 'slug' => Str::slug("Винтовые сваи 325 мм в ЯНАО"),
                 'img' => "products/product_11.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_11/top.html')),
@@ -137,6 +148,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'title' => "Винтовые сваи с усиленной лопастью 8 мм в ЯНАО",
+                'short_title' => "Винтовые сваи с усиленной лопастью 8 мм",
                 'slug' => Str::slug("Винтовые сваи с усиленной лопастью 8 мм в ЯНАО"),
                 'img' => "products/product_13.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_13/top.html')),
@@ -145,6 +157,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'title' => "Промышленные опоры из нержавеющей стали в ЯНАО",
+                'short_title' => "Промышленные опоры из нержавеющей стали",
                 'slug' => Str::slug("Промышленные опоры из нержавеющей стали в ЯНАО"),
                 'img' => "products/product_14.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_14/top.html')),
@@ -153,6 +166,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'title' => "Квадратные винтовые сваи в ЯНАО",
+                'short_title' => "Квадратные винтовые сваи",
                 'slug' => Str::slug("Квадратные винтовые сваи в ЯНАО"),
                 'img' => "products/product_15.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_15/top.html')),
@@ -161,6 +175,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'title' => "Комбинированные сваи для заборов в ЯНАО",
+                'short_title' => "Комбинированные сваи для заборов",
                 'slug' => Str::slug("Комбинированные сваи для заборов в ЯНАО"),
                 'img' => "products/product_16.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_16/top.html')),
@@ -169,6 +184,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'title' => "Буронабивные сваи в ЯНАО",
+                'short_title' => "Буронабивные сваи",
                 'slug' => Str::slug("Буронабивные сваи в ЯНАО"),
                 'img' => "products/product_17.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_17/top.html')),
@@ -177,6 +193,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'title' => "Опоры железобетонные в ЯНАО",
+                'short_title' => "Опоры железобетонные",
                 'slug' => Str::slug("Опоры железобетонные в ЯНАО"),
                 'img' => "products/product_18.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_18/top.html')),
@@ -185,6 +202,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'title' => "Многолопастные Сваи в ЯНАО",
+                'short_title' => "Многолопастные Сваи",
                 'slug' => Str::slug("Многолопастные Сваи в ЯНАО"),
                 'img' => "products/product_19.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_19/top.html')),
@@ -193,6 +211,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'title' => "Сваи винтовые 150*150*3000 в ЯНАО",
+                'short_title' => "Сваи винтовые 150*150*3000",
                 'slug' => Str::slug("Сваи винтовые 150*150*3000 в ЯНАО"),
                 'img' => "products/product_20.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_20/top.html')),
@@ -201,6 +220,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'title' => "Шурупные сваи в ЯНАО",
+                'short_title' => "Шурупные сваи",
                 'slug' => Str::slug("Шурупные сваи в ЯНАО"),
                 'img' => "products/product_21.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_21/top.html')),
@@ -209,6 +229,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'title' => "Наклонные сваи в ЯНАО",
+                'short_title' => "Наклонные сваи",
                 'slug' => Str::slug("Наклонные сваи в ЯНАО"),
                 'img' => "products/product_22.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_22/top.html')),
@@ -217,6 +238,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'title' => "Деревянные сваи в ЯНАО",
+                'short_title' => "Деревянные сваи",
                 'slug' => Str::slug("Деревянные сваи в ЯНАО"),
                 'img' => "products/product_23.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_23/top.html')),
@@ -225,6 +247,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'title' => "Сваи центрифугированные в ЯНАО",
+                'short_title' => "Сваи центрифугированные",
                 'slug' => Str::slug("Сваи центрифугированные в ЯНАО"),
                 'img' => "products/product_24.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_24/top.html')),
@@ -233,6 +256,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'title' => "Сваи цельные в ЯНАО",
+                'short_title' => "Сваи цельные",
                 'slug' => Str::slug("Сваи цельные в ЯНАО"),
                 'img' => "products/product_25.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_25/top.html')),
@@ -241,6 +265,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'title' => "Сваи для беседки в ЯНАО",
+                'short_title' => "Сваи для беседки",
                 'slug' => Str::slug("Сваи для беседки в ЯНАО"),
                 'img' => "products/product_26.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_26/top.html')),
@@ -249,6 +274,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'title' => "Якорные сваи в ЯНАО",
+                'short_title' => "Якорные сваи",
                 'slug' => Str::slug("Якорные сваи в ЯНАО"),
                 'img' => "products/product_27.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_27/top.html')),
@@ -257,6 +283,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'title' => "Мини сваи в ЯНАО",
+                'short_title' => "Мини сваи",
                 'slug' => Str::slug("Мини сваи в ЯНАО"),
                 'img' => "products/product_28.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_28/top.html')),
@@ -265,6 +292,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'title' => "Сваи для помоста в ЯНАО",
+                'short_title' => "Сваи для помоста",
                 'slug' => Str::slug("Сваи для помоста в ЯНАО"),
                 'img' => "products/product_29.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_29/top.html')),
@@ -273,6 +301,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'title' => "Сваи для парника в ЯНАО",
+                'short_title' => "Сваи для парника",
                 'slug' => Str::slug("Сваи для парника в ЯНАО"),
                 'img' => "products/product_30.jpg",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_30/top.html')),
@@ -284,5 +313,15 @@ class ProductSeeder extends Seeder
         ];
 
         DB::table("products")->insert($data);
+
+        foreach ($data as $item) {
+            DB::table("seo_data")->insert(
+                [
+                    'url' => 'products/'.$item['slug'],
+                    'seo_title' => $item['title'],
+                    'seo_description' => $item['title'],
+                ]
+            );
+        }
     }
 }

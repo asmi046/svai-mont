@@ -86,6 +86,16 @@ swiper-slide {
     }
 }
 
+.breadcrumbs {
+    font-size: 14px;
+    a {
+        color: $main_color;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
 // Схема с сайдбаром
 // @import "sidebar-schem";
 
@@ -110,6 +120,7 @@ swiper-slide {
 @import "price";
 @import "about";
 @import "fondation";
+@import "page";
 
 
 @import "footer";

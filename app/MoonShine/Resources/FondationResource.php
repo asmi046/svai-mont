@@ -4,14 +4,12 @@ declare(strict_types=1);
 
 namespace App\MoonShine\Resources;
 
-use App\Models\Product;
+use App\Models\Fondation;
 use MoonShine\UI\Fields\ID;
 
-use MoonShine\UI\Fields\Json;
 use MoonShine\UI\Fields\Text;
 use MoonShine\UI\Fields\Image;
 use MoonShine\UI\Fields\Number;
-use MoonShine\UI\Fields\Position;
 use MoonShine\TinyMce\Fields\TinyMce;
 use Illuminate\Database\Eloquent\Model;
 use MoonShine\UI\Components\Layout\Box;
@@ -20,13 +18,13 @@ use MoonShine\Contracts\UI\ComponentContract;
 use MoonShine\Laravel\Resources\ModelResource;
 
 /**
- * @extends ModelResource<Product>
+ * @extends ModelResource<Fondation>
  */
-class ProductResource extends ModelResource
+class FondationResource extends ModelResource
 {
-    protected string $model = Product::class;
+    protected string $model = Fondation::class;
 
-    protected string $title = 'Продукция';
+    protected string $title = 'Фундаменты';
 
     protected string $column = 'title';
 
@@ -39,7 +37,7 @@ class ProductResource extends ModelResource
             ID::make()->sortable(),
             Number::make('Порядок сортировки', 'order'),
             Text::make('Наименование', 'title'),
-            Image::make('Изображение', 'img')->dir('products'),
+            Image::make('Изображение', 'img')->dir('fondation'),
         ];
     }
 
@@ -51,10 +49,12 @@ class ProductResource extends ModelResource
         return [
             Box::make([
                 ID::make(),
-                Number::make('Порядок сортировки', 'order'),
-                Text::make('Наименование', 'title'),
+                Number::make('Порядок вывода', 'order'),
+                Text::make('Название', 'title'),
+                Text::make('Короткое название', 'short_title'),
                 Text::make('Ссылка', 'slug'),
-                Image::make('Изображение', 'img')->dir('products'),
+                Image::make('Изображение', 'img')->dir('fondation'),
+                Image::make('Иконка', 'icon')->dir('fondation'),
                 TinyMce::make('Описание верхнее', 'top_description'),
                 TinyMce::make('Описание основное', 'description'),
                 TinyMce::make('Цены', 'price'),
@@ -69,19 +69,19 @@ class ProductResource extends ModelResource
     {
         return [
             ID::make(),
-            Number::make('Порядок сортировки', 'order'),
-            Text::make('Наименование', 'title'),
+            Text::make('Название', 'title'),
+            Text::make('Короткое название', 'short_title'),
             Text::make('Ссылка', 'slug'),
-            Image::make('Изображение', 'img')->dir('products'),
+            Image::make('Изображение', 'img')->dir('fondation'),
+            Image::make('Иконка', 'icon')->dir('fondation'),
             TinyMce::make('Описание верхнее', 'top_description'),
             TinyMce::make('Описание основное', 'description'),
             TinyMce::make('Цены', 'price'),
-
         ];
     }
 
     /**
-     * @param Product $item
+     * @param Fondation $item
      *
      * @return array<string, string[]|string>
      * @see https://laravel.com/docs/validation#available-validation-rules
@@ -90,6 +90,7 @@ class ProductResource extends ModelResource
     {
         return [
             'title' => ['required'],
+            'short_title' => ['required'],
             'img' =>($item->img === "")?['required']:[],
         ];
     }

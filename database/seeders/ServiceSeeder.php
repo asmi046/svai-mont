@@ -102,7 +102,7 @@ class ServiceSeeder extends Seeder
                 'slug' => Str::slug("Заказать обвязку винтовых свай в ЯНАО"),
                 'sub_title' => "Обвязка винтовых свай в ЯНАО",
                 'img' => "services/s_6.jpg",
-                'top_description' => file_get_contents(public_path('tmp_data/serv/s7/top.html')),
+                'top_description' => file_get_contents(public_path('tmp_data/serv/s_7/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/serv/s_7/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/serv/s_7/price.html')),
             ],

@@ -1,0 +1,29 @@
+.page_content {
+    display: flex;
+    gap:30px;
+
+    h1 {
+        font-size: 32px;
+        font-family: "Russo One", sans-serif;
+    }
+
+    .sidebar {
+        flex:1;
+
+
+        li {
+            line-height: 1.2;
+            margin-bottom: 7px;
+        }
+
+        a{
+            &:hover{
+                color: $main_color;
+
+            }
+        }
+    }
+    .content {
+        flex:3;
+    }
+}

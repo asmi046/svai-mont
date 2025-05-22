@@ -44,6 +44,8 @@ use App\MoonShine\Resources\CertificatResource;
 use App\MoonShine\Resources\ProductResource;
 use App\MoonShine\Resources\ServiceResource;
 use App\MoonShine\Resources\PriceVidgetResource;
+use App\MoonShine\Resources\FondationResource;
+use App\MoonShine\Resources\SeoDataResource;
 
 final class MoonShineLayout extends AppLayout
 {
@@ -64,18 +66,20 @@ final class MoonShineLayout extends AppLayout
                 MenuItem::make('Галерея', GaleryResource::class)->icon('photo'),
                 MenuItem::make('Сертификаты', CertificatResource::class)->icon('clipboard-document-check'),
             ])->icon('folder-open'),
+
+            MenuGroup::make('Бизнес-параметры', [
+                MenuItem::make('Продукция', ProductResource::class)->icon('archive-box'),
+                MenuItem::make('Услсги', ServiceResource::class)->icon('users'),
+                MenuItem::make('Фундаменты', FondationResource::class)->icon('building-library'),
+                MenuItem::make('Цены на главной', PriceVidgetResource::class)->icon('shopping-bag'),
+            ])->icon('archive-box'),
+
             MenuItem::make("Страницы", PageResource::class)->icon('document-text'),
             MenuItem::make('Меню', MenuResource::class)->icon('bars-3-bottom-left'),
             MenuItem::make('Контакты', ContactResource::class)->icon('chat-bubble-bottom-center-text'),
-
-            MenuItem::make('Продукция', ProductResource::class)->icon('archive-box'),
-            MenuItem::make('Услсги', ServiceResource::class)->icon('users'),
-
-            MenuItem::make('Цены на главной', PriceVidgetResource::class)->icon('shopping-bag'),
+            MenuItem::make('SEO', SeoDataResource::class,)->icon('chart-bar-square'),
 
             ...parent::menu(),
-
-
 
         ];
     }

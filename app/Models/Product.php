@@ -8,6 +8,7 @@ class Product extends Model
 {
     public $fillable = [
         'title',
+        'short_title',
         'slug',
         'order',
         'img',

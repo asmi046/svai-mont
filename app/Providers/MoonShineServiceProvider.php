@@ -22,6 +22,8 @@ use App\MoonShine\Resources\ProductResource;
 use App\MoonShine\Resources\ServiceResource;
 use App\MoonShine\Resources\PriceVidgetResource;
 use App\MoonShine\Resources\PageResource;
+use App\MoonShine\Resources\FondationResource;
+use App\MoonShine\Resources\SeoDataResource;
 
 class MoonShineServiceProvider extends ServiceProvider
 {
@@ -36,6 +38,7 @@ class MoonShineServiceProvider extends ServiceProvider
 
         $core
             ->resources([
+                SeoDataResource::class,
                 MenuResource::class,
                 MoonShineUserResource::class,
                 MoonShineUserRoleResource::class,
@@ -48,7 +51,8 @@ class MoonShineServiceProvider extends ServiceProvider
                 ProductResource::class,
                 ServiceResource::class,
                 PriceVidgetResource::class,
-                PageResource::class
+                PageResource::class,
+                FondationResource::class,
             ])
             ->pages([
                 ...$config->getPages(),

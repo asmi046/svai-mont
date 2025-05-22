@@ -67,7 +67,7 @@ class MenuSeeder extends Seeder
                 'menu_name' => 'Главное меню',
                 'title' => 'Сертификаты',
                 'order' => 9,
-                'lnk' => "#",
+                'lnk' => "/certificat",
             ],
             [
                 'menu_name' => 'Главное меню',
@@ -139,7 +139,7 @@ class MenuSeeder extends Seeder
                 'menu_name' => 'Полезная информация',
                 'title' => 'Сертификаты',
                 'order' => 9,
-                'lnk' => "#",
+                'lnk' => "/certificat",
             ],
             [
                 'menu_name' => 'Полезная информация',
