@@ -29,10 +29,13 @@
 </head>
 <body>
     @include("allicon")
+
+    <x-menues.side-menu></x-menues.side-menu>
+
     <main id="main">
         <x-top-navigation-section></x-top-navigation-section>
         <x-top_logo_section></x-top_logo_section>
-        <x-main-menu></x-main-menu>
+        <x-main-menu-section/>
 
         @yield('main')
     </main>
