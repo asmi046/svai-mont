@@ -10,18 +10,14 @@
 
 @section('main')
     <x-main-banner/>
-    <x-adv-section/>
+    <x-fondation-in-main/>
     <x-about-in-main/>
-
     <x-service-in-main/>
     <x-price-in-main/>
-
-
+    <x-adv-section/>
+    <x-galery-in-main/>
     <x-faq-in-main/>
     <x-pay-methods/>
-    <x-galery-in-main/>
-
-
 
     <section class="rew_section">
         <div class="container" id="review_app">
