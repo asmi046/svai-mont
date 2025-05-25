@@ -71,6 +71,27 @@ class SeoDataSeeder extends Seeder
                 'page_title' => "",
             ],
 
+            [
+                'url' => "page/soglasie-na-obrabotku-personalnyx-dannyx",
+                'seo_title' => "Согласие на обработку персональных данных",
+                'seo_description' => "Согласие на обработку персональных данных",
+                'page_title' => "",
+            ],
+
+            [
+                'url' => "page/politika-v-oblasti-obrabotki-personalnyx-dannyx",
+                'seo_title' => "Политика в области обработки персональных данных",
+                'seo_description' => "Политика в области обработки персональных данных",
+                'page_title' => "",
+            ],
+
+            [
+                'url' => "page/oplata-i-dostavka",
+                'seo_title' => "Оплата и доставка винтовых свай в [city|pp]",
+                'seo_description' => "Оплата и доставка винтовых свай в [city|pp]. Выберите удобный способ оплаты и вариант доставки.",
+                'page_title' => "",
+            ],
+
         ];
 
         DB::table("seo_data")->insert($data);

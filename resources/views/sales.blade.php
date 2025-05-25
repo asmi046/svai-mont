@@ -7,7 +7,7 @@
                 <x-page-sidebar></x-page-sidebar>
                 <div class="content">
                     <x-breadcrumbs.main title="Скидки и акции"></x-breadcrumbs.main>
-                    <h1>Скидки и акции</h1>
+                    <h1 class="inner_page_h1">Скидки и акции</h1>
 
                 </div>
             </div>

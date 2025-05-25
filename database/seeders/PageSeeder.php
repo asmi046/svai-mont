@@ -42,6 +42,29 @@ class PageSeeder extends Seeder
                     ]
                 ])
             ],
+
+        ];
+
+        DB::table("pages")->insert($data);
+
+        $data = [
+            [
+                'title' => "Политика в области обработки персональных данных",
+                'slug' => Str::slug("Политика в области обработки персональных данных"),
+                'description' => file_get_contents(public_path('tmp_data/page/policy.html')),
+            ],
+
+            [
+                'title' => "Согласие на обработку персональных данных",
+                'slug' => Str::slug("Согласие на обработку персональных данных"),
+                'description' => file_get_contents(public_path('tmp_data/page/accept.html')),
+            ],
+
+            [
+                'title' => "Оплата и доставка",
+                'slug' => Str::slug("Оплата и доставка"),
+                'description' => file_get_contents(public_path('tmp_data/page/pay_delivery.html')),
+            ],
         ];
 
         DB::table("pages")->insert($data);

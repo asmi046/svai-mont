@@ -7,7 +7,7 @@
                 <x-page-sidebar></x-page-sidebar>
                 <div class="content">
                     <x-breadcrumbs.main title="Галерея наших работ"></x-breadcrumbs.main>
-                    <h1>Галерея наших работ</h1>
+                    <h1 class="inner_page_h1">Галерея наших работ</h1>
 
                 </div>
             </div>

@@ -10,6 +10,8 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\CertificatController;
+use App\Http\Controllers\PageController;
+
     use Illuminate\Support\Facades\Route;
 
     use App\Http\Controllers\IndexController;
@@ -23,6 +25,8 @@ Route::middleware(IssetCity::class)->group( function() {
     Route::get('/sales', [SalesController::class, "index"])->name('sales');
     Route::get('/galery', [GaleryController::class, "index"])->name('galery');
     Route::get('/price', [PriceController::class, "index"])->name('price');
+
+    Route::get('/page/{slug}', [PageController::class, "index"])->name('page');
 
     Route::get('/products', [ProductController::class, "index"])->name('products');
     Route::get('/products/{slug}', [ProductController::class, "page"])->name('product_page');

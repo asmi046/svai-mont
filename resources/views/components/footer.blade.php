@@ -60,7 +60,8 @@
                 © 2025 Компания "СвайМастер". 28.10.2022 1011.z0.15560.100.4.main.0
             </span>
             <span class="policy">
-                <a href="#">Политика конфиденциальности</a>
+                <a href="/page/politika-v-oblasti-obrabotki-personalnyx-dannyx">Политика конфиденциальности</a><br>
+                <a href="/page/soglasie-na-obrabotku-personalnyx-dannyx">Соглавие на обработку ПД</a>
             </span>
         </div>
     </div>

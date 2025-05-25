@@ -3,16 +3,8 @@
         <h2 class="section_h2">Ответы на популярные вопросы</h2>
         <div class="faq">
             @foreach ($questions as $item)
-                <details>
-                    <summary>
-                        {{ $item->title }}
-                    </summary>
-                    <div class="response">
-                        {!! $item->description !!}
-                    </div>
-                </details>
+                <x-cards.faq :item="$item" />
             @endforeach
-
         </div>
     </div>
 </section>

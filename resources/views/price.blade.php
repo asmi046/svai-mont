@@ -7,7 +7,7 @@
                 <x-page-sidebar></x-page-sidebar>
                 <div class="content">
                     <x-breadcrumbs.main title="Цены на нашу продукцию"></x-breadcrumbs.main>
-                    <h1>Цены на нашу продукцию</h1>
+                    <h1 class="inner_page_h1">Цены на нашу продукцию</h1>
 
                 </div>
             </div>

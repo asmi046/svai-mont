@@ -61,7 +61,7 @@ class MenuSeeder extends Seeder
                 'menu_name' => 'Главное меню',
                 'title' => 'Оплата и доставка',
                 'order' => 8,
-                'lnk' => "#",
+                'lnk' => "/page/oplata-i-dostavka",
             ],
             [
                 'menu_name' => 'Главное меню',
