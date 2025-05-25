@@ -18,6 +18,14 @@ body{
     min-height: 100vh;
 }
 
+h1, h2, h3, h4, h5 {
+    font-family: 'Russo One', sans-serif;
+}
+
+.inner_page_h1 {
+    margin: 20px 0;
+}
+
 header,
 footer,
 section{
@@ -31,7 +39,7 @@ section{
     text-transform: uppercase;
     text-align: center;
     margin: 20px 0 30px 0;
-    font-family: 'Russo One', sans-serif;
+
 }
 
 .green_section {
@@ -62,6 +70,9 @@ img {
 .map_in_page {
     width:100%;
     min-height: 300px;
+    border: 1px solid $main_color;
+    border-radius: $border_rad;
+    overflow: hidden;
 }
 
 .thencs_section {
@@ -129,6 +140,7 @@ swiper-slide {
 @import "fondation";
 @import "page";
 @import "certificates";
+@import "contacts";
 
 
 @import "footer";

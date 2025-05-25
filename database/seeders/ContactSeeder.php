@@ -57,6 +57,37 @@ class ContactSeeder extends Seeder
                     'title' => 'E-mail',
                     'value' => 'info@master.ru',
                 ],
+
+                [
+                    'name' => 'company_name',
+                    'title' => 'Имя компании',
+                    'value' => 'ИП Хамроев Сарвар Султонбоевич ',
+                ],
+
+                [
+                    'name' => 'inn',
+                    'title' => 'ИНН',
+                    'value' => '860249669343 ',
+                ],
+
+                [
+                    'name' => 'rs',
+                    'title' => 'Р/С',
+                    'value' => '860249669343 ',
+                ],
+
+                [
+                    'name' => 'person',
+                    'title' => 'Контактное лицо',
+                    'value' => 'Сарвар',
+                ],
+
+                [
+                    'name' => 'geo',
+                    'title' => 'Кординаты',
+                    'value' => '61.32438868717126,73.44367413558194',
+                ],
+
             ]
         );
     }
