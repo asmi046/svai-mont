@@ -12,6 +12,7 @@ table {
         text-align: left;
     }
 
+    thead td,
     th {
         background-color: $main_color;
         color: white;
@@ -19,5 +20,21 @@ table {
 
     tr:nth-child(2n) td {
         background-color: #EBEBEB;
+    }
+}
+
+    .table-wrapper {
+        width: 100%;
+        margin-bottom: 20px;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+@media (max-width: 1024px) {
+
+    .table-wrapper {
+        overflow-x: auto;
     }
 }

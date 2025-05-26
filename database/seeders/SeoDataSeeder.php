@@ -72,6 +72,27 @@ class SeoDataSeeder extends Seeder
             ],
 
             [
+                'url' => "products",
+                'seo_title' => "Цены на винтовые сваи в [city|pp]",
+                'seo_description' => "Цены на продукцию на нашу продукцию в [city|pp]. Винтовые сваи всех типоразмеров по доступным ценам.",
+                'page_title' => "",
+            ],
+
+            [
+                'url' => "services",
+                'seo_title' => "Услуги нашей компании в [city|pp]",
+                'seo_description' => "Цены на услуги нашей компании в [city|pp]. Винтовые сваи всех типоразмеров + услуги по монтажу по доступным ценам.",
+                'page_title' => "",
+            ],
+
+            [
+                'url' => "fondations",
+                'seo_title' => "Виды свайных фундаментов устанавливаемых нами в [city|pp]",
+                'seo_description' => "Цены на услуги созданию фундаментов в [city|pp]. Винтовые сваи всех типоразмеров + услуги по монтажу по доступным ценам.",
+                'page_title' => "",
+            ],
+
+            [
                 'url' => "page/soglasie-na-obrabotku-personalnyx-dannyx",
                 'seo_title' => "Согласие на обработку персональных данных",
                 'seo_description' => "Согласие на обработку персональных данных",

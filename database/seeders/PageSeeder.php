@@ -65,6 +65,12 @@ class PageSeeder extends Seeder
                 'slug' => Str::slug("Оплата и доставка"),
                 'description' => file_get_contents(public_path('tmp_data/page/pay_delivery.html')),
             ],
+
+            [
+                'title' => "О нашей компании",
+                'slug' => Str::slug("О нашей компании"),
+                'description' => file_get_contents(public_path('tmp_data/page/about.html')),
+            ],
         ];
 
         DB::table("pages")->insert($data);

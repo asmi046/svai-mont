@@ -114,7 +114,7 @@
     background-image: url(../img/icons/menu_burger.svg);
     background-repeat: no-repeat;
     background-position: center;
-    display: block;
+    display: none;
     z-index: 1000;
 
     &.active {

@@ -13,7 +13,8 @@ class City extends Model
         'slug',
         'order',
         'rp',
-        'pp'
+        'pp',
+        'dp',
     ];
 
     protected static function booted(): void

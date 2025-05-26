@@ -23,6 +23,7 @@ class CitySeeder extends Seeder
                 'order' => 1,
                 'rp' => "Сургута",
                 'pp' => "Сургуте",
+                'dp' => "Сургуту",
             ],
             [
                 'name' => "Нижневартовск",
@@ -31,6 +32,7 @@ class CitySeeder extends Seeder
                 'order' => 2,
                 'rp' => "Нижневартовска",
                 'pp' => "Нижневартовске",
+                'dp' => "Нижневартовску",
             ],
             [
                 'name' => "Когалым",
@@ -39,7 +41,7 @@ class CitySeeder extends Seeder
                 'order' => 3,
                 'rp' => "Когалыма",
                 'pp' => "Когалыме",
-
+                'dp' => "Когалыму",
             ],
             [
                 'name' => "Нефтеюганск",
@@ -48,7 +50,7 @@ class CitySeeder extends Seeder
                 'order' => 4,
                 'rp' => "Нефтеюганска",
                 'pp' => "Нефтеюганске",
-
+                'dp' => "Нефтеюганску",
             ],
 
             [
@@ -58,7 +60,7 @@ class CitySeeder extends Seeder
                 'order' => 5,
                 'rp' => "Птьяха",
                 'pp' => "Птьяха",
-
+                'dp' => "Птьяху",
             ],
 
             [
@@ -68,6 +70,7 @@ class CitySeeder extends Seeder
                 'order' => 6,
                 'rp' => "Пойковского",
                 'pp' => "Пойковском",
+                'dp' => "Пойковскому",
 
             ],
             [
@@ -77,6 +80,7 @@ class CitySeeder extends Seeder
                 'order' => 7,
                 'rp' => "Мегиона",
                 'pp' => "Мегионе",
+                'dp' => "Мегиону",
 
             ],
             [
@@ -86,6 +90,7 @@ class CitySeeder extends Seeder
                 'order' => 8,
                 'rp' => "Ноябрьска",
                 'pp' => "Ноябрьске",
+                'dp' => "Ноябрьску",
 
             ],
             [
@@ -95,6 +100,7 @@ class CitySeeder extends Seeder
                 'order' => 9,
                 'rp' => "Нового уренгоя",
                 'pp' => "Новом уренге",
+                'dp' => "Новому уренгою",
 
             ],
             [
@@ -104,6 +110,7 @@ class CitySeeder extends Seeder
                 'order' => 10,
                 'rp' => "Губкинском",
                 'pp' => "Губкинске",
+                'dp' => "Губкинскому",
 
             ],
             [
@@ -113,6 +120,7 @@ class CitySeeder extends Seeder
                 'order' => 11,
                 'rp' => "Муравленко",
                 'pp' => "Муравленко",
+                'dp' => "Муравленко",
 
             ],
             [
@@ -122,6 +130,7 @@ class CitySeeder extends Seeder
                 'order' => 12,
                 'rp' => "Тарко-сале",
                 'pp' => "Тарко-сале",
+                'dp' => "Тарко-сале",
 
             ],
 

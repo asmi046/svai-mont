@@ -20,6 +20,7 @@ return new class extends Migration
             $table->integer('order')->default(0)->comment('Порядок вывода');
             $table->string('rp')->comment('Родительный падеж');
             $table->string('pp')->comment('Предложный падеж');
+            $table->string('dp')->comment('Дательный падеж');
         });
     }
 

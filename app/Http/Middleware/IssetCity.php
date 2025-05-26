@@ -29,6 +29,7 @@ class IssetCity
         app()->instance('current_city_name', $currentCity->name ?? "Сургут");
         app()->instance('current_city_pp', $currentCity->pp ?? "Сургуте");
         app()->instance('current_city_rp', $currentCity->rp ?? "Сургута");
+        app()->instance('current_city_dp', $currentCity->rp ?? "Сургуту");
 
         $request->merge([
             'currentCity' => $currentCity,

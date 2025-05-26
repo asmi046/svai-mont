@@ -2,6 +2,7 @@
 
 use App\Http\Middleware\IssetCity;
 use App\Http\Controllers\FaqController;
+use App\Http\Controllers\PageController;
 use App\Http\Controllers\PriceController;
 use App\Http\Controllers\SalesController;
 use App\Http\Controllers\GaleryController;
@@ -9,8 +10,8 @@ use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\ContactsController;
+use App\Http\Controllers\FondationController;
 use App\Http\Controllers\CertificatController;
-use App\Http\Controllers\PageController;
 
     use Illuminate\Support\Facades\Route;
 

@@ -54,6 +54,7 @@ class CityResource extends ModelResource
                 Text::make('Поддомен', 'slug'),
                 Text::make('Родительный падеж', 'rp'),
                 Text::make('Предложный падеж', 'pp'),
+                Text::make('Дательный падеж', 'dp'),
 
             ])
         ];
@@ -72,7 +73,7 @@ class CityResource extends ModelResource
             Text::make('Поддомен', 'slug'),
             Text::make('Родительный падеж', 'rp'),
             Text::make('Предложный падеж', 'pp'),
-
+            Text::make('Дательный падеж', 'dp'),
         ];
     }
 

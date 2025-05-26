@@ -1,0 +1,45 @@
+.uni_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 20px;
+
+    .uni_card {
+        width:30%;
+        border-radius: $border_rad;
+        overflow: hidden;
+        border: 1px solid $gray_border_color;
+        flex-direction: column;
+        display: flex;
+
+        .card_img {
+            width: 100%;
+            height: 200px;
+        }
+
+        h3 {
+            margin: 20px 0;
+            padding: 0 20px;
+        }
+
+        .card_content {
+            margin-top: auto;
+
+        }
+
+        .button{
+            width:100%;
+            text-align: center;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .uni_list {
+        .uni_card {
+            width:46%;
+        }
+    }
+}

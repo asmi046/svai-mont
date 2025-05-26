@@ -1,7 +1,7 @@
 .galery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     // align-items: center;
     gap: 20px;
 
@@ -30,6 +30,13 @@
         }
 
     }
+
+    &_in_page {
+        .galery_item {
+            flex:unset;
+            width: 30%;
+        }
+    }
 }
 
 
@@ -40,8 +47,8 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .galery .galery_item {
-        width: 85%;
+        width: 100%;
     }
 }

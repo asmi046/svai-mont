@@ -7,6 +7,7 @@ if (!function_exists("get_city_text")) {
             '[city|name]' => app('current_city_name'),
             '[city|pp]'   => app('current_city_pp'),
             '[city|rp]'   => app('current_city_rp'),
+            '[city|dp]'   => app('current_city_dp'),
         ];
 
         return strtr($text, $replacements);
