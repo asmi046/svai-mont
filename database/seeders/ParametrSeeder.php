@@ -36,7 +36,7 @@ class ParametrSeeder extends Seeder
                 'str_id' => 'banner_text',
                 'section' => "Баннер на главной",
                 'title' => null,
-                'value' => "Производство<br>и монтаж<br>Винтовых сваий <br>в [city|pp]",
+                'value' => "Производство<br>и монтаж<br>Винтовых сваи <br>в [city|pp]",
                 'img' => null,
             ],
             [

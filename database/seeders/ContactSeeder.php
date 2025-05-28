@@ -25,25 +25,31 @@ class ContactSeeder extends Seeder
                 [
                     'name' => 'phone',
                     'title' => 'Телефон',
-                    'value' => '+7 905 000 00 00',
+                    'value' => '+7 (3462) 59-71-71',
+                ],
+
+                [
+                    'name' => 'phone_2',
+                    'title' => 'Телефон',
+                    'value' => '+7 904 450 32 07',
                 ],
 
                 [
                     'name' => 'tg_lnk',
                     'title' => 'Ссылка  на Телеграм',
-                    'value' => '#',
+                    'value' => 'tg://resolve?domain=ekaterems',
                 ],
 
                 [
                     'name' => 'ws_lnk',
                     'title' => 'Ссылка  на WhatsApp',
-                    'value' => '#',
+                    'value' => 'https://wa.me/79044503207',
                 ],
 
                 [
                     'name' => 'adress',
                     'title' => 'Адрес компании',
-                    'value' => '628414,Россия, Ханты-Мансийский автономный округ, Сургут, ул. Западная, 16',
+                    'value' => '628414, г. Сургут, улица Маяковского, 57, ТЦ Гуливер',
                 ],
 
                 [
@@ -67,7 +73,13 @@ class ContactSeeder extends Seeder
                 [
                     'name' => 'inn',
                     'title' => 'ИНН',
-                    'value' => '860249669343 ',
+                    'value' => '860249669343',
+                ],
+
+                [
+                    'name' => 'ogrn',
+                    'title' => 'ОГРН',
+                    'value' => '322861700036299',
                 ],
 
                 [
@@ -79,13 +91,13 @@ class ContactSeeder extends Seeder
                 [
                     'name' => 'person',
                     'title' => 'Контактное лицо',
-                    'value' => 'Сарвар',
+                    'value' => 'Хамроев Сарвар Султонбоевич',
                 ],
 
                 [
                     'name' => 'geo',
                     'title' => 'Кординаты',
-                    'value' => '61.32438868717126,73.44367413558194',
+                    'value' => '61.26667125324669,73.42057220370485',
                 ],
 
             ]

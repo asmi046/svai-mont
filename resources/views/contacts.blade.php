@@ -19,8 +19,8 @@
                             <p class="label">ИНН:</p>
                             <p class="param">{{ $contacts['inn'] }}</p>
 
-                            <p class="label">р/с:</p>
-                            <p class="param">{{ $contacts['rs'] }}</p>
+                            <p class="label">ОГРНИП:</p>
+                            <p class="param">{{ $contacts['ogrn'] }}</p>
 
                             <p class="label">Контактное лицо:</p>
                             <p class="param">{{ $contacts['person'] }}</p>
@@ -29,6 +29,7 @@
                         <div class="col">
                             <h2>Контакты</h2>
                             <p class="param">тел. <a class="phone" href="tel:+7{{ phone_format( $contacts['phone'] ) }}">{{ $contacts['phone'] }}</a></p>
+                            <p class="param">тел. <a class="phone" href="tel:+7{{ phone_format( $contacts['phone_2'] ) }}">{{ $contacts['phone_2'] }}</a></p>
                             <p class="param">e-mail: <a class="email" href="mailto:{{ $contacts['email']}}">{{ $contacts['email'] }}</a></p>
                             <h2>Главный офис</h2>
                             <p class="param">Адрес: {{ $contacts['adress'] }}</p>
