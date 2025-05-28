@@ -13,6 +13,7 @@ class FondationController extends Controller
     }
 
     public function page($slug) {
-        return view('fondation.page');
+        $fondation = Fondation::where('slug', $slug)->firstOrFail();
+        return view('fondation.page', ['fondation' => $fondation]);
     }
 }

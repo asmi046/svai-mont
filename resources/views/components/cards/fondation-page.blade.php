@@ -4,6 +4,6 @@
     </div>
     <div class="card_content">
         <h3 class="product_card_title">{{ get_city_text($item->title) }}</h3>
-        <a href="{{ route('product_page', $item->slug) }}" class="button">Подробнее</a>
+        <a href="{{ route('fondation_page', $item->slug) }}" class="button">Подробнее</a>
     </div>
 </div>

@@ -13,6 +13,7 @@ class ServiceController extends Controller
     }
 
     public function page($slug) {
-        return view('service.page');
+        $service = Service::where('slug', $slug)->firstOrFail();
+        return view('service.page', ['service' => $service]);
     }
 }

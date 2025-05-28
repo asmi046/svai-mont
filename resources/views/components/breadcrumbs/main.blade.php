@@ -30,6 +30,44 @@
                 </span>
             @endif
 
+            @if (Request::route()->named('service_page'))
+                <span class="sep"> / </span>
+                <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a title="Все услуги нашей компании" itemprop="item" href="{{route('services')}}">
+                        <span itemprop="name">Все услуги</span>
+                        <meta itemprop="position" content="1">
+                    </a>
+                </span>
+
+                <span class="sep"> / </span>
+
+                <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="finish">
+                    <span title="{{ $service }}" itemprop="item">
+                        <span itemprop="name">{{ $service }}</span>
+                        <meta itemprop="position" content="2">
+                    </span>
+                </span>
+            @endif
+
+            @if (Request::route()->named('fondation_page'))
+                <span class="sep"> / </span>
+                <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a title="Все виды фундаментов" itemprop="item" href="{{route('fondations')}}">
+                        <span itemprop="name">Все виды фундаментов</span>
+                        <meta itemprop="position" content="1">
+                    </a>
+                </span>
+
+                <span class="sep"> / </span>
+
+                <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="finish">
+                    <span title="{{ $fondation }}" itemprop="item">
+                        <span itemprop="name">{{ $fondation }}</span>
+                        <meta itemprop="position" content="2">
+                    </span>
+                </span>
+            @endif
+
             @if (isset($title))
                 <span class="sep"> / </span>
                     <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="finish">
