@@ -23,8 +23,6 @@ class City extends Model
 
     public function getUrl(): string
     {
-        Log::info(config('app.url'));
-        Log::info($this->is_default);
 
          $lnk = Str::of(config('app.url'))
             ->when(!$this->is_default, function (Stringable $str) {
@@ -36,10 +34,6 @@ class City extends Model
             ->when(request()->getQueryString(), function (Stringable $str) {
                 return $str->append(values: '?' . request()->getQueryString());
             });
-
-            // if ($this->slug !== "surgut")
-            //     dd($this->slug, $lnk, $this->is_default);
-            Log::info($lnk);
 
             return $lnk;
     }
