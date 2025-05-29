@@ -1,6 +1,7 @@
 import './bootstrap';
 
 
+import CitySelectModal from "./components/CitySelectModal.vue"
 import ModalWindow from "./components/ModalWindow.vue"
 import {createApp} from 'vue/dist/vue.esm-bundler'
 import Review from './components/Reviews/Review.vue'
@@ -29,6 +30,7 @@ review_app.mount("#review_app")
 const modal_app = createApp({
     components:{
         ModalWindow,
+        CitySelectModal
     },
     setup() {}
 })

@@ -14,8 +14,12 @@
 
 @media (max-width: 480px) {
     .top_navigation_section {
+        .col {
+            gap: 10px;
+        }
+
         .text_icon .text {
-            font-size: 12px;
+            font-size: 10px;
         }
         .right {
             display: none;
