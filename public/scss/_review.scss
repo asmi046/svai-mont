@@ -157,6 +157,11 @@
 
 }
 
+.review_in_page {
+    display:flex;
+    flex-direction: column;
+}
+
 
 @media (max-width: 1024px) {
     .review_dop {

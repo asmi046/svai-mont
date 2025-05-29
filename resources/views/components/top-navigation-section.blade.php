@@ -2,19 +2,19 @@
     <div class="container">
         <div class="colls">
             <div class="col left">
-                <div class="text_icon">
+                <a href="#zamer" class="text_icon">
                     <svg class="sprite_icon">
                         <use xlink:href="#ti_zamer"></use>
                     </svg>
                     <span class="text">Вызвать замерщика</span>
-                </div>
+                </a>
 
-                <div class="text_icon">
+                <a href="#coll" class="text_icon">
                     <svg class="sprite_icon">
                         <use xlink:href="#ti_phone"></use>
                     </svg>
                     <span class="text">Заказать звонок</span>
-                </div>
+                </a>
             </div>
 
             <div class="col right">

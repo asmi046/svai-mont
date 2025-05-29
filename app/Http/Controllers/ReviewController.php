@@ -23,4 +23,9 @@ class ReviewController extends Controller
             'reviews' => $sorted_review
         ];
     }
+
+
+    public function all_review_page() {
+        return view('all-rev', ['reviews' => Review::all()]);
+    }
 }

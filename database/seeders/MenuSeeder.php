@@ -61,7 +61,7 @@ class MenuSeeder extends Seeder
                 'menu_name' => 'Главное меню',
                 'title' => 'Отзывы',
                 'order' => 8,
-                'lnk' => "#",
+                'lnk' => "/review",
             ],
             [
                 'menu_name' => 'Главное меню',

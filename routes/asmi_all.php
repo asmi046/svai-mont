@@ -13,6 +13,8 @@ use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\FondationController;
 use App\Http\Controllers\CertificatController;
 
+use App\Http\Controllers\Consultation\SenderConsultController;
+
     use Illuminate\Support\Facades\Route;
 
     use App\Http\Controllers\IndexController;
@@ -22,7 +24,7 @@ Route::middleware(IssetCity::class)->group( function() {
     Route::get('/certificat', [CertificatController::class, "index"])->name('certificat');
     Route::get('/contacts', [ContactsController::class, "index"])->name('contacts');
     Route::get('/faq', [FaqController::class, "index"])->name('faq');
-    Route::get('/review', [ReviewController::class, "index"])->name('review');
+    Route::get('/review', [ReviewController::class, "all_review_page"])->name('all_review_page');
     Route::get('/sales', [SalesController::class, "index"])->name('sales');
     Route::get('/galery', [GaleryController::class, "index"])->name('galery');
     Route::get('/price', [PriceController::class, "index"])->name('price');
@@ -39,6 +41,10 @@ Route::middleware(IssetCity::class)->group( function() {
     Route::get('/fondations/{slug}', [FondationController::class, "page"])->name('fondation_page');
 
     Route::get('/all_rewiews', [ReviewController::class, "index"])->name('rewiews');
+
+    Route::post('/send_consult', [SenderConsultController::class, "send_consultation"])->name('send_consultation');
+    Route::get('/thencs_consult', [SenderConsultController::class, "show_thencs"])->name('thencs_consult');
+
 });
 
 

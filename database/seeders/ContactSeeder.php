@@ -61,7 +61,7 @@ class ContactSeeder extends Seeder
                 [
                     'name' => 'email',
                     'title' => 'E-mail',
-                    'value' => 'info@master.ru',
+                    'value' => 'zabor.86@internet.ru',
                 ],
 
                 [

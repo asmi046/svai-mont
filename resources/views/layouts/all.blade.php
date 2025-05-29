@@ -30,6 +30,11 @@
 <body>
     @include("allicon")
 
+    <div class="modal_win" id="modal_app">
+        <modal-window rout="/send_consult" redirect="/thencs" hesh="zamer" title="Вызов замерщика" subtitle="Мы свяжемся с Вами в ближайшее время"></modal-window>
+        <modal-window rout="/send_consult" redirect="/thencs" hesh="coll" title="Обратный звонок" subtitle="Мы свяжемся с Вами в ближайшее время"></modal-window>
+    </div>
+
     <x-menues.side-menu></x-menues.side-menu>
 
     <main id="main">

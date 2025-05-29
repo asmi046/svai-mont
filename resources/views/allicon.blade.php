@@ -32,6 +32,28 @@
         <g id="cross"><line x1="7" x2="25" y1="7" y2="25"/><line x1="7" x2="25" y1="25" y2="7"/></g>
     </symbol>
 
+    <symbol id="loader_icon" viewBox="0 0 100 100">
+        <circle fill="none" stroke-width="4" stroke-miterlimit="10" cx="50" cy="50" r="48"/>
+        <line fill="none" stroke-linecap="round" stroke-width="4" stroke-miterlimit="10" x1="50" y1="50" x2="85" y2="50.5">
+        <animateTransform
+            attributeName="transform"
+            dur="2s"
+            type="rotate"
+            from="0 50 50"
+            to="360 50 50"
+            repeatCount="indefinite" />
+        </line>
+        <line fill="none" stroke-linecap="round" stroke-width="4" stroke-miterlimit="10" x1="50" y1="50" x2="49.5" y2="74">
+        <animateTransform
+            attributeName="transform"
+            dur="15s"
+            type="rotate"
+            from="0 50 50"
+            to="360 50 50"
+            repeatCount="indefinite" />
+        </line>
+    </symbol>
+
 
     <symbol id="ti_zamer" viewBox="0 0 20 22" fill="none">
             <path d="M7.31006 13.7L8.81006 15.2L12.8101 11.2" stroke="#E7C873" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
