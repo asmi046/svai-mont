@@ -23,10 +23,10 @@ class City extends Model
 
     public function getUrl(): string
     {
-        Log::info(env('APP_URL'));
+        Log::info(config('app.url'));
         Log::info($this->is_default);
 
-         $lnk = Str::of(env('APP_URL'))
+         $lnk = Str::of(config('app.url'))
             ->when(!$this->is_default, function (Stringable $str) {
                 return $str->replace(search: '//', replace: '//' . $this->slug . '.');
             })
