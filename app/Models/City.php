@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Support\Str;
 use Illuminate\Support\Stringable;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Collection;
@@ -22,6 +23,9 @@ class City extends Model
 
     public function getUrl(): string
     {
+        Log::info(env('APP_URL'));
+        Log::info($this->is_default);
+
          $lnk = Str::of(env('APP_URL'))
             ->when(!$this->is_default, function (Stringable $str) {
                 return $str->replace(search: '//', replace: '//' . $this->slug . '.');
@@ -35,6 +39,7 @@ class City extends Model
 
             // if ($this->slug !== "surgut")
             //     dd($this->slug, $lnk, $this->is_default);
+            Log::info($lnk);
 
             return $lnk;
     }
