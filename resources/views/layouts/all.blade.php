@@ -30,11 +30,6 @@
 <body>
     @include("allicon")
 
-    <div class="modal_win" id="modal_app">
-        <modal-window rout="/send_consult" redirect="/thencs" hesh="zamer" title="Вызов замерщика" subtitle="Мы свяжемся с Вами в ближайшее время"></modal-window>
-        <modal-window rout="/send_consult" redirect="/thencs" hesh="coll" title="Обратный звонок" subtitle="Мы свяжемся с Вами в ближайшее время"></modal-window>
-    </div>
-
     <x-menues.side-menu></x-menues.side-menu>
 
     <main id="main">
@@ -46,5 +41,14 @@
     </main>
 
     <x-footer></x-footer>
+
+
+    <div class="modal_win" id="modal_app">
+        <modal-window rout="/send_consult" redirect="/thencs" hesh="zamer" title="Вызов замерщика" subtitle="Мы свяжемся с Вами в ближайшее время"></modal-window>
+        <modal-window rout="/send_consult" redirect="/thencs" hesh="coll" title="Обратный звонок" subtitle="Мы свяжемся с Вами в ближайшее время"></modal-window>
+        <city-select-modal hesh="cityselect" title="Выбор города" subtitle="Выберите город в котором вы проживаете">
+            <x-city-list-link/>
+        </city-select-modal>
+    </div>
 </body>
 </html>

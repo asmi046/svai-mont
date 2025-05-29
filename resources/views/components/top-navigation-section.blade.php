@@ -2,6 +2,13 @@
     <div class="container">
         <div class="colls">
             <div class="col left">
+                <a href="#cityselect" class="text_icon">
+                    <svg class="sprite_icon">
+                        <use xlink:href="#ti_map"></use>
+                    </svg>
+                    <span class="text">{{ app()->make('current_city_name') }}</span>
+                </a>
+
                 <a href="#zamer" class="text_icon">
                     <svg class="sprite_icon">
                         <use xlink:href="#ti_zamer"></use>

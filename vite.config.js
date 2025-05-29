@@ -16,4 +16,9 @@ export default defineConfig({
         }),
         tailwindcss(),
     ],
+
+    server: {
+		allowedHosts: true,
+        cors:true
+	},
 });

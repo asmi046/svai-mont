@@ -73,6 +73,11 @@
         <path d="M14.7099 14.18L11.6099 12.33C11.0699 12.01 10.6299 11.24 10.6299 10.61V6.51" stroke="#E7C873" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
 
+    <symbol id="ti_map" viewBox="0 0 24 24" fill="none">
+        <path d="M3.61995 8.49C5.58995 -0.169998 18.42 -0.159997 20.38 8.5C21.53 13.58 18.37 17.88 15.6 20.54C13.59 22.48 10.41 22.48 8.38995 20.54C5.62995 17.88 2.46995 13.57 3.61995 8.49Z" stroke="#E7C873" stroke-width="1.5"/>
+        <path d="M9.25 11.5L10.75 13L14.75 9" stroke="#E7C873" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
     <symbol id="arrow_slide_left" viewBox="0 0 35 35" fill="none">
         <rect x="35" y="35" width="35" height="35" rx="5" transform="rotate(-180 35 35)" fill="#E7C873"/>
         <path d="M21 9.16L14.48 15.68C13.71 16.45 13.71 17.71 14.48 18.48L21 25" fill="#E7C873"/>
