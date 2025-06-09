@@ -16,7 +16,7 @@
         </details>
         <details class="sidebar_details">
             <summary>
-                Наши услсги
+                Наши услуги
             </summary>
             <div class="response">
                 <nav>
