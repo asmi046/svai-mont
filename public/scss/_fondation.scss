@@ -31,6 +31,8 @@
 
         .text {
             flex: 1;
+            display: flex;
+            flex-direction: column;
             word-break:break-all;
 
             h2 {
@@ -38,9 +40,11 @@
                 font-size: 14px;
             }
 
+            .about_lnk,
             a {
                 font-size: 14px;
                 color: $main_color;
+                margin-top: auto;
             }
         }
     }
