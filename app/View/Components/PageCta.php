@@ -3,22 +3,22 @@
 namespace App\View\Components;
 
 use Closure;
-use App\Models\Fondation;
-use App\Models\PriceVidget;
+use App\Models\Contact;
 use Illuminate\View\Component;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Cache;
 
-class FondationInMain extends Component
+class PageCta extends Component
 {
-    public $fondation;
+    public $phone;
     /**
      * Create a new component instance.
      */
     public function __construct()
     {
-        $this->fondation = Cache::rememberForever('fondation_in_main', function () {
-            return Fondation::orderBy('order', 'ASC')->take(8)->get();
+        $this->phone = Cache::rememberForever('top_contacts_phone', function () {
+            $elem = Contact::where('name', 'phone')->first();
+            return $elem->value;
         });
     }
 
@@ -27,6 +27,6 @@ class FondationInMain extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.fondation-in-main');
+        return view('components.page-cta');
     }
 }

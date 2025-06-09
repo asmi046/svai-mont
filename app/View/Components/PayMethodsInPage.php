@@ -3,22 +3,21 @@
 namespace App\View\Components;
 
 use Closure;
-use App\Models\Fondation;
-use App\Models\PriceVidget;
+use App\Models\Parametr;
 use Illuminate\View\Component;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Cache;
 
-class FondationInMain extends Component
+class PayMethodsInPage extends Component
 {
-    public $fondation;
+    public $pay_methods;
     /**
      * Create a new component instance.
      */
     public function __construct()
     {
-        $this->fondation = Cache::rememberForever('fondation_in_main', function () {
-            return Fondation::orderBy('order', 'ASC')->take(8)->get();
+        $this->pay_methods = Cache::rememberForever('pay_methods', function () {
+            return Parametr::where('section', 'Способы оплаты')->get();
         });
     }
 
@@ -27,6 +26,6 @@ class FondationInMain extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.fondation-in-main');
+        return view('components.pay-methods-in-page');
     }
 }

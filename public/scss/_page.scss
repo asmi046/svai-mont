@@ -1,7 +1,7 @@
 .page_content {
     display: flex;
     gap:30px;
-
+    flex-wrap: wrap;
     h1 {
         font-size: 32px;
         font-family: "Russo One", sans-serif;
@@ -9,8 +9,7 @@
     }
 
     .sidebar {
-        flex:1;
-
+        width: 280px;
 
         li {
             line-height: 1.2;
@@ -25,13 +24,66 @@
         }
     }
     .content {
-        flex:3;
+        flex:1;
+    }
+}
+
+.page_cta {
+    border-radius: $border_rad;
+    overflow: hidden;
+    border:  1px solid $gray_border_color;
+    box-shadow: $box_shadow;
+    padding: 20px 30px;
+
+    .phone {
+        font-size: 32px;
+        color: $main_color;
+        font-family: "Russo One", sans-serif;
+    }
+
+    h3 {
+        margin-top: 0;
+    }
+}
+
+.inner_page_top {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    border-radius: $border_rad;
+    overflow: hidden;
+    border:  1px solid $gray_border_color;
+    box-shadow: $box_shadow;
+    .img_wrapper {
+        width:320px;
+
+    }
+
+    .text {
+        flex: 1;
+        padding: 10px;
     }
 }
 
 @media (max-width: 768px) {
     .page_content {
         flex-direction: column-reverse;
+    }
+
+    .inner_page_top {
+
+        flex-direction: column;
+
+            .img_wrapper {
+                width:100%;
+                height: 300px;
+            }
+
+        .text {
+            padding: 10px;
+        }
+
     }
 }
 
@@ -42,5 +94,9 @@
         h1 {
             font-size: 24px;
         }
+    }
+
+    .page_cta {
+        flex-direction: column;
     }
 }
