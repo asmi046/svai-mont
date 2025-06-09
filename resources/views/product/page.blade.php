@@ -18,10 +18,15 @@
                                 {!! get_city_text($product->top_description) !!}
                             </div>
                         </div>
-                        {!! $product->description !!}
+                        {!! get_city_text($product->description) !!}
 
+                        <x-page-cta/>
+
+                        <h2 class="in_page_h2">Цены</h2>
                         {!! get_city_text($product->price) !!}
                     </div>
+
+                    <x-pay-methods-in-page/>
                 </div>
             </div>
         </div>

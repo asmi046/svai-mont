@@ -18,8 +18,11 @@
                                 {!! get_city_text($fondation->top_description) !!}
                             </div>
                         </div>
-                        {!! $fondation->description !!}
+                        {!! get_city_text($fondation->description) !!}
 
+                        <x-page-cta/>
+
+                        <h2 class="in_page_h2">Цены</h2>
                         {!! get_city_text($fondation->price) !!}
                     </div>
                 </div>
