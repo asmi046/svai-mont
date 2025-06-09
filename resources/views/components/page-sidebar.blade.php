@@ -8,7 +8,7 @@
                 <nav>
                     <ul>
                         @foreach ($products as $item)
-                            <li><a href="{{ route('product_page', $item->slug) }}">{{ $item->short_title }}</a></li>
+                            <li><a href="{{ route('product_page', $item->slug) }}">{{ get_city_text($item->short_title) }}</a></li>
                         @endforeach
                     </ul>
                 </nav>
@@ -22,7 +22,7 @@
                 <nav>
                     <ul>
                         @foreach ($services as $item)
-                            <li><a href="{{ route('service_page', $item->slug) }}">{{ $item->sub_title }}</a></li>
+                            <li><a href="{{ route('service_page', $item->slug) }}">{{ get_city_text($item->sub_title) }}</a></li>
                         @endforeach
                     </ul>
                 </nav>
@@ -36,7 +36,7 @@
                 <nav>
                     <ul>
                         @foreach ($fondations as $item)
-                            <li><a href="{{ route('fondation_page', $item->slug) }}">{{ $item->short_title }}</a></li>
+                            <li><a href="{{ route('fondation_page', $item->slug) }}">{{ get_city_text($item->short_title) }}</a></li>
                         @endforeach
                     </ul>
                 </nav>
