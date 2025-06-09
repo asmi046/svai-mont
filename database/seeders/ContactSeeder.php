@@ -19,7 +19,7 @@ class ContactSeeder extends Seeder
                 [
                     'name' => 'site_name',
                     'title' => 'Имя сайта',
-                    'value' => 'СвайМастер',
+                    'value' => 'СвайМонтаж',
                 ],
 
                 [

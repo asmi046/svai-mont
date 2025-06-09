@@ -57,7 +57,7 @@
 
         <div class="line bottom">
             <span class="copuright">
-                © 2025 Компания "СвайМастер". 28.10.2022 1011.z0.15560.100.4.main.0
+                © 2025 Компания "СвайМонтаж". 28.10.2022 1011.z0.15560.100.4.main.0
             </span>
             <span class="policy">
                 <a href="/page/politika-v-oblasti-obrabotki-personalnyx-dannyx">Политика конфиденциальности</a><br>

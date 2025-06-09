@@ -1,6 +1,6 @@
 <section class="adv_section gray_section">
     <div class="container">
-        <h2 class="section_h2">ПРЕИМУЩЕСТВА «СВАЙМАСТЕР»</h2>
+        <h2 class="section_h2">ПРЕИМУЩЕСТВА «СВАЙМОНТАЖ»</h2>
 
         <div class="adv_wrapper">
             @foreach ($adv as $item)

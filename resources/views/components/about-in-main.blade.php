@@ -1,6 +1,6 @@
 <section class="about_in_main">
     <div class="container">
-        <h2 class="section_h2">О компании СвайМастер</h2>
+        <h2 class="section_h2">О компании СвайМонтаж</h2>
         <div class="colls">
             <div class="col pictures">
                 <div class="big_photo pw">

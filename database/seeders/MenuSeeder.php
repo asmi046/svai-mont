@@ -96,7 +96,7 @@ class MenuSeeder extends Seeder
                 'menu_name' => 'Меню в подвале',
                 'title' => 'О компании',
                 'order' => 1,
-                'lnk' => "#",
+                'lnk' => "/page/o-nasei-kompanii",
             ],
             [
                 'menu_name' => 'Меню в подвале',
@@ -108,13 +108,13 @@ class MenuSeeder extends Seeder
                 'menu_name' => 'Меню в подвале',
                 'title' => 'Сваи',
                 'order' => 3,
-                'lnk' => "'/products",
+                'lnk' => "/products",
             ],
             [
                 'menu_name' => 'Меню в подвале',
                 'title' => 'Галерея',
                 'order' => 4,
-                'lnk' => "#",
+                'lnk' => "/galery",
             ],
             [
                 'menu_name' => 'Меню в подвале',
@@ -145,7 +145,7 @@ class MenuSeeder extends Seeder
                 'menu_name' => 'Полезная информация',
                 'title' => 'Оплата и доставка',
                 'order' => 8,
-                'lnk' => "#",
+                'lnk' => "/page/oplata-i-dostavka",
             ],
             [
                 'menu_name' => 'Полезная информация',
