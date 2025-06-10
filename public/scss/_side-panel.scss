@@ -7,7 +7,7 @@
   border-radius: 8px 0 0 8px;
 
   box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
+  z-index: 18;
   overflow: hidden;
 
   .panel-list {
@@ -41,10 +41,6 @@
         margin: auto;
         stroke: white;
         fill: white;
-    }
-
-    li {
-
     }
 
     .open {
