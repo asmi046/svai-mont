@@ -3,7 +3,7 @@
         <h2 class="section_h2">Услуги нашей компании</h2>
         <div class="services">
             @foreach ($services as $item)
-                <x-cards.service :item="$item" />
+                <x-cards.service :index="$loop->index" :item="$item" />
             @endforeach
         </div>
     </div>
