@@ -8,7 +8,11 @@
                 <div class="content">
                     <x-breadcrumbs.main title="Скидки и акции"></x-breadcrumbs.main>
                     <h1 class="inner_page_h1">Скидки и акции</h1>
-
+                    <div class="sales_wrapper">
+                        @foreach ($sales as $item)
+                            <x-cards.sale :item="$item" />
+                        @endforeach
+                    </div>
                 </div>
             </div>
         </div>

@@ -25,6 +25,7 @@ use App\MoonShine\Resources\PageResource;
 use App\MoonShine\Resources\FondationResource;
 use App\MoonShine\Resources\SeoDataResource;
 use App\MoonShine\Resources\CityResource;
+use App\MoonShine\Resources\SaleResource;
 
 class MoonShineServiceProvider extends ServiceProvider
 {
@@ -55,6 +56,7 @@ class MoonShineServiceProvider extends ServiceProvider
                 PageResource::class,
                 FondationResource::class,
                 CityResource::class,
+                SaleResource::class,
             ])
             ->pages([
                 ...$config->getPages(),

@@ -44,6 +44,7 @@
 
 
     <div class="modal_win" id="modal_app">
+        <side-panel></side-panel>
         <modal-window rout="/send_consult" redirect="/thencs" hesh="zamer" title="Вызов замерщика" subtitle="Мы свяжемся с Вами в ближайшее время"></modal-window>
         <modal-window rout="/send_consult" redirect="/thencs" hesh="coll" title="Обратный звонок" subtitle="Мы свяжемся с Вами в ближайшее время"></modal-window>
         <city-select-modal hesh="cityselect" title="Выбор города" subtitle="Выберите город в котором вы проживаете">

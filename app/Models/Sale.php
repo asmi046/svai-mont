@@ -9,6 +9,7 @@ class Sale extends Model
     public $fillable = [
         'order',
         'title',
+        'sub_title',
         'description',
         'img',
     ];

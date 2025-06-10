@@ -16,8 +16,9 @@ return new class extends Migration
             $table->timestamps();
             $table->integer('order')->default(0)->comment('Порядок вывода');
             $table->string('title')->comment('Заголовок');
+            $table->string('sub_title')->comment('Заголовок');
             $table->longText('description')->comment('Текст акции');
-            $table->string('img', 800)->comment('Картинка акции');
+            $table->string('img', 800)->nullable()->comment('Картинка акции');
         });
     }
 

@@ -47,6 +47,7 @@ use App\MoonShine\Resources\PriceVidgetResource;
 use App\MoonShine\Resources\FondationResource;
 use App\MoonShine\Resources\SeoDataResource;
 use App\MoonShine\Resources\CityResource;
+use App\MoonShine\Resources\SaleResource;
 
 final class MoonShineLayout extends AppLayout
 {
@@ -69,6 +70,7 @@ final class MoonShineLayout extends AppLayout
             ])->icon('folder-open'),
 
             MenuGroup::make('Бизнес-параметры', [
+                MenuItem::make('Скидки', SaleResource::class)->icon('receipt-percent'),
                 MenuItem::make('Продукция', ProductResource::class)->icon('archive-box'),
                 MenuItem::make('Услсги', ServiceResource::class)->icon('users'),
                 MenuItem::make('Фундаменты', FondationResource::class)->icon('building-library'),
@@ -84,6 +86,7 @@ final class MoonShineLayout extends AppLayout
             ...parent::menu(),
 
 
+            MenuItem::make('Sales', SaleResource::class),
         ];
     }
 
