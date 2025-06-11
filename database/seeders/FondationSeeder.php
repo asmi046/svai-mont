@@ -70,7 +70,7 @@ class FondationSeeder extends Seeder
 
         $data = [
             [
-                'order' => 1,
+                'order' => 10,
                 'title' => "Свайный фундамент под ключ в [city|pp]",
                 'slug' => Str::slug("Свайный фундамент под ключ в [city|pp]"),
                 'short_title' => "Свайный фундамент под ключ",
@@ -82,9 +82,9 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 2,
+                'order' => 20,
                 'title' => "Заказать свайное поле в [city|pp]",
-                'short_title' => "Заказать свайное поле",
+                'short_title' => "Свайное поле под ключ",
                 'slug' => Str::slug("Заказать свайное поле в [city|pp]"),
                 'img' => "fondation/f_2.jpg",
                 'icon' => "fondation/home.svg",
@@ -93,22 +93,25 @@ class FondationSeeder extends Seeder
                 'price' => file_get_contents(public_path('tmp_data/fond/f_2/price.html')),
 
             ],
+
             [
-                'order' => 3,
-                'title' => "Заказать забор из евроштакетника на сваях в [city|pp]",
-                'short_title' => "Заказать забор из евроштакетника на сваях",
-                'slug' => Str::slug("Заказать забор из евроштакетника на сваях в [city|pp]"),
-                'img' => "fondation/f_3.jpg",
+                'order' => 21,
+                'title' => "Купить сваи под баню в [city|pp]",
+                'short_title' => "Свайный фундамент под баню",
+                'slug' => Str::slug("Купить сваи под баню в [city|pp]"),
+                'img' => "fondation/f_24.jpg",
                 'icon' => "fondation/home.svg",
-                'top_description' => file_get_contents(public_path('tmp_data/fond/f_3/top.html')),
-                'description' => file_get_contents(public_path('tmp_data/fond/f_3/main.html')),
-                'price' => file_get_contents(public_path('tmp_data/fond/f_3/price.html')),
+                'top_description' => file_get_contents(public_path('tmp_data/fond/f_24/top.html')),
+                'description' => file_get_contents(public_path('tmp_data/fond/f_24/main.html')),
+                'price' => file_get_contents(public_path('tmp_data/fond/f_24/price.html')),
 
             ],
+
+
             [
-                'order' => 4,
+                'order' => 40,
                 'title' => "Заказать пристройку на винтовых сваях в [city|pp]",
-                'short_title' => "Заказать пристройку на винтовых сваях",
+                'short_title' => "Свайный фундамент под пристройку",
                 'slug' => Str::slug("Заказать пристройку на винтовых сваях в [city|pp]"),
                 'img' => "fondation/f_4.jpg",
                 'icon' => "fondation/home.svg",
@@ -118,9 +121,9 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 5,
+                'order' => 50,
                 'title' => "Заказать сваи для легких конструкций в [city|pp]",
-                'short_title' => "Заказать сваи для легких конструкций",
+                'short_title' => "Свайный фундамент для легких конструкций",
                 'slug' => Str::slug("Заказать сваи для легких конструкций в [city|pp]"),
                 'img' => "fondation/f_5.jpg",
                 'icon' => "fondation/home.svg",
@@ -130,7 +133,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 6,
+                'order' => 60,
                 'title' => "Заказать сваи для лестницы крыльца в [city|pp]",
                 'short_title' => "Заказать сваи для лестницы крыльца",
                 'slug' => Str::slug("Заказать сваи для лестницы крыльца в [city|pp]"),
@@ -142,19 +145,33 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 7,
-                'title' => "Заказать сваи для ограждения от производителя в [city|pp]",
-                'short_title' => "Заказать сваи для ограждения от производителя",
-                'slug' => Str::slug("Заказать сваи для ограждения от производителя в [city|pp]"),
-                'img' => "fondation/f_7.jpg",
+                'order' => 61,
+                'title' => "Купить винтовые сваи для фундамента каркасного дома в [city|pp]",
+                'short_title' => "Свайный фундамент для каркасного дома",
+                'slug' => Str::slug("Купить винтовые сваи для фундамента каркасного дома в [city|pp]"),
+                'img' => "fondation/f_27.jpg",
                 'icon' => "fondation/home.svg",
-                'top_description' => file_get_contents(public_path('tmp_data/fond/f_7/top.html')),
-                'description' => file_get_contents(public_path('tmp_data/fond/f_7/main.html')),
-                'price' => file_get_contents(public_path('tmp_data/fond/f_7/price.html')),
+                'top_description' => file_get_contents(public_path('tmp_data/fond/f_27/top.html')),
+                'description' => file_get_contents(public_path('tmp_data/fond/f_27/main.html')),
+                'price' => file_get_contents(public_path('tmp_data/fond/f_27/price.html')),
 
             ],
+
             [
-                'order' => 8,
+                'order' => 62,
+                'title' => "Купить сваи для настила на улице в [city|pp]",
+                'short_title' => "Свайный фундамент для настила на улице",
+                'slug' => Str::slug("Купить сваи для настила на улице в [city|pp]"),
+                'img' => "fondation/f_16.jpg",
+                'icon' => "fondation/home.svg",
+                'top_description' => file_get_contents(public_path('tmp_data/fond/f_16/top.html')),
+                'description' => file_get_contents(public_path('tmp_data/fond/f_16/main.html')),
+                'price' => file_get_contents(public_path('tmp_data/fond/f_16/price.html')),
+
+            ],
+
+            [
+                'order' => 80,
                 'title' => "Купить сваи для причала в [city|pp]",
                 'short_title' => "Купить сваи для причала",
                 'slug' => Str::slug("Купить сваи для причала в [city|pp]"),
@@ -166,7 +183,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 9,
+                'order' => 90,
                 'title' => "Купить сваи для фундамента афрейма в [city|pp]",
                 'short_title' => "Купить сваи для фундамента афрейма",
                 'slug' => Str::slug("Купить сваи для фундамента афрейма в [city|pp]"),
@@ -178,7 +195,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 10,
+                'order' => 100,
                 'title' => "Защита фундамента от промерзания в [city|pp]",
                 'short_title' => "Защита фундамента от промерзания",
                 'slug' => Str::slug("Защита фундамента от промерзания в [city|pp]"),
@@ -190,7 +207,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 11,
+                'order' => 110,
                 'title' => "Купить услугу фундамент на плывуне в [city|pp]",
                 'short_title' => "Купить услугу фундамент на плывуне",
                 'slug' => Str::slug("Купить услугу фундамент на плывуне в [city|pp]"),
@@ -202,7 +219,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 12,
+                'order' => 120,
                 'title' => "Купить сваи для веранды в [city|pp]",
                 'short_title' => "Купить сваи для веранды",
                 'slug' => Str::slug("Купить сваи для веранды в [city|pp]"),
@@ -214,7 +231,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 13,
+                'order' => 130,
                 'title' => "Купить сваи для щитового дома в [city|pp]",
                 'short_title' => "Купить сваи для щитового дома",
                 'slug' => Str::slug("Купить сваи для щитового дома в [city|pp]"),
@@ -226,7 +243,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 14,
+                'order' => 140,
                 'title' => "Купить сваи для штакетника в [city|pp]",
                 'short_title' => "Купить сваи для штакетника",
                 'slug' => Str::slug("Купить сваи для штакетника в [city|pp]"),
@@ -238,7 +255,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 15,
+                'order' => 150,
                 'title' => "Купить сваи для гамака в [city|pp]",
                 'short_title' => "Купить сваи для гамака",
                 'slug' => Str::slug("Купить сваи для гамака в [city|pp]"),
@@ -249,20 +266,20 @@ class FondationSeeder extends Seeder
                 'price' => file_get_contents(public_path('tmp_data/fond/f_15/price.html')),
 
             ],
-            [
-                'order' => 16,
-                'title' => "Купить сваи для настила на улице в [city|pp]",
-                'short_title' => "Купить сваи для настила на улице",
-                'slug' => Str::slug("Купить сваи для настила на улице в [city|pp]"),
-                'img' => "fondation/f_16.jpg",
-                'icon' => "fondation/home.svg",
-                'top_description' => file_get_contents(public_path('tmp_data/fond/f_16/top.html')),
-                'description' => file_get_contents(public_path('tmp_data/fond/f_16/main.html')),
-                'price' => file_get_contents(public_path('tmp_data/fond/f_16/price.html')),
+            // [
+            //     'order' => 160,
+            //     'title' => "Купить сваи для настила на улице в [city|pp]",
+            //     'short_title' => "Купить сваи для настила на улице",
+            //     'slug' => Str::slug("Купить сваи для настила на улице в [city|pp]"),
+            //     'img' => "fondation/f_16.jpg",
+            //     'icon' => "fondation/home.svg",
+            //     'top_description' => file_get_contents(public_path('tmp_data/fond/f_16/top.html')),
+            //     'description' => file_get_contents(public_path('tmp_data/fond/f_16/main.html')),
+            //     'price' => file_get_contents(public_path('tmp_data/fond/f_16/price.html')),
 
-            ],
+            // ],
             [
-                'order' => 17,
+                'order' => 170,
                 'title' => "Купить сваи для качелей в [city|pp]",
                 'short_title' => "Купить сваи для качелей",
                 'slug' => Str::slug("Купить сваи для качелей в [city|pp]"),
@@ -274,7 +291,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 18,
+                'order' => 180,
                 'title' => "Купить сваи для крыльца в [city|pp]",
                 'short_title' => "Купить сваи для крыльца",
                 'slug' => Str::slug("Купить сваи для крыльца в [city|pp]"),
@@ -286,7 +303,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 19,
+                'order' => 190,
                 'title' => "Купить сваи 150x150 в [city|pp]",
                 'short_title' => "Купить сваи 150x150",
                 'slug' => Str::slug("Купить сваи 150x150 в [city|pp]"),
@@ -298,7 +315,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 20,
+                'order' => 200,
                 'title' => "Купить редуктор для закручивания в [city|pp]",
                 'short_title' => "Купить редуктор для закручивания",
                 'slug' => Str::slug("Купить редуктор для закручивания в [city|pp]"),
@@ -310,7 +327,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 21,
+                'order' => 210,
                 'title' => "Купить услугу сваекрут в [city|pp]",
                 'short_title' => "Купить услугу сваекрут",
                 'slug' => Str::slug("Купить услугу сваекрут в [city|pp]"),
@@ -322,7 +339,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 22,
+                'order' => 220,
                 'title' => "Купить висячие сваи и стойки в [city|pp]",
                 'short_title' => "Купить висячие сваи и стойки",
                 'slug' => Str::slug("Купить висячие сваи и стойки в [city|pp]"),
@@ -334,7 +351,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 23,
+                'order' => 230,
                 'title' => "Купить забивные столбы в [city|pp]",
                 'short_title' => "Купить забивные столбы",
                 'slug' => Str::slug("Купить забивные столбы в [city|pp]"),
@@ -346,19 +363,19 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 24,
-                'title' => "Купить сваи под баню в [city|pp]",
-                'short_title' => "Купить сваи под баню",
-                'slug' => Str::slug("Купить сваи под баню в [city|pp]"),
-                'img' => "fondation/f_24.jpg",
+                'order' => 231,
+                'title' => "Заказать забор из евроштакетника на сваях в [city|pp]",
+                'short_title' => "Заказать забор из евроштакетника на сваях",
+                'slug' => Str::slug("Заказать забор из евроштакетника на сваях в [city|pp]"),
+                'img' => "fondation/f_3.jpg",
                 'icon' => "fondation/home.svg",
-                'top_description' => file_get_contents(public_path('tmp_data/fond/f_24/top.html')),
-                'description' => file_get_contents(public_path('tmp_data/fond/f_24/main.html')),
-                'price' => file_get_contents(public_path('tmp_data/fond/f_24/price.html')),
+                'top_description' => file_get_contents(public_path('tmp_data/fond/f_3/top.html')),
+                'description' => file_get_contents(public_path('tmp_data/fond/f_3/main.html')),
+                'price' => file_get_contents(public_path('tmp_data/fond/f_3/price.html')),
 
             ],
             [
-                'order' => 25,
+                'order' => 250,
                 'title' => "Купить опоры для дорожек в [city|pp]",
                 'short_title' => "Купить опоры для дорожек",
                 'slug' => Str::slug("Купить опоры для дорожек в [city|pp]"),
@@ -370,7 +387,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 26,
+                'order' => 260,
                 'title' => "Купить свайный фундамент в [city|pp]",
                 'short_title' => "Купить свайный фундамент",
                 'slug' => Str::slug("Купить свайный фундамент в [city|pp]"),
@@ -381,20 +398,22 @@ class FondationSeeder extends Seeder
                 'price' => file_get_contents(public_path('tmp_data/fond/f_26/price.html')),
 
             ],
+
             [
-                'order' => 27,
-                'title' => "Купить винтовые сваи для фундамента каркасного дома в [city|pp]",
-                'short_title' => "Купить винтовые сваи для фундамента каркасного дома",
-                'slug' => Str::slug("Купить винтовые сваи для фундамента каркасного дома в [city|pp]"),
-                'img' => "fondation/f_27.jpg",
+                'order' => 270,
+                'title' => "Заказать сваи для ограждения от производителя в [city|pp]",
+                'short_title' => "Заказать сваи для ограждения от производителя",
+                'slug' => Str::slug("Заказать сваи для ограждения от производителя в [city|pp]"),
+                'img' => "fondation/f_7.jpg",
                 'icon' => "fondation/home.svg",
-                'top_description' => file_get_contents(public_path('tmp_data/fond/f_27/top.html')),
-                'description' => file_get_contents(public_path('tmp_data/fond/f_27/main.html')),
-                'price' => file_get_contents(public_path('tmp_data/fond/f_27/price.html')),
+                'top_description' => file_get_contents(public_path('tmp_data/fond/f_7/top.html')),
+                'description' => file_get_contents(public_path('tmp_data/fond/f_7/main.html')),
+                'price' => file_get_contents(public_path('tmp_data/fond/f_7/price.html')),
 
             ],
+
             [
-                'order' => 28,
+                'order' => 280,
                 'title' => "Купить пол на винтовых сваях в [city|pp]",
                 'short_title' => "Купить пол на винтовых сваях",
                 'slug' => Str::slug("Купить пол на винтовых сваях в [city|pp]"),
@@ -406,7 +425,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 29,
+                'order' => 290,
                 'title' => "Купить сваи для ворот в [city|pp]",
                 'short_title' => "Купить сваи для ворот",
                 'slug' => Str::slug("Купить сваи для ворот в [city|pp]"),
@@ -418,7 +437,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 30,
+                'order' => 300,
                 'title' => "Купить винтовые сваи для забора в [city|pp]",
                 'short_title' => "Купить винтовые сваи для забора",
                 'slug' => Str::slug("Купить винтовые сваи для забора в [city|pp]"),
@@ -430,7 +449,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 31,
+                'order' => 310,
                 'title' => "Купить пирс на винтовых сваях в [city|pp]",
                 'short_title' => "Купить пирс на винтовых сваях",
                 'slug' => Str::slug("Купить пирс на винтовых сваях в [city|pp]"),
@@ -442,7 +461,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 32,
+                'order' => 320,
                 'title' => "Купить ангар или склад на сваях в [city|pp]",
                 'short_title' => "Купить ангар или склад на сваях",
                 'slug' => Str::slug("Купить ангар или склад на сваях в [city|pp]"),
@@ -454,7 +473,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 33,
+                'order' => 330,
                 'title' => "Купить мост на винтовых сваях в [city|pp]",
                 'short_title' => "Купить мост на винтовых сваях",
                 'slug' => Str::slug("Купить мост на винтовых сваях в [city|pp]"),
@@ -466,7 +485,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 34,
+                'order' => 340,
                 'title' => "Купить винтовые сваи для теплицы в [city|pp]",
                 'short_title' => "Купить винтовые сваи для теплицы",
                 'slug' => Str::slug("Купить винтовые сваи для теплицы в [city|pp]"),
@@ -478,7 +497,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 35,
+                'order' => 350,
                 'title' => "Купить винтовые сваи для перголы в [city|pp]",
                 'short_title' => "Купить винтовые сваи для перголы",
                 'slug' => Str::slug("Купить винтовые сваи для перголы в [city|pp]"),
@@ -490,7 +509,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 36,
+                'order' => 360,
                 'title' => "Купить винтовые сваи под лестницу в [city|pp]",
                 'short_title' => "Купить винтовые сваи под лестницу",
                 'slug' => Str::slug("Купить винтовые сваи под лестницу в [city|pp]"),
@@ -502,7 +521,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 37,
+                'order' => 370,
                 'title' => "Купить винтовые сваи для автонавеса в [city|pp]",
                 'short_title' => "Купить винтовые сваи для автонавеса",
                 'slug' => Str::slug("Купить винтовые сваи для автонавеса в [city|pp]"),
@@ -514,7 +533,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 38,
+                'order' => 380,
                 'title' => "Купить винтовые сваи для настила бассейна в [city|pp]",
                 'short_title' => "Купить винтовые сваи для настила бассейна",
                 'slug' => Str::slug("Купить винтовые сваи для настила бассейна в [city|pp]"),
@@ -526,7 +545,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 39,
+                'order' => 390,
                 'title' => "Купить винтовые сваи для фонарей в [city|pp]",
                 'short_title' => "Купить винтовые сваи для фонарей",
                 'slug' => Str::slug("Купить винтовые сваи для фонарей в [city|pp]"),
@@ -538,7 +557,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 40,
+                'order' => 400,
                 'title' => "Купить винтовые сваи для дорожных знаков в [city|pp]",
                 'short_title' => "Купить винтовые сваи для дорожных знаков",
                 'slug' => Str::slug("Купить винтовые сваи для дорожных знаков в [city|pp]"),
@@ -550,7 +569,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 41,
+                'order' => 410,
                 'title' => "Купить терраса / веранда на винтовых сваях в [city|pp]",
                 'short_title' => "Купить терраса / веранда на винтовых сваях",
                 'slug' => Str::slug("Купить терраса / веранда на винтовых сваях в [city|pp]"),
@@ -562,7 +581,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 42,
+                'order' => 420,
                 'title' => "Купить винтовые сваи под гараж в [city|pp]",
                 'short_title' => "Купить винтовые сваи под гараж",
                 'slug' => Str::slug("Купить винтовые сваи под гараж в [city|pp]"),
@@ -574,7 +593,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 43,
+                'order' => 430,
                 'title' => "Купить сваи под откатные ворота в [city|pp]",
                 'short_title' => "Купить сваи под откатные ворота",
                 'slug' => Str::slug("Купить сваи под откатные ворота в [city|pp]"),
@@ -586,7 +605,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 44,
+                'order' => 440,
                 'title' => "Купить эстакаду на сваях в [city|pp]",
                 'short_title' => "Купить эстакаду на сваях",
                 'slug' => Str::slug("Купить эстакаду на сваях в [city|pp]"),
@@ -598,7 +617,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 45,
+                'order' => 450,
                 'title' => "Купить винтовые сваи под дом в [city|pp]",
                 'short_title' => "Купить винтовые сваи под дом",
                 'slug' => Str::slug("Купить винтовые сваи под дом в [city|pp]"),
@@ -610,7 +629,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 46,
+                'order' => 460,
                 'title' => "Купить винтовые сваи под печь в [city|pp]",
                 'short_title' => "Купить винтовые сваи под печь",
                 'slug' => Str::slug("Купить винтовые сваи под печь в [city|pp]"),
@@ -622,7 +641,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 47,
+                'order' => 470,
                 'title' => "Купить сарай на винтовых сваях или хозблок в [city|pp]",
                 'short_title' => "Купить сарай на винтовых сваях или хозблок",
                 'slug' => Str::slug("Купить сарай на винтовых сваях или хозблок в [city|pp]"),
@@ -634,7 +653,7 @@ class FondationSeeder extends Seeder
 
             ],
             [
-                'order' => 47,
+                'order' => 480,
                 'title' => "Купить цоколь на винтовых сваях в [city|pp]",
                 'short_title' => "Купить цоколь на винтовых сваях",
                 'slug' => Str::slug("Купить цоколь на винтовых сваях в [city|pp]"),
