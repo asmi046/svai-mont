@@ -14,8 +14,8 @@
         </a>
 
     <a class="open" @click.prevent="panelOpen">
-        <span v-show="!hoveredText">Открыть</span>
-        <span v-show="hoveredText">Закрыть</span>
+        <svg v-show="!hoveredText" class="sprite_icon"><use xlink:href="#arrow_open"></use></svg>
+        <svg v-show="hoveredText" class="sprite_icon"><use xlink:href="#close_icon"></use></svg>
     </a>
     </div>
   </div>
@@ -49,7 +49,7 @@ const buttons = ref([
     id: 4,
     text: 'Калькулятор',
     icon: `<svg class="sprite_icon"><use xlink:href="#calc_icon"></use></svg>`,
-    href: '#'
+    href: '/quiz'
   },
 ]);
 

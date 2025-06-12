@@ -3,6 +3,7 @@
 use App\Http\Middleware\IssetCity;
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\QuizController;
 use App\Http\Controllers\PriceController;
 use App\Http\Controllers\SalesController;
 use App\Http\Controllers\GaleryController;
@@ -11,8 +12,9 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\FondationController;
-use App\Http\Controllers\CertificatController;
 
+use App\Http\Controllers\CertificatController;
+use App\Http\Controllers\Consultation\SenderQuizController;
 use App\Http\Controllers\Consultation\SenderConsultController;
 
     use Illuminate\Support\Facades\Route;
@@ -41,6 +43,9 @@ Route::middleware(IssetCity::class)->group( function() {
     Route::get('/fondations/{slug}', [FondationController::class, "page"])->name('fondation_page');
 
     Route::get('/all_rewiews', [ReviewController::class, "index"])->name('rewiews');
+    Route::get('/quiz', [QuizController::class, "index"])->name('quiz');
+
+    Route::post('/send_quiz', [SenderQuizController::class, "send"])->name('send_quiz');
 
     Route::post('/send_consult', [SenderConsultController::class, "send_consultation"])->name('send_consultation');
     Route::get('/thencs_consult', [SenderConsultController::class, "show_thencs"])->name('thencs_consult');

@@ -48,25 +48,36 @@
         font-size: 12px;
         padding:5px 10px;
         cursor:pointer;
+
+        .sprite_icon {
+            width: 20px;
+            height: 20px;
+            margin: auto;
+            stroke: $main_color;
+            fill: $main_color;
+        }
     }
   }
 }
 
 @media (max-width: 480px) {
-    .side-panel .panel-list {
+    .side-panel {
+        transform: translateY(0%);
+        .panel-list {
 
-        .panel-item {
-            .icon {
-                    width: 22px;
-                    height: 22px;
+            .panel-item {
+                .icon {
+                        width: 22px;
+                        height: 22px;
+                }
+                .text {
+                    font-size: 12px;
+                }
             }
-            .text {
-                font-size: 12px;
-            }
-        }
 
-        .open {
-            font-size: 10px;
+            .open {
+                font-size: 10px;
+            }
         }
     }
 }

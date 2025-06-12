@@ -6,6 +6,7 @@ import ModalWindow from "./components/ModalWindow.vue"
 import SidePanel from "./components/SidePanel.vue"
 import {createApp} from 'vue/dist/vue.esm-bundler'
 import Review from './components/Reviews/Review.vue'
+import Quiz from './components/Quiz/Quiz.vue'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import { VMaskDirective } from 'v-slim-mask'
@@ -41,3 +42,17 @@ const modal_app = createApp({
 modal_app.use(VueAxios, axios)
 modal_app.directive('mask', VMaskDirective)
 modal_app.mount("#modal_app");
+
+
+if (document.getElementById('quiz_app')) {
+    const quiz_app = createApp({
+        components:{
+            Quiz,
+        },
+        setup() {}
+    })
+
+    quiz_app.use(VueAxios, axios)
+    quiz_app.directive('mask', VMaskDirective)
+    quiz_app.mount("#quiz_app");
+}

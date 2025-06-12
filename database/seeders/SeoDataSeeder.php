@@ -44,6 +44,13 @@ class SeoDataSeeder extends Seeder
             ],
 
             [
+                'url' => "quiz",
+                'seo_title' => "Калькулятор для расчета стоимости винтовых свай",
+                'seo_description' => "Калькулятор для расчета стоимости винтовых свай",
+                'page_title' => "",
+            ],
+
+            [
                 'url' => "review",
                 'seo_title' => "Отзывы довольных клиентов",
                 'seo_description' => "Отзывы довольных клиентов",
