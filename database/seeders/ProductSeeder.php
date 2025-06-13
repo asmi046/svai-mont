@@ -16,42 +16,42 @@ class ProductSeeder extends Seeder
      */
     public function run(): void
     {
-        Storage::disk('public')->put("products/product_1.jpg", file_get_contents(public_path('tmp_data/prod/product_1.jpg')), 'public');
-        Storage::disk('public')->put("products/product_2.jpg", file_get_contents(public_path('tmp_data/prod/product_2.jpg')), 'public');
-        Storage::disk('public')->put("products/product_3.jpg", file_get_contents(public_path('tmp_data/prod/product_3.jpg')), 'public');
-        Storage::disk('public')->put("products/product_4.jpg", file_get_contents(public_path('tmp_data/prod/product_4.jpg')), 'public');
-        Storage::disk('public')->put("products/product_5.jpg", file_get_contents(public_path('tmp_data/prod/product_5.jpg')), 'public');
-        Storage::disk('public')->put("products/product_6.jpg", file_get_contents(public_path('tmp_data/prod/product_6.jpg')), 'public');
-        Storage::disk('public')->put("products/product_7.jpg", file_get_contents(public_path('tmp_data/prod/product_7.jpg')), 'public');
-        Storage::disk('public')->put("products/product_8.jpg", file_get_contents(public_path('tmp_data/prod/product_8.jpg')), 'public');
-        Storage::disk('public')->put("products/product_9.jpg", file_get_contents(public_path('tmp_data/prod/product_9.jpg')), 'public');
-        Storage::disk('public')->put("products/product_10.jpg", file_get_contents(public_path('tmp_data/prod/product_10.jpg')), 'public');
-        Storage::disk('public')->put("products/product_11.jpg", file_get_contents(public_path('tmp_data/prod/product_11.jpg')), 'public');
+        Storage::disk('public')->put("products/57 мм.png", file_get_contents(public_path('tmp_data/prod/57 мм.png')), 'public');
+        Storage::disk('public')->put("products/60 мм.png", file_get_contents(public_path('tmp_data/prod/60 мм.png')), 'public');
+        Storage::disk('public')->put("products/73 мм.png", file_get_contents(public_path('tmp_data/prod/73 мм.png')), 'public');
+        Storage::disk('public')->put("products/76 мм.png", file_get_contents(public_path('tmp_data/prod/76 мм.png')), 'public');
+        Storage::disk('public')->put("products/89 мм.png", file_get_contents(public_path('tmp_data/prod/89 мм.png')), 'public');
+        Storage::disk('public')->put("products/102 мм.png", file_get_contents(public_path('tmp_data/prod/102 мм.png')), 'public');
+        Storage::disk('public')->put("products/108 мм.png", file_get_contents(public_path('tmp_data/prod/108 мм.png')), 'public');
+        Storage::disk('public')->put("products/133 мм.png", file_get_contents(public_path('tmp_data/prod/133 мм.png')), 'public');
+        Storage::disk('public')->put("products/159 мм.png", file_get_contents(public_path('tmp_data/prod/159 мм.png')), 'public');
+        Storage::disk('public')->put("products/219 мм.png", file_get_contents(public_path('tmp_data/prod/219 мм.png')), 'public');
+        Storage::disk('public')->put("products/325 мм.png", file_get_contents(public_path('tmp_data/prod/325 мм.png')), 'public');
         Storage::disk('public')->put("products/product_12.jpg", file_get_contents(public_path('tmp_data/prod/product_12.jpg')), 'public');
         Storage::disk('public')->put("products/product_13.jpg", file_get_contents(public_path('tmp_data/prod/product_13.jpg')), 'public');
         Storage::disk('public')->put("products/product_14.jpg", file_get_contents(public_path('tmp_data/prod/product_14.jpg')), 'public');
-        Storage::disk('public')->put("products/product_15.jpg", file_get_contents(public_path('tmp_data/prod/product_15.jpg')), 'public');
-        Storage::disk('public')->put("products/product_16.jpg", file_get_contents(public_path('tmp_data/prod/product_16.jpg')), 'public');
+        Storage::disk('public')->put("products/kvadrat.png", file_get_contents(public_path('tmp_data/prod/kvadrat.png')), 'public');
+        Storage::disk('public')->put("products/kombinirovanie.png", file_get_contents(public_path('tmp_data/prod/kombinirovanie.png')), 'public');
         Storage::disk('public')->put("products/product_17.jpg", file_get_contents(public_path('tmp_data/prod/product_17.jpg')), 'public');
-        Storage::disk('public')->put("products/product_18.jpg", file_get_contents(public_path('tmp_data/prod/product_18.jpg')), 'public');
-        Storage::disk('public')->put("products/product_19.jpg", file_get_contents(public_path('tmp_data/prod/product_19.jpg')), 'public');
+        Storage::disk('public')->put("products/zelezobetonie.png", file_get_contents(public_path('tmp_data/prod/zelezobetonie.png')), 'public');
+        Storage::disk('public')->put("products/mnogolopostnie.png", file_get_contents(public_path('tmp_data/prod/mnogolopostnie.png')), 'public');
         Storage::disk('public')->put("products/product_20.jpg", file_get_contents(public_path('tmp_data/prod/product_20.jpg')), 'public');
-        Storage::disk('public')->put("products/product_21.jpg", file_get_contents(public_path('tmp_data/prod/product_21.jpg')), 'public');
+        Storage::disk('public')->put("products/shurupnie.png", file_get_contents(public_path('tmp_data/prod/shurupnie.png')), 'public');
         Storage::disk('public')->put("products/product_22.jpg", file_get_contents(public_path('tmp_data/prod/product_22.jpg')), 'public');
-        Storage::disk('public')->put("products/product_23.jpg", file_get_contents(public_path('tmp_data/prod/product_23.jpg')), 'public');
-        Storage::disk('public')->put("products/product_24.jpg", file_get_contents(public_path('tmp_data/prod/product_24.jpg')), 'public');
-        Storage::disk('public')->put("products/product_25.jpg", file_get_contents(public_path('tmp_data/prod/product_25.jpg')), 'public');
-        Storage::disk('public')->put("products/product_26.jpg", file_get_contents(public_path('tmp_data/prod/product_26.jpg')), 'public');
-        Storage::disk('public')->put("products/product_27.jpg", file_get_contents(public_path('tmp_data/prod/product_27.jpg')), 'public');
-        Storage::disk('public')->put("products/product_28.jpg", file_get_contents(public_path('tmp_data/prod/product_28.jpg')), 'public');
-        Storage::disk('public')->put("products/product_29.jpg", file_get_contents(public_path('tmp_data/prod/product_29.jpg')), 'public');
-        Storage::disk('public')->put("products/product_30.jpg", file_get_contents(public_path('tmp_data/prod/product_30.jpg')), 'public');
+        Storage::disk('public')->put("products/derevynie.png", file_get_contents(public_path('tmp_data/prod/derevynie.png')), 'public');
+        Storage::disk('public')->put("products/centrofugirovanie.png", file_get_contents(public_path('tmp_data/prod/centrofugirovanie.png')), 'public');
+        Storage::disk('public')->put("products/celnie.png", file_get_contents(public_path('tmp_data/prod/celnie.png')), 'public');
+        Storage::disk('public')->put("products/besedka.png", file_get_contents(public_path('tmp_data/prod/besedka.png')), 'public');
+        Storage::disk('public')->put("products/yakornaya.png", file_get_contents(public_path('tmp_data/prod/yakornaya.png')), 'public');
+        Storage::disk('public')->put("products/minisvaya.png", file_get_contents(public_path('tmp_data/prod/minisvaya.png')), 'public');
+        Storage::disk('public')->put("products/pomost.png", file_get_contents(public_path('tmp_data/prod/pomost.png')), 'public');
+        Storage::disk('public')->put("products/teplica.png", file_get_contents(public_path('tmp_data/prod/teplica.png')), 'public');
         $data = [
             [
                 'title' => "Винтовые сваи 57 мм купить в [city|pp]",
                 'short_title' => "Винтовые сваи 57 мм",
                 'slug' => Str::slug("Винтовые сваи 57 мм купить в [city|pp]"),
-                'img' => "products/product_1.jpg",
+                'img' => "products/57 мм.png",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_1/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_1/main.html')),
                 'price' =>  file_get_contents(public_path('tmp_data/prod/pr_1/price.html')),
@@ -60,7 +60,7 @@ class ProductSeeder extends Seeder
                 'title' => "Винтовые сваи 60 мм в [city|pp]",
                 'short_title' => "Винтовые сваи 60 мм",
                 'slug' => Str::slug("Винтовые сваи 60 мм в [city|pp]"),
-                'img' => "products/product_2.jpg",
+                'img' => "products/60 мм.png",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_2/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_2/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_2/price.html')),
@@ -69,7 +69,7 @@ class ProductSeeder extends Seeder
                 'title' => "Винтовые сваи 73 мм в [city|pp]",
                 'short_title' => "Винтовые сваи 73 мм",
                 'slug' => Str::slug("Винтовые сваи 73 мм в [city|pp]"),
-                'img' => "products/product_3.jpg",
+                'img' => "products/73 мм.png",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_3/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_3/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_3/price.html')),
@@ -78,7 +78,7 @@ class ProductSeeder extends Seeder
                 'title' => "Винтовые сваи 76 мм в [city|pp]",
                 'short_title' => "Винтовые сваи 76 мм",
                 'slug' => Str::slug("Винтовые сваи 76 мм в [city|pp]"),
-                'img' => "products/product_4.jpg",
+                'img' => "products/76 мм.png",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_4/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_4/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_4/price.html')),
@@ -87,7 +87,7 @@ class ProductSeeder extends Seeder
                 'title' => "Винтовые сваи 89 мм в [city|pp]",
                 'short_title' => "Винтовые сваи 89 мм",
                 'slug' => Str::slug("Винтовые сваи 89 мм в [city|pp]"),
-                'img' => "products/product_5.jpg",
+                'img' => "products/89 мм.png",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_5/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_5/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_5/price.html')),
@@ -96,7 +96,7 @@ class ProductSeeder extends Seeder
                 'title' => "Винтовые сваи 102 мм в [city|pp]",
                 'short_title' => "Винтовые сваи 102 мм",
                 'slug' => Str::slug("Винтовые сваи 102 мм в [city|pp]"),
-                'img' => "products/product_6.jpg",
+                'img' => "products/102 мм.png",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_6/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_6/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_6/price.html')),
@@ -105,7 +105,7 @@ class ProductSeeder extends Seeder
                 'title' => "Винтовые сваи 108 мм в [city|pp]",
                 'short_title' => "Винтовые сваи 108 мм",
                 'slug' => Str::slug("Винтовые сваи 108 мм в [city|pp]"),
-                'img' => "products/product_7.jpg",
+                'img' => "products/108 мм.png",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_7/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_7/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_7/price.html')),
@@ -114,7 +114,7 @@ class ProductSeeder extends Seeder
                 'title' => "Винтовые сваи 133 мм в [city|pp]",
                 'short_title' => "Винтовые сваи 133 мм",
                 'slug' => Str::slug("Винтовые сваи 133 мм в [city|pp]"),
-                'img' => "products/product_8.jpg",
+                'img' => "products/133 мм.png",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_8/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_8/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_8/price.html')),
@@ -123,7 +123,7 @@ class ProductSeeder extends Seeder
                 'title' => "Винтовые сваи 159 мм в [city|pp]",
                 'short_title' => "Винтовые сваи 159 мм",
                 'slug' => Str::slug("Винтовые сваи 159 мм в [city|pp]"),
-                'img' => "products/product_9.jpg",
+                'img' => "products/159 мм.png",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_9/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_9/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_9/price.html')),
@@ -132,7 +132,7 @@ class ProductSeeder extends Seeder
                 'title' => "Винтовые сваи 219 мм в [city|pp]",
                 'short_title' => "Винтовые сваи 219 мм",
                 'slug' => Str::slug("Винтовые сваи 219 мм в [city|pp]"),
-                'img' => "products/product_10.jpg",
+                'img' => "products/219 мм.png",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_10/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_10/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_10/price.html')),
@@ -141,7 +141,7 @@ class ProductSeeder extends Seeder
                 'title' => "Винтовые сваи 325 мм в [city|pp]",
                 'short_title' => "Винтовые сваи 325 мм",
                 'slug' => Str::slug("Винтовые сваи 325 мм в [city|pp]"),
-                'img' => "products/product_11.jpg",
+                'img' => "products/325 мм.png",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_11/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_11/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_11/price.html')),
@@ -168,7 +168,7 @@ class ProductSeeder extends Seeder
                 'title' => "Квадратные винтовые сваи в [city|pp]",
                 'short_title' => "Квадратные винтовые сваи",
                 'slug' => Str::slug("Квадратные винтовые сваи в [city|pp]"),
-                'img' => "products/product_15.jpg",
+                'img' => "products/kvadrat.png",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_15/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_15/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_15/price.html')),
@@ -177,7 +177,7 @@ class ProductSeeder extends Seeder
                 'title' => "Комбинированные сваи для заборов в [city|pp]",
                 'short_title' => "Комбинированные сваи для заборов",
                 'slug' => Str::slug("Комбинированные сваи для заборов в [city|pp]"),
-                'img' => "products/product_16.jpg",
+                'img' => "products/kombinirovanie.png",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_16/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_16/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_16/price.html')),
@@ -195,7 +195,7 @@ class ProductSeeder extends Seeder
                 'title' => "Опоры железобетонные в [city|pp]",
                 'short_title' => "Опоры железобетонные",
                 'slug' => Str::slug("Опоры железобетонные в [city|pp]"),
-                'img' => "products/product_18.jpg",
+                'img' => "products/zelezobetonie.png",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_18/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_18/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_18/price.html')),
@@ -204,7 +204,7 @@ class ProductSeeder extends Seeder
                 'title' => "Многолопастные Сваи в [city|pp]",
                 'short_title' => "Многолопастные Сваи",
                 'slug' => Str::slug("Многолопастные Сваи в [city|pp]"),
-                'img' => "products/product_19.jpg",
+                'img' => "products/mnogolopostnie.png",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_19/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_19/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_19/price.html')),
@@ -222,7 +222,7 @@ class ProductSeeder extends Seeder
                 'title' => "Шурупные сваи в [city|pp]",
                 'short_title' => "Шурупные сваи",
                 'slug' => Str::slug("Шурупные сваи в [city|pp]"),
-                'img' => "products/product_21.jpg",
+                'img' => "products/shurupnie.png",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_21/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_21/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_21/price.html')),
@@ -240,7 +240,7 @@ class ProductSeeder extends Seeder
                 'title' => "Деревянные сваи в [city|pp]",
                 'short_title' => "Деревянные сваи",
                 'slug' => Str::slug("Деревянные сваи в [city|pp]"),
-                'img' => "products/product_23.jpg",
+                'img' => "products/derevynie.png",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_23/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_23/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_23/price.html')),
@@ -249,7 +249,7 @@ class ProductSeeder extends Seeder
                 'title' => "Сваи центрифугированные в [city|pp]",
                 'short_title' => "Сваи центрифугированные",
                 'slug' => Str::slug("Сваи центрифугированные в [city|pp]"),
-                'img' => "products/product_24.jpg",
+                'img' => "products/centrofugirovanie.png",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_24/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_24/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_24/price.html')),
@@ -258,7 +258,7 @@ class ProductSeeder extends Seeder
                 'title' => "Сваи цельные в [city|pp]",
                 'short_title' => "Сваи цельные",
                 'slug' => Str::slug("Сваи цельные в [city|pp]"),
-                'img' => "products/product_25.jpg",
+                'img' => "products/celnie.png",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_25/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_25/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_25/price.html')),
@@ -267,7 +267,7 @@ class ProductSeeder extends Seeder
                 'title' => "Сваи для беседки в [city|pp]",
                 'short_title' => "Сваи для беседки",
                 'slug' => Str::slug("Сваи для беседки в [city|pp]"),
-                'img' => "products/product_26.jpg",
+                'img' => "products/besedka.png",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_26/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_26/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_26/price.html')),
@@ -276,7 +276,7 @@ class ProductSeeder extends Seeder
                 'title' => "Якорные сваи в [city|pp]",
                 'short_title' => "Якорные сваи",
                 'slug' => Str::slug("Якорные сваи в [city|pp]"),
-                'img' => "products/product_27.jpg",
+                'img' => "products/yakornaya.png",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_27/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_27/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_27/price.html')),
@@ -285,7 +285,7 @@ class ProductSeeder extends Seeder
                 'title' => "Мини сваи в [city|pp]",
                 'short_title' => "Мини сваи",
                 'slug' => Str::slug("Мини сваи в [city|pp]"),
-                'img' => "products/product_28.jpg",
+                'img' => "products/minisvaya.png",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_28/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_28/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_28/price.html')),
@@ -294,7 +294,7 @@ class ProductSeeder extends Seeder
                 'title' => "Сваи для помоста в [city|pp]",
                 'short_title' => "Сваи для помоста",
                 'slug' => Str::slug("Сваи для помоста в [city|pp]"),
-                'img' => "products/product_29.jpg",
+                'img' => "products/pomost.png",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_29/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_29/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_29/price.html')),
@@ -303,7 +303,7 @@ class ProductSeeder extends Seeder
                 'title' => "Сваи для парника в [city|pp]",
                 'short_title' => "Сваи для парника",
                 'slug' => Str::slug("Сваи для парника в [city|pp]"),
-                'img' => "products/product_30.jpg",
+                'img' => "products/teplica.png",
                 'top_description' => file_get_contents(public_path('tmp_data/prod/pr_30/top.html')),
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_30/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_30/price.html')),
