@@ -24,6 +24,7 @@
             v-model="answers[currentStep - 1].answer"
             :placeholder="currentQuestion.placeholder || 'Введите ваш ответ'"
           >
+          <button v-show="answers[currentStep - 1].answer.length > 0">Продолжить</button>
         </div>
       </div>
 
@@ -217,6 +218,7 @@ const goToStep = (step) => {
 
 const selectOption = (option) => {
   answers.value[currentStep.value - 1].answer = option
+  goToStep(currentStep.value + 1)
 }
 
 const submitQuiz = async () => {
