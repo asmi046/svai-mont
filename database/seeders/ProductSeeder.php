@@ -92,6 +92,7 @@ class ProductSeeder extends Seeder
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_5/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_5/price.html')),
             ],
+
             [
                 'title' => "Винтовые сваи 102 мм в [city|pp]",
                 'short_title' => "Винтовые сваи 102 мм",
@@ -101,7 +102,8 @@ class ProductSeeder extends Seeder
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_6/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_6/price.html')),
             ],
-            [
+
+            [ //7
                 'title' => "Винтовые сваи 108 мм в [city|pp]",
                 'short_title' => "Винтовые сваи 108 мм",
                 'slug' => Str::slug("Винтовые сваи 108 мм в [city|pp]"),
@@ -110,7 +112,8 @@ class ProductSeeder extends Seeder
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_7/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_7/price.html')),
             ],
-            [
+
+            [//8
                 'title' => "Винтовые сваи 133 мм в [city|pp]",
                 'short_title' => "Винтовые сваи 133 мм",
                 'slug' => Str::slug("Винтовые сваи 133 мм в [city|pp]"),
@@ -119,7 +122,7 @@ class ProductSeeder extends Seeder
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_8/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_8/price.html')),
             ],
-            [
+            [//9
                 'title' => "Винтовые сваи 159 мм в [city|pp]",
                 'short_title' => "Винтовые сваи 159 мм",
                 'slug' => Str::slug("Винтовые сваи 159 мм в [city|pp]"),
@@ -128,7 +131,7 @@ class ProductSeeder extends Seeder
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_9/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_9/price.html')),
             ],
-            [
+            [//10
                 'title' => "Винтовые сваи 219 мм в [city|pp]",
                 'short_title' => "Винтовые сваи 219 мм",
                 'slug' => Str::slug("Винтовые сваи 219 мм в [city|pp]"),
@@ -137,7 +140,7 @@ class ProductSeeder extends Seeder
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_10/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_10/price.html')),
             ],
-            [
+            [//11
                 'title' => "Винтовые сваи 325 мм в [city|pp]",
                 'short_title' => "Винтовые сваи 325 мм",
                 'slug' => Str::slug("Винтовые сваи 325 мм в [city|pp]"),
@@ -146,7 +149,7 @@ class ProductSeeder extends Seeder
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_11/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_11/price.html')),
             ],
-            [
+            [//13
                 'title' => "Винтовые сваи с усиленной лопастью 8 мм в [city|pp]",
                 'short_title' => "Винтовые сваи с усиленной лопастью 8 мм",
                 'slug' => Str::slug("Винтовые сваи с усиленной лопастью 8 мм в [city|pp]"),
@@ -155,7 +158,7 @@ class ProductSeeder extends Seeder
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_13/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_13/price.html')),
             ],
-            [
+            [//14
                 'title' => "Промышленные опоры из нержавеющей стали в [city|pp]",
                 'short_title' => "Промышленные опоры из нержавеющей стали",
                 'slug' => Str::slug("Промышленные опоры из нержавеющей стали в [city|pp]"),
@@ -164,7 +167,7 @@ class ProductSeeder extends Seeder
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_14/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_14/price.html')),
             ],
-            [
+            [//15
                 'title' => "Квадратные винтовые сваи в [city|pp]",
                 'short_title' => "Квадратные винтовые сваи",
                 'slug' => Str::slug("Квадратные винтовые сваи в [city|pp]"),
@@ -173,7 +176,7 @@ class ProductSeeder extends Seeder
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_15/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_15/price.html')),
             ],
-            [
+            [//16
                 'title' => "Комбинированные сваи для заборов в [city|pp]",
                 'short_title' => "Комбинированные сваи для заборов",
                 'slug' => Str::slug("Комбинированные сваи для заборов в [city|pp]"),
@@ -182,7 +185,7 @@ class ProductSeeder extends Seeder
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_16/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_16/price.html')),
             ],
-            [
+            [//17
                 'title' => "Буронабивные сваи в [city|pp]",
                 'short_title' => "Буронабивные сваи",
                 'slug' => Str::slug("Буронабивные сваи в [city|pp]"),
@@ -191,7 +194,7 @@ class ProductSeeder extends Seeder
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_17/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_17/price.html')),
             ],
-            [
+            [//18
                 'title' => "Опоры железобетонные в [city|pp]",
                 'short_title' => "Опоры железобетонные",
                 'slug' => Str::slug("Опоры железобетонные в [city|pp]"),
@@ -200,7 +203,7 @@ class ProductSeeder extends Seeder
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_18/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_18/price.html')),
             ],
-            [
+            [//19
                 'title' => "Многолопастные Сваи в [city|pp]",
                 'short_title' => "Многолопастные Сваи",
                 'slug' => Str::slug("Многолопастные Сваи в [city|pp]"),
@@ -209,7 +212,7 @@ class ProductSeeder extends Seeder
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_19/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_19/price.html')),
             ],
-            [
+            [//20
                 'title' => "Сваи винтовые 150*150*3000 в [city|pp]",
                 'short_title' => "Сваи винтовые 150*150*3000",
                 'slug' => Str::slug("Сваи винтовые 150*150*3000 в [city|pp]"),
@@ -218,7 +221,7 @@ class ProductSeeder extends Seeder
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_20/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_20/price.html')),
             ],
-            [
+            [//21
                 'title' => "Шурупные сваи в [city|pp]",
                 'short_title' => "Шурупные сваи",
                 'slug' => Str::slug("Шурупные сваи в [city|pp]"),
@@ -227,7 +230,7 @@ class ProductSeeder extends Seeder
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_21/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_21/price.html')),
             ],
-            [
+            [//22
                 'title' => "Наклонные сваи в [city|pp]",
                 'short_title' => "Наклонные сваи",
                 'slug' => Str::slug("Наклонные сваи в [city|pp]"),
@@ -236,7 +239,7 @@ class ProductSeeder extends Seeder
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_22/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_22/price.html')),
             ],
-            [
+            [//23
                 'title' => "Деревянные сваи в [city|pp]",
                 'short_title' => "Деревянные сваи",
                 'slug' => Str::slug("Деревянные сваи в [city|pp]"),
@@ -245,7 +248,7 @@ class ProductSeeder extends Seeder
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_23/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_23/price.html')),
             ],
-            [
+            [//24
                 'title' => "Сваи центрифугированные в [city|pp]",
                 'short_title' => "Сваи центрифугированные",
                 'slug' => Str::slug("Сваи центрифугированные в [city|pp]"),
@@ -254,7 +257,7 @@ class ProductSeeder extends Seeder
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_24/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_24/price.html')),
             ],
-            [
+            [//25
                 'title' => "Сваи цельные в [city|pp]",
                 'short_title' => "Сваи цельные",
                 'slug' => Str::slug("Сваи цельные в [city|pp]"),
@@ -263,7 +266,7 @@ class ProductSeeder extends Seeder
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_25/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_25/price.html')),
             ],
-            [
+            [//26
                 'title' => "Сваи для беседки в [city|pp]",
                 'short_title' => "Сваи для беседки",
                 'slug' => Str::slug("Сваи для беседки в [city|pp]"),
@@ -272,7 +275,7 @@ class ProductSeeder extends Seeder
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_26/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_26/price.html')),
             ],
-            [
+            [//27
                 'title' => "Якорные сваи в [city|pp]",
                 'short_title' => "Якорные сваи",
                 'slug' => Str::slug("Якорные сваи в [city|pp]"),
@@ -281,7 +284,7 @@ class ProductSeeder extends Seeder
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_27/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_27/price.html')),
             ],
-            [
+            [//28
                 'title' => "Мини сваи в [city|pp]",
                 'short_title' => "Мини сваи",
                 'slug' => Str::slug("Мини сваи в [city|pp]"),
@@ -290,7 +293,7 @@ class ProductSeeder extends Seeder
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_28/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_28/price.html')),
             ],
-            [
+            [//29
                 'title' => "Сваи для помоста в [city|pp]",
                 'short_title' => "Сваи для помоста",
                 'slug' => Str::slug("Сваи для помоста в [city|pp]"),
@@ -299,7 +302,7 @@ class ProductSeeder extends Seeder
                 'description' => file_get_contents(public_path('tmp_data/prod/pr_29/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_29/price.html')),
             ],
-            [
+            [//30
                 'title' => "Сваи для парника в [city|pp]",
                 'short_title' => "Сваи для парника",
                 'slug' => Str::slug("Сваи для парника в [city|pp]"),
