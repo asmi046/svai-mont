@@ -16,7 +16,7 @@ class ParametrSeeder extends Seeder
     public function run(): void
     {
 
-        Storage::disk('public')->put("parametr/main_top.jpg", file_get_contents(public_path('tmp_data/main_banner.jpg')), 'public');
+        Storage::disk('public')->put("parametr/main_top.webp", file_get_contents(public_path('tmp_data/main_banner.webp')), 'public');
 
         Storage::disk('public')->put("parametr/adv_1.svg", file_get_contents(public_path('tmp_data/adv_icon/adv_1.svg')), 'public');
         Storage::disk('public')->put("parametr/adv_2.svg", file_get_contents(public_path('tmp_data/adv_icon/adv_2.svg')), 'public');
@@ -36,7 +36,7 @@ class ParametrSeeder extends Seeder
                 'str_id' => 'banner_text',
                 'section' => "Баннер на главной",
                 'title' => null,
-                'value' => "Производство<br>и монтаж<br>Винтовых сваи <br>в [city|pp]",
+                'value' => "Производство и монтаж<br>Винтовых сваи <br>в [city|pp]",
                 'img' => null,
             ],
             [
@@ -44,7 +44,7 @@ class ParametrSeeder extends Seeder
                 'section' => "Баннер на главной",
                 'title' => null,
                 'value' => null,
-                'img' => "parametr/main_top.jpg",
+                'img' => "parametr/main_top.webp",
             ],
             [
                 'str_id' => 'banner_projects',

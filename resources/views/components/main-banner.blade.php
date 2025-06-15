@@ -3,7 +3,12 @@
         <div class="hiro">
             <img src="{{ Storage::url($img) }}" class="fon" />
             <div class="shadow"></div>
-            <h1>{!! get_city_text($text) !!}</h1>
+            <div class="control">
+                <h1>{!! get_city_text($text) !!}</h1>
+                <a href="{{ route('quiz') }}" class="button">Рассчет стоимости</a>
+            </div>
+
+
             <div class="bn_ch">
                 <div class="ch ch0">
                     <div class="c">{{ $cerecters[0]->value }}</div>
