@@ -29,8 +29,9 @@
                     type="text"
                     v-model="answers[currentStep - 1].answer"
                     :placeholder="currentQuestion.placeholder || 'Введите ваш ответ'"
+                    @input="showTextFieldButton=(answers[currentStep - 1].answer.length > 0)?true:false"
                 >
-                <button @click.prevent="goToStep(currentStep + 1)" v-show="answers[currentStep - 1].answer.length > 0">Продолжить</button>
+                <button @click.prevent="goToStep(currentStep + 1)" v-show="showTextFieldButton">Продолжить</button>
                 </div>
 
 
@@ -58,7 +59,7 @@
       </div>
     </div>
 
-    <div v-if="showContactForm" class="contact-form">
+    <div v-if="showContactForm && submissionStatus == null" class="contact-form">
       <h3>Почти готово!</h3>
       <p>Пожалуйста, оставьте ваши контактные данные, чтобы мы могли связаться с вами.</p>
 
@@ -188,6 +189,7 @@ const policy_ch = ref(false)
 const accept_ch = ref(false)
 
 const transitionDirection = ref('slide')
+const showTextFieldButton = ref(false)
 
 // Состояние компонента
 const currentStep = ref(1)
@@ -230,12 +232,15 @@ const goToStep = (step) => {
     currentStep.value = step
     showContactForm.value = false
     transitionDirection.value = (currentStep.value < step)?'slide-prev':'slide-next';
+    showTextFieldButton.value=false;
   }
 
     if (step === questions.value.length + 1) {
         showContactForm.value = true
         transitionDirection.value = 'slide-next'
     }
+
+
 }
 
 const selectOption = (option) => {
