@@ -9,7 +9,10 @@
                     <x-breadcrumbs.main fondation="{{ get_city_text($fondation->title) }}"></x-breadcrumbs.main>
                     <h1 class="inner_page_h1">{{ get_city_text($fondation->title) }}</h1>
                     <div class="text_styles">
-                        <div class="inner_page_top">
+                        <div class="img_wrapper img_wrapper_opot">
+                            <img src="{{ Storage::url($fondation->img) }}" alt="{{ $fondation->title }}" class="img-fluid">
+                        </div>
+                        {{-- <div class="inner_page_top">
                             <div class="img_wrapper">
                                 <img src="{{ Storage::url($fondation->img) }}" alt="{{ $fondation->title }}" class="img-fluid">
                             </div>
@@ -18,6 +21,7 @@
                                 {!! get_city_text($fondation->top_description) !!}
                             </div>
                         </div>
+                         --}}
                         {!! get_city_text($fondation->description) !!}
 
                         <x-page-cta/>

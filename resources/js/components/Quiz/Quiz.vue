@@ -29,7 +29,7 @@
                     type="text"
                     v-model="answers[currentStep - 1].answer"
                     :placeholder="currentQuestion.placeholder || 'Введите ваш ответ'"
-                    @input="showTextFieldButton=(answers[currentStep - 1].answer.length > 0)?true:false"
+                    @input="showTextFieldButton=($event.target.value.length > 0)?true:false"
                 >
                 <button @click.prevent="goToStep(currentStep + 1)" v-show="showTextFieldButton">Продолжить</button>
                 </div>

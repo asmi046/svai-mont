@@ -1,4 +1,4 @@
-<a href="{{ route('service_page', $item->slug) }}" class="uni_card product_card">
+<a href="{{ route('service_page', $item->slug) }}" class="uni_card service_card">
     <div class="card_img">
         <img src="{{ Storage::url($item->img) }}" alt="{{ $item->title }}">
     </div>

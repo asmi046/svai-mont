@@ -36,7 +36,7 @@ class ServiceSeeder extends Seeder
         $data = [
             [
                 'order' => 1,
-                'title' => "Бурение свай в [city|pp]",
+                'title' => "Бурение под фундамент",
                 'slug' => Str::slug("Бурение свай в [city|pp]"),
                 'sub_title' => "Бурение свай в [city|pp]",
                 'img' => "services/s_1.jpg",
@@ -47,7 +47,7 @@ class ServiceSeeder extends Seeder
             ],
             [
                 'order' => 2,
-                'title' => "Заказать утепление подполья дома в [city|pp]",
+                'title' => "Утепление основания фундамента",
                 'slug' => Str::slug("Заказать утепление подполья дома в [city|pp]"),
                 'sub_title' => "Утепление подполья дома в [city|pp]",
                 'img' => "services/s_2.jpg",
@@ -57,7 +57,7 @@ class ServiceSeeder extends Seeder
             ],
             [
                 'order' => 3,
-                'title' => "Заказать закручивание винтовых свай в [city|pp]",
+                'title' => "Заказать закручивание винтовых свай",
                 'slug' => Str::slug("Заказать закручивание винтовых свай в [city|pp]"),
                 'sub_title' => "Закручивание винтовых свай в [city|pp]",
                 'img' => "services/s_3.jpg",
@@ -67,7 +67,7 @@ class ServiceSeeder extends Seeder
             ],
             [
                 'order' => 4,
-                'title' => "Заказать замену фундамента на сваи в [city|pp]",
+                'title' => "Замена свайного фундамента",
                 'slug' => Str::slug("Заказать замену фундамента на сваи в [city|pp]"),
                 'sub_title' => "Замена фундамента на сваи в [city|pp]",
                 'img' => "services/s_4.jpg",
@@ -78,7 +78,7 @@ class ServiceSeeder extends Seeder
 
             [
                 'order' => 5,
-                'title' => "Заказать монтаж винтовых свай в [city|pp]",
+                'title' => "Монтаж финтовых свай",
                 'slug' => Str::slug("Заказать монтаж винтовых свай в [city|pp]"),
                 'sub_title' => "Монтаж винтовых свай в [city|pp]",
                 'img' => "services/s_5.jpg",
@@ -86,19 +86,19 @@ class ServiceSeeder extends Seeder
                 'description' => file_get_contents(public_path('tmp_data/serv/s_5/main.html')),
                 'price' => file_get_contents(public_path('tmp_data/serv/s_5/price.html')),
             ],
-            [
-                'order' => 6,
-                'title' => "Заказать расшивку металлических опор под вагон в [city|pp]",
-                'slug' => Str::slug("Заказать расшивку металлических опор под вагон в [city|pp]"),
-                'sub_title' => "Расшивка металлических опор под вагон в [city|pp]",
-                'img' => "services/s_6.jpg",
-                'top_description' => file_get_contents(public_path('tmp_data/serv/s_6/top.html')),
-                'description' => file_get_contents(public_path('tmp_data/serv/s_6/main.html')),
-                'price' => file_get_contents(public_path('tmp_data/serv/s_6/price.html')),
-            ],
+            // [
+            //     'order' => 6,
+            //     'title' => "Заказать расшивку металлических опор под вагон в [city|pp]",
+            //     'slug' => Str::slug("Заказать расшивку металлических опор под вагон в [city|pp]"),
+            //     'sub_title' => "Расшивка металлических опор под вагон в [city|pp]",
+            //     'img' => "services/s_6.jpg",
+            //     'top_description' => file_get_contents(public_path('tmp_data/serv/s_6/top.html')),
+            //     'description' => file_get_contents(public_path('tmp_data/serv/s_6/main.html')),
+            //     'price' => file_get_contents(public_path('tmp_data/serv/s_6/price.html')),
+            // ],
             [
                 'order' => 7,
-                'title' => "Заказать обвязку винтовых свай в [city|pp]",
+                'title' => "Обвязка винтовых свай",
                 'slug' => Str::slug("Заказать обвязку винтовых свай в [city|pp]"),
                 'sub_title' => "Обвязка винтовых свай в [city|pp]",
                 'img' => "services/s_6.jpg",
@@ -108,7 +108,7 @@ class ServiceSeeder extends Seeder
             ],
             [
                 'order' => 8,
-                'title' => "Заказать поднятие дома на сваях в [city|pp]",
+                'title' => "Поднятие дома на сваях",
                 'slug' => Str::slug("Заказать поднятие дома на сваях в [city|pp]"),
                 'sub_title' => "Поднятие дома на сваях в [city|pp]",
                 'img' => "services/s_7.jpg",
@@ -118,7 +118,7 @@ class ServiceSeeder extends Seeder
             ],
             [
                 'order' => 9,
-                'title' => "Заказать усиление фундамента винтовыми сваями в [city|pp]",
+                'title' => "Усиление фундамента винтовыми",
                 'slug' => Str::slug("Заказать усиление фундамента винтовыми сваями в [city|pp]"),
                 'sub_title' => "Усиление фундамента винтовыми сваями в [city|pp]",
                 'img' => "services/s_9.jpg",
@@ -128,7 +128,7 @@ class ServiceSeeder extends Seeder
             ],
             [
                 'order' => 10,
-                'title' => "Заказать установка винтовых свай в [city|pp]",
+                'title' => "Заказать установка винтовых свай",
                 'slug' => Str::slug("Заказать установка винтовых свай в [city|pp]"),
                 'sub_title' => "Установка винтовых свай в [city|pp]",
                 'img' => "services/s_10.jpg",
@@ -138,7 +138,7 @@ class ServiceSeeder extends Seeder
             ],
             [
                 'order' => 11,
-                'title' => "Заказать сварные работы в [city|pp]",
+                'title' => "Cварные работы",
                 'slug' => Str::slug("Заказать сварные работы в [city|pp]"),
                 'sub_title' => "Сварные работы в [city|pp]",
                 'img' => "services/s_11.jpg",
@@ -148,7 +148,7 @@ class ServiceSeeder extends Seeder
             ],
             [
                 'order' => 12,
-                'title' => "Заказать механизированный монтаж в [city|pp]",
+                'title' => "Механизированный монтаж свай",
                 'slug' => Str::slug("Заказать механизированный монтаж в [city|pp]"),
                 'sub_title' => "Механизированный монтаж в [city|pp]",
                 'img' => "services/s_12.jpg",
@@ -158,7 +158,7 @@ class ServiceSeeder extends Seeder
             ],
             [
                 'order' => 13,
-                'title' => "Заказать ремонт фундамента в [city|pp]",
+                'title' => "Ремонт фундамента",
                 'slug' => Str::slug("Заказать ремонт фундамента в [city|pp]"),
                 'sub_title' => "Ремонт фундамента в [city|pp]",
                 'img' => "services/s_13.jpg",
@@ -168,7 +168,7 @@ class ServiceSeeder extends Seeder
             ],
             [
                 'order' => 14,
-                'title' => "Заказать строительство пристроек в [city|pp] под ключ",
+                'title' => "Строительство пристройки под ключ",
                 'slug' => Str::slug("Заказать строительство пристроек в [city|pp] под ключ"),
                 'sub_title' => "Строительство пристроек в [city|pp] под ключ",
                 'img' => "services/s_14.jpg",
@@ -178,7 +178,7 @@ class ServiceSeeder extends Seeder
             ],
             [
                 'order' => 15,
-                'title' => "Заказать пробное бурение под сваи в [city|pp]",
+                'title' => "Пробное бурение под сваи",
                 'slug' => Str::slug("Заказать пробное бурение под сваи в [city|pp]"),
                 'sub_title' => "Пробное бурение под сваи в [city|pp]",
                 'img' => "services/s_15.jpg",
@@ -188,7 +188,7 @@ class ServiceSeeder extends Seeder
             ],
             [
                 'order' => 16,
-                'title' => "Заказать удлинители для свай в [city|pp]",
+                'title' => "Удлинители для свай",
                 'slug' => Str::slug("Заказать удлинители для свай в [city|pp]"),
                 'sub_title' => "Удлинители для свай в [city|pp]",
                 'img' => "services/s_16.jpg",
