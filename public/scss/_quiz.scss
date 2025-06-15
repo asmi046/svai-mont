@@ -1,6 +1,40 @@
+/* Анимации */
+.slide-next-enter-active,
+.slide-next-leave-active,
+.slide-prev-enter-active,
+.slide-prev-leave-active {
+  transition: all 0.4s cubic-bezier(0.55, 0, 0.1, 1);
+  position: absolute;
+  width: 100%;
+}
+
+.slide-next-enter-from {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.slide-next-leave-to {
+  transform: translateX(-30%);
+  opacity: 0;
+}
+
+.slide-prev-enter-from {
+  transform: translateX(-30%);
+  opacity: 0;
+}
+
+.slide-prev-leave-to {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.question-container {
+  position: relative;
+}
 .quiz-container {
   margin: 0 auto;
   font-family: Arial, sans-serif;
+  overflow: hidden;
 
   .quiz-content, .contact-form {
     background-color: $gray_bg_color;

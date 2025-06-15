@@ -3,30 +3,41 @@
     <div v-if="(currentStep <= questions.length) && !showContactForm" class="quiz-content">
       <h2>Вопрос {{ currentStep }} из {{ questions.length }}</h2>
 
-      <div class="question-container">
-        <h3>{{ currentQuestion.text }}</h3>
 
-        <div v-if="currentQuestion.type === 'multiple-choice'" class="options-container">
-          <div
-            v-for="(option, index) in currentQuestion.options"
-            :key="index"
-            class="option"
-            :class="{ 'selected': answers[currentStep - 1]?.answer === option }"
-            @click="selectOption(option)"
-          >
-            {{ option }}
-          </div>
-        </div>
 
-        <div v-else class="input-container">
-          <input
-            type="text"
-            v-model="answers[currentStep - 1].answer"
-            :placeholder="currentQuestion.placeholder || 'Введите ваш ответ'"
-          >
-          <button v-show="answers[currentStep - 1].answer.length > 0">Продолжить</button>
-        </div>
-      </div>
+      <transition :name="transitionDirection" mode="out-in">
+            <div class="question-container" :key="currentStep">
+                <h3>{{ currentQuestion.text }}</h3>
+
+
+                <div v-if="currentQuestion.type === 'multiple-choice'" class="options-container">
+
+                    <div
+                        v-for="(option, index) in currentQuestion.options"
+                        :key="index"
+                        class="option"
+                        :class="{ 'selected': answers[currentStep - 1]?.answer === option }"
+                        @click="selectOption(option)"
+                    >
+                        {{ option }}
+                    </div>
+                </div>
+
+
+                <div v-else class="input-container">
+                    <input
+                    type="text"
+                    v-model="answers[currentStep - 1].answer"
+                    :placeholder="currentQuestion.placeholder || 'Введите ваш ответ'"
+                    @input="showTextFieldButton=(answers[currentStep - 1].answer.length > 0)?true:false"
+                >
+                <button @click.prevent="goToStep(currentStep + 1)" v-show="showTextFieldButton">Продолжить</button>
+                </div>
+
+
+            </div>
+        </transition>
+
 
       <div class="reviews_btn_wrapper">
         <a title="Предыдущий вопрос" @click.prevent="prevStep" class="arrow_button arrow_pred" href="#">
@@ -48,7 +59,7 @@
       </div>
     </div>
 
-    <div v-if="showContactForm" class="contact-form">
+    <div v-if="showContactForm && submissionStatus == null" class="contact-form">
       <h3>Почти готово!</h3>
       <p>Пожалуйста, оставьте ваши контактные данные, чтобы мы могли связаться с вами.</p>
 
@@ -81,13 +92,15 @@
         </div>
 
       <div class="form-actions">
-        <button @click="showContactForm = false" class="button">
-          Вернуться к опросу
-        </button>
 
         <button @click="submitQuiz" class="button">
           Отправить
         </button>
+
+        <button @click="showContactForm = false" class="button">
+          Вернуться к опросу
+        </button>
+
       </div>
     </div>
 
@@ -175,6 +188,9 @@ const errorList = ref([]);
 const policy_ch = ref(false)
 const accept_ch = ref(false)
 
+const transitionDirection = ref('slide')
+const showTextFieldButton = ref(false)
+
 // Состояние компонента
 const currentStep = ref(1)
 const showContactForm = ref(false)
@@ -198,12 +214,14 @@ const currentQuestion = computed(() => {
 
 // Методы
 const nextStep = () => {
+transitionDirection.value = 'slide-next'
   if (currentStep.value < questions.value.length) {
     currentStep.value++
   }
 }
 
 const prevStep = () => {
+transitionDirection.value = 'slide-prev'
   if (currentStep.value > 1) {
     currentStep.value--
   }
@@ -213,12 +231,25 @@ const goToStep = (step) => {
   if (step >= 1 && step <= questions.value.length) {
     currentStep.value = step
     showContactForm.value = false
+    transitionDirection.value = (currentStep.value < step)?'slide-prev':'slide-next';
+    showTextFieldButton.value=false;
   }
+
+    if (step === questions.value.length + 1) {
+        showContactForm.value = true
+        transitionDirection.value = 'slide-next'
+    }
+
+
 }
 
 const selectOption = (option) => {
-  answers.value[currentStep.value - 1].answer = option
-  goToStep(currentStep.value + 1)
+    answers.value[currentStep.value - 1].answer = option
+
+    function delayedFunction() {
+        goToStep(currentStep.value + 1)
+    }
+    setTimeout(delayedFunction, 200)
 }
 
 const submitQuiz = async () => {

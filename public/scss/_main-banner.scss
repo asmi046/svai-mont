@@ -18,20 +18,27 @@
         z-index: 2;
         width: 100%;
         height: 100%;
-        background: linear-gradient(0deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,.55) 100%);
+        background: linear-gradient(0deg, rgba(0,0,0,.45) 0%, rgba(0,0,0,.45) 100%);
     }
 
-    h1{
+    .control {
         position: absolute;
         z-index: 3;
-        color: white;
-        font-family: "Russo One", sans-serif;
-        font-size: 48px;
-        line-height: 1.2;
         left: 50px;
         top:20%;
-        text-transform: uppercase ;
+        h1{
+            color: white;
+            font-family: "Russo One", sans-serif;
+            font-size: 42px;
+            line-height: 1.2;
+            text-transform: uppercase ;
+        }
+
+        .button {
+            margin-top: 20px;
+        }
     }
+
 
     .bn_ch {
         position: absolute;
@@ -72,11 +79,14 @@
 
 @media (max-width: 480px) {
     .hiro {
-        height: 240px;
-        h1 {
-            font-size: 22px;
+        height: 300px;
+        .control {
             left: 25px;
             top: 10%;
+            h1 {
+                font-size: 22px;
+
+            }
         }
 
         .bn_ch {

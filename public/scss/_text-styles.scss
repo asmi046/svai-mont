@@ -53,7 +53,10 @@
     }
 
     ul{
-        display: inline-block;
+        display: inline;
+        li {
+            display: flow-root;
+        }
         li:before{
             content:"";
             position: absolute;
