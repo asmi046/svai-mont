@@ -1,8 +1,8 @@
 <details>
     <summary>
-        {{ $item->title }}
+        {{ get_city_text($item->title) }}
     </summary>
     <div class="response">
-        {!! $item->description !!}
+        {!! get_city_text($item->description) !!}
     </div>
 </details>
