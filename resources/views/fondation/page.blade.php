@@ -27,7 +27,9 @@
                         <x-page-cta/>
 
                         <h2 class="in_page_h2">Цены</h2>
-                        {!! get_city_text($fondation->price) !!}
+                        <div class="table-wrapper">
+                            {!! get_city_text($fondation->price) !!}
+                        </div>
                     </div>
                 </div>
             </div>
