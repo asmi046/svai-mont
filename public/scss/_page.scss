@@ -68,11 +68,15 @@
 
 @media (max-width: 768px) {
     .page_content {
-        flex-direction: column-reverse;
+        flex-direction: column;
         .content {
             display: flex;
             flex-direction: column;
             width: 100%;
+        }
+
+        .sidebar {
+            width:100%;
         }
     }
 

@@ -7,6 +7,7 @@ import SidePanel from "./components/SidePanel.vue"
 import {createApp} from 'vue/dist/vue.esm-bundler'
 import Review from './components/Reviews/Review.vue'
 import Quiz from './components/Quiz/Quiz.vue'
+import ToggleWrapper from './components/ToggleWrapper.vue'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import { VMaskDirective } from 'v-slim-mask'
@@ -55,4 +56,17 @@ if (document.getElementById('quiz_app')) {
     quiz_app.use(VueAxios, axios)
     quiz_app.directive('mask', VMaskDirective)
     quiz_app.mount("#quiz_app");
+}
+
+if (document.getElementById('toggle_app')) {
+    const toggle_app = createApp({
+        components:{
+            ToggleWrapper,
+        },
+        setup() {}
+    })
+
+    toggle_app.use(VueAxios, axios)
+    toggle_app.directive('mask', VMaskDirective)
+    toggle_app.mount("#toggle_app");
 }
