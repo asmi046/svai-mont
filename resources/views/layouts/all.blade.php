@@ -27,6 +27,7 @@
         window.isMobile = window.innerWidth < 768;
     </script>
 
+    <meta name="yandex-verification" content="01ea8fe41369d45a" />
     <!-- Yandex.Metrika counter -->
         <script type="text/javascript" >
         (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
