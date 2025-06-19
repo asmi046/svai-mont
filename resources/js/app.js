@@ -70,3 +70,38 @@ if (document.getElementById('toggle_app')) {
     toggle_app.directive('mask', VMaskDirective)
     toggle_app.mount("#toggle_app");
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+        const backToTopBtn = document.getElementById('backToTop');
+
+        // Показываем/скрываем кнопку при прокрутке
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 100) {
+                backToTopBtn.style.display = 'block';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        });
+
+        // Прокрутка вверх при клике
+        backToTopBtn.addEventListener('click', function() {
+            // Если браузер поддерживает smooth-прокрутку через CSS
+            if ('scrollBehavior' in document.documentElement.style) {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            } else {
+                // Фоллбек для старых браузеров
+                const scrollStep = -window.scrollY / 15;
+                const scrollInterval = setInterval(function() {
+                    if (window.scrollY !== 0) {
+                        window.scrollBy(0, scrollStep);
+                    } else {
+                        clearInterval(scrollInterval);
+                    }
+                }, 15);
+            }
+        });
+    });

@@ -56,9 +56,13 @@
         </div>
 
         <div class="line bottom">
-            <span class="copuright">
-                © 2025 Компания "СвайМонтаж"
-            </span>
+            <div class="copuright">
+                <span class="copuright_text">
+                    © 2025 Компания "СвайМонтаж"
+                </span>
+                <p class="discl">ВНИМАНИЕ: Цены на сайте не являются публичной офёртой и могут отличаться, уточняйте у наших менеджеров!</p>
+            </div>
+
             <span class="policy">
                 <a href="/page/politika-v-oblasti-obrabotki-personalnyx-dannyx">Политика конфиденциальности</a><br>
                 <a href="/page/soglasie-na-obrabotku-personalnyx-dannyx">Соглавие на обработку ПД</a>

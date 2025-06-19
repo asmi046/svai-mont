@@ -49,6 +49,8 @@
 <body>
     @include("allicon")
 
+    <button onclick="topFunction()" id="backToTop" title="Наверх">↑</button>
+
     <x-menues.side-menu></x-menues.side-menu>
 
     <main id="main">

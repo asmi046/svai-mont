@@ -77,6 +77,14 @@ footer {
             display: flex;
             justify-content: space-between;
             padding-top: 20px;
+
+            .copuright {
+                display: flex;
+                flex-direction: column;
+                .discl {
+                    font-size: 12px;
+                }
+            }
         }
     }
 }
