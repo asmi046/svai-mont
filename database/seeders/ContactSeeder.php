@@ -61,13 +61,13 @@ class ContactSeeder extends Seeder
                 [
                     'name' => 'email',
                     'title' => 'E-mail',
-                    'value' => 'zabor.86@internet.ru',
+                    'value' => 'hmao-stroyka@yandex.ru',
                 ],
 
                 [
                     'name' => 'company_name',
                     'title' => 'Имя компании',
-                    'value' => 'ИП Хамроев Сарвар Султонбоевич ',
+                    'value' => 'ИП Хамроев Сарвар Султонбоевич',
                 ],
 
                 [
