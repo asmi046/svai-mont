@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use DB;
 use Illuminate\Support\Str;
 
+use Illuminate\Support\Carbon;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -35,6 +36,8 @@ class ServiceSeeder extends Seeder
 
         $data = [
             [
+                                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 1,
                 'title' => "Бурение свай в [city|pp]",
                 'slug' => Str::slug("Бурение свай"),
@@ -45,6 +48,8 @@ class ServiceSeeder extends Seeder
                 'price' => file_get_contents(public_path('tmp_data/serv/s_1/price.html')),
             ],
             [
+                                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 2,
                 'title' => "Утепление подполья дома в [city|pp]",
                 'slug' => Str::slug("Заказать утепление подполья дома"),
@@ -55,6 +60,8 @@ class ServiceSeeder extends Seeder
                 'price' => file_get_contents(public_path('tmp_data/serv/s_2/price.html')),
             ],
             [
+                                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 3,
                 'title' => "Закручивание винтовых свай в [city|pp]",
                 'slug' => Str::slug("Заказать закручивание винтовых свай"),
@@ -65,6 +72,8 @@ class ServiceSeeder extends Seeder
                 'price' => file_get_contents(public_path('tmp_data/serv/s_3/price.html')),
             ],
             [
+                                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 4,
                 'title' => "Замена фундамента на сваи в [city|pp]",
                 'slug' => Str::slug("Заказать замену фундамента на сваи"),
@@ -75,6 +84,8 @@ class ServiceSeeder extends Seeder
                 'price' => file_get_contents(public_path('tmp_data/serv/s_4/price.html')),
             ],
             [
+                                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 5,
                 'title' => "Монтаж винтовых свай в [city|pp]",
                 'slug' => Str::slug("Заказать монтаж винтовых свай"),
@@ -85,6 +96,8 @@ class ServiceSeeder extends Seeder
                 'price' => file_get_contents(public_path('tmp_data/serv/s_5/price.html')),
             ],
             [
+                                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 7,
                 'title' => "Обвязка винтовых свай в [city|pp]",
                 'slug' => Str::slug("Заказать обвязку винтовых свай"),
@@ -95,6 +108,8 @@ class ServiceSeeder extends Seeder
                 'price' => file_get_contents(public_path('tmp_data/serv/s_7/price.html')),
             ],
             [
+                                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 8,
                 'title' => "Поднятие дома на сваях в [city|pp]",
                 'slug' => Str::slug("Заказать поднятие дома на сваях"),
@@ -105,6 +120,8 @@ class ServiceSeeder extends Seeder
                 'price' => file_get_contents(public_path('tmp_data/serv/s_8/price.html')),
             ],
             [
+                                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 9,
                 'title' => "Усиление фундамента винтовыми сваями в [city|pp]",
                 'slug' => Str::slug("Заказать усиление фундамента винтовыми сваями"),
@@ -115,6 +132,8 @@ class ServiceSeeder extends Seeder
                 'price' => file_get_contents(public_path('tmp_data/serv/s_9/price.html')),
             ],
             [
+                                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 10,
                 'title' => "Установка винтовых свай в [city|pp]",
                 'slug' => Str::slug("Заказать установка винтовых свай"),
@@ -125,6 +144,8 @@ class ServiceSeeder extends Seeder
                 'price' => file_get_contents(public_path('tmp_data/serv/s_10/price.html')),
             ],
             [
+                                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 11,
                 'title' => "Сварные работы в [city|pp]",
                 'slug' => Str::slug("Заказать сварные работы"),
@@ -135,6 +156,8 @@ class ServiceSeeder extends Seeder
                 'price' => file_get_contents(public_path('tmp_data/serv/s_11/price.html')),
             ],
             [
+                                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 12,
                 'title' => "Механизированный монтаж в [city|pp]",
                 'slug' => Str::slug("Заказать механизированный монтаж"),
@@ -145,6 +168,8 @@ class ServiceSeeder extends Seeder
                 'price' => file_get_contents(public_path('tmp_data/serv/s_12/price.html')),
             ],
             [
+                                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 13,
                 'title' => "Ремонт фундамента в [city|pp]",
                 'slug' => Str::slug("Заказать ремонт фундамента"),
@@ -155,6 +180,8 @@ class ServiceSeeder extends Seeder
                 'price' => file_get_contents(public_path('tmp_data/serv/s_13/price.html')),
             ],
             [
+                                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 14,
                 'title' => "Строительство пристроек в [city|pp] под ключ",
                 'slug' => Str::slug("Заказать строительство пристроек под ключ"),
@@ -165,6 +192,8 @@ class ServiceSeeder extends Seeder
                 'price' => file_get_contents(public_path('tmp_data/serv/s_14/price.html')),
             ],
             [
+                                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 15,
                 'title' => "Пробное бурение под сваи в [city|pp]",
                 'slug' => Str::slug("Заказать пробное бурение под сваи"),
@@ -175,6 +204,8 @@ class ServiceSeeder extends Seeder
                 'price' => file_get_contents(public_path('tmp_data/serv/s_15/price.html')),
             ],
             [
+                                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 16,
                 'title' => "Удлинители для свай в [city|pp]",
                 'slug' => Str::slug("Заказать удлинители для свай"),

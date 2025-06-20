@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use DB;
 use Illuminate\Support\Str;
 
+use Illuminate\Support\Carbon;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -70,6 +71,8 @@ class FondationSeeder extends Seeder
 
         $data = [
             [
+                                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 10,
                 'title' => "Свайный фундамент под ключ",
                 'slug' => Str::slug("Свайный фундамент под ключ в [city|pp]"),
@@ -82,6 +85,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 20,
                 'title' => "Свайное поле",
                 'short_title' => "Свайное поле под ключ",
@@ -95,6 +100,8 @@ class FondationSeeder extends Seeder
             ],
 
             [
+                                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 21,
                 'title' => "Свайный фундамент под баню",
                 'short_title' => "Свайный фундамент под баню",
@@ -109,6 +116,8 @@ class FondationSeeder extends Seeder
 
 
             [
+                                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 40,
                 'title' => "Свайный фундамент под пристройук",
                 'short_title' => "Свайный фундамент под пристройку",
@@ -121,6 +130,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 50,
                 'title' => "Свайный фундамент для легких конструкций",
                 'short_title' => "Свайный фундамент для легких конструкций",
@@ -133,6 +144,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 60,
                 'title' => "Свайный фундамент для лестницы",
                 'short_title' => "Заказать сваи для лестницы крыльца",
@@ -145,6 +158,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 61,
                 'title' => "Свайный фундамент для каркасного дома",
                 'short_title' => "Свайный фундамент для каркасного дома",
@@ -158,6 +173,8 @@ class FondationSeeder extends Seeder
             ],
 
             [
+                                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 62,
                 'title' => "Свайный фундамент для настила на улице",
                 'short_title' => "Свайный фундамент для настила на улице",
@@ -171,6 +188,8 @@ class FondationSeeder extends Seeder
             ],
 
             [
+                                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 80,
                 'title' => "Свайный фундамент для причала",
                 'short_title' => "Купить сваи для причала",
@@ -183,6 +202,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 90,
                 'title' => "Свайный фундамент для афрейма",
                 'short_title' => "Купить сваи для фундамента афрейма",
@@ -195,6 +216,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 100,
                 'title' => "Защита фундамента от промерзания",
                 'short_title' => "Защита фундамента от промерзания",
@@ -207,6 +230,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 110,
                 'title' => "Свайный фундамент на плавуне",
                 'short_title' => "Купить услугу фундамент на плывуне",
@@ -219,6 +244,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 120,
                 'title' => "Свайный фундамент для веранды",
                 'short_title' => "Купить сваи для веранды",
@@ -231,6 +258,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 130,
                 'title' => "Свайный фундамент для щитового дома",
                 'short_title' => "Купить сваи для щитового дома",
@@ -243,6 +272,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                            'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 140,
                 'title' => "Свайный фундамент для штакетника",
                 'short_title' => "Купить сваи для штакетника",
@@ -255,6 +286,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                            'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 150,
                 'title' => "Cваи для гамака",
                 'short_title' => "Купить сваи для гамака",
@@ -279,6 +312,8 @@ class FondationSeeder extends Seeder
 
             // ],
             [
+                            'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 170,
                 'title' => "Cваи для качелей",
                 'short_title' => "Купить сваи для качелей",
@@ -291,6 +326,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                            'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 180,
                 'title' => "Свайный фундамент для крыльца",
                 'short_title' => "Купить сваи для крыльца",
@@ -303,6 +340,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                            'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 190,
                 'title' => "Фундамент на сваях 150x150",
                 'short_title' => "Купить сваи 150x150",
@@ -315,6 +354,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                            'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 200,
                 'title' => "Редуктор для закручивания свай",
                 'short_title' => "Купить редуктор для закручивания",
@@ -327,6 +368,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                            'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 210,
                 'title' => "Заказать сваекрут",
                 'short_title' => "Купить услугу сваекрут",
@@ -339,6 +382,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                            'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 220,
                 'title' => "Висячие сваи и стойки",
                 'short_title' => "Купить висячие сваи и стойки",
@@ -351,6 +396,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                            'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 230,
                 'title' => "Збивные столбы для забора",
                 'short_title' => "Купить забивные столбы",
@@ -363,6 +410,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                            'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 231,
                 'title' => "Свайный фундамент для евроштакетника",
                 'short_title' => "Заказать забор из евроштакетника на сваях",
@@ -375,6 +424,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                            'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 250,
                 'title' => "Свайный фундамент для дорожек",
                 'short_title' => "Купить опоры для дорожек",
@@ -387,6 +438,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                            'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 260,
                 'title' => "Фундамент на винтовых сваях",
                 'short_title' => "Купить свайный фундамент",
@@ -400,6 +453,8 @@ class FondationSeeder extends Seeder
             ],
 
             [
+                            'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 270,
                 'title' => "Свайный фундамент для ограждения",
                 'short_title' => "Заказать сваи для ограждения от производителя",
@@ -413,6 +468,8 @@ class FondationSeeder extends Seeder
             ],
 
             [
+                            'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 280,
                 'title' => "Пол на винтовых сваях",
                 'short_title' => "Купить пол на винтовых сваях",
@@ -425,6 +482,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                            'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 290,
                 'title' => "Cваи для ворот",
                 'short_title' => "Купить сваи для ворот",
@@ -437,6 +496,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                            'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 300,
                 'title' => "Cваи для забора",
                 'short_title' => "Купить винтовые сваи для забора",
@@ -449,6 +510,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                            'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 310,
                 'title' => "Пирс на винтовых сваях",
                 'short_title' => "Купить пирс на винтовых сваях",
@@ -461,6 +524,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                            'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 320,
                 'title' => "Ангар, склад на винтовых сваях",
                 'short_title' => "Купить ангар или склад на сваях",
@@ -473,6 +538,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                            'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 330,
                 'title' => "Мост на винтовых сваях",
                 'short_title' => "Купить мост на винтовых сваях",
@@ -485,6 +552,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                            'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 340,
                 'title' => "Свайный фундамент для теплицы",
                 'short_title' => "Купить винтовые сваи для теплицы",
@@ -497,6 +566,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                            'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 350,
                 'title' => "Cваи для перголы",
                 'short_title' => "Купить винтовые сваи для перголы",
@@ -509,6 +580,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                            'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 360,
                 'title' => "Cваи под лестницу",
                 'short_title' => "Купить винтовые сваи под лестницу",
@@ -521,6 +594,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                            'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 370,
                 'title' => "Свайный фундамент для автонавеса",
                 'short_title' => "Купить винтовые сваи для автонавеса",
@@ -533,6 +608,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                            'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 380,
                 'title' => "Свайный фундамент для настила бассейна",
                 'short_title' => "Купить винтовые сваи для настила бассейна",
@@ -545,6 +622,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                            'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 390,
                 'title' => "Сваи для фонарей",
                 'short_title' => "Купить винтовые сваи для фонарей",
@@ -557,6 +636,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                            'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 400,
                 'title' => "Сваи для дорожных знаков",
                 'short_title' => "Купить винтовые сваи для дорожных знаков",
@@ -569,6 +650,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                            'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 410,
                 'title' => "Терраса / веранда на винтовых сваях",
                 'short_title' => "Купить терраса / веранда на винтовых сваях",
@@ -581,6 +664,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                            'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 420,
                 'title' => "Свайный фундамент для гаража",
                 'short_title' => "Купить винтовые сваи под гараж",
@@ -593,6 +678,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                            'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 430,
                 'title' => "Свайный фундамент под откатные ворота",
                 'short_title' => "Купить сваи под откатные ворота",
@@ -629,6 +716,8 @@ class FondationSeeder extends Seeder
 
             // ],
             [
+                            'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 460,
                 'title' => "Свайный фундамент под печь",
                 'short_title' => "Купить винтовые сваи под печь",
@@ -641,6 +730,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                            'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 470,
                 'title' => "Свайный фундамент для сарая",
                 'short_title' => "Купить сарай на винтовых сваях или хозблок",
@@ -653,6 +744,8 @@ class FondationSeeder extends Seeder
 
             ],
             [
+                            'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
                 'order' => 480,
                 'title' => "Цоколь на винтовых сваях",
                 'short_title' => "Купить цоколь на винтовых сваях",

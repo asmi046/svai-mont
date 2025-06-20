@@ -10,9 +10,10 @@ use App\Http\Controllers\GaleryController;
 use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\ContactsController;
-use App\Http\Controllers\FondationController;
 
+use App\Http\Controllers\FondationController;
 use App\Http\Controllers\CertificatController;
 use App\Http\Controllers\Consultation\SenderQuizController;
 use App\Http\Controllers\Consultation\SenderConsultController;
@@ -50,6 +51,7 @@ Route::middleware(IssetCity::class)->group( function() {
     Route::post('/send_consult', [SenderConsultController::class, "send_consultation"])->name('send_consultation');
     Route::get('/thencs_consult', [SenderConsultController::class, "show_thencs"])->name('thencs_consult');
 
+    Route::get('/sitemap.xml', [SitemapController::class, 'index']);
 });
 
 
