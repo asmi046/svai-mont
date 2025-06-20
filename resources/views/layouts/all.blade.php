@@ -45,6 +45,7 @@
         </script>
         <noscript><div><img src="https://mc.yandex.ru/watch/102714753" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
+        <script src="//code.jivo.ru/widget/SQf7RZp2Ca" async></script>
 </head>
 <body>
     @include("allicon")
