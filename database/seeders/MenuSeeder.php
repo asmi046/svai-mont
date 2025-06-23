@@ -75,12 +75,14 @@ class MenuSeeder extends Seeder
                 'order' => 10,
                 'lnk' => "/page/oplata-i-dostavka",
             ],
-            [
-                'menu_name' => 'Главное меню',
-                'title' => 'Сертификаты',
-                'order' => 11,
-                'lnk' => "/certificat",
-            ],
+
+            // [
+            //     'menu_name' => 'Главное меню',
+            //     'title' => 'Сертификаты',
+            //     'order' => 11,
+            //     'lnk' => "/certificat",
+            // ],
+
             [
                 'menu_name' => 'Главное меню',
                 'title' => 'Контакты',
