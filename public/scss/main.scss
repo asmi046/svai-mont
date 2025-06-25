@@ -137,7 +137,7 @@ swiper-slide {
         #backToTop {
             display: none;
             position: fixed;
-            bottom: 80px;
+            bottom: 130px;
             right: 10px;
             z-index: 99;
             border: none;
@@ -161,6 +161,9 @@ swiper-slide {
         html {
             scroll-behavior: smooth;
         }
+
+
+
 
 // Схема с сайдбаром
 // @import "sidebar-schem";
@@ -197,6 +200,8 @@ swiper-slide {
 @import "quiz";
 @import "toggle";
 
+
+@import "bottom-control";
 
 @import "footer";
 

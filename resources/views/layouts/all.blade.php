@@ -65,6 +65,24 @@
 
     <x-footer></x-footer>
 
+    <div class="colls bottom_control">
+        <div class="col left">
+            <a href="tel:+73462597171" class="text_icon">
+                    <svg class="sprite_icon">
+                        <use xlink:href="#ti_phone"></use>
+                    </svg>
+                    <span class="text">Позвонить</span>
+                </a>
+        </div>
+        <div class="col right">
+            <a href="{{ route('quiz') }}" class="text_icon">
+                <svg class="sprite_icon">
+                    <use xlink:href="#calc_icon_gold"></use>
+                </svg>
+                <span class="text">Рассчитать</span>
+            </a>
+        </div>
+    </div>
 
     <div class="modal_win" id="modal_app">
         <side-panel></side-panel>
