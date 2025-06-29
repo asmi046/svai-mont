@@ -31,7 +31,6 @@ class SitemapController extends Controller
         $url->addChild('lastmod', Carbon::now()->toAtomString());
         $url->addChild('changefreq', 'weekly');
         $url->addChild('priority', '0.8');
-        $url->addChild('priority', '0.8');
 
         $url = $xml->addChild('url');
         $url->addChild('loc', route('price'));
