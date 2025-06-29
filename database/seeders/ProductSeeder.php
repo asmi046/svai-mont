@@ -327,7 +327,7 @@ class ProductSeeder extends Seeder
                 'price' => file_get_contents(public_path('tmp_data/prod/pr_26/price.html')),
             ],
             [//27
-                                'created_at' => Carbon::now(),
+                'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
                 'title' => "Якорные сваи в [city|pp]",
                 'short_title' => "Якорные сваи",
@@ -373,6 +373,8 @@ class ProductSeeder extends Seeder
 
 
         ];
+
+
 
         DB::table("products")->insert($data);
 
