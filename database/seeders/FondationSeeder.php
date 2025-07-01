@@ -119,7 +119,7 @@ class FondationSeeder extends Seeder
                                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
                 'order' => 40,
-                'title' => "Свайный фундамент под пристройук",
+                'title' => "Свайный фундамент под пристройку",
                 'short_title' => "Свайный фундамент под пристройку",
                 'slug' => Str::slug("Заказать пристройку на винтовых сваях в [city|pp]"),
                 'img' => "fondation/f_4.webp",
