@@ -10,7 +10,7 @@
                     <h1 class="inner_page_h1">{{ get_city_text($product->title) }}</h1>
                     <div class="text_styles">
                         <div class="img_wrapper img_wrapper_opot">
-                            <img src="{{ Storage::url($product->img) }}" alt="{{ $product->title }}" class="img-fluid">
+                            <img src="{{ Storage::url($product->img) }}" alt="{{ get_city_text($product->title) }}" class="img-fluid">
                         </div>
                         {{-- <div class="inner_page_top">
                             <div class="img_wrapper">
