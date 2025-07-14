@@ -54,13 +54,13 @@ class CitySeeder extends Seeder
             ],
 
             [
-                'name' => "Птьях",
+                'name' => "Пыть-Ях",
                 'slug' => "ptyah",
                 'is_default' => false,
                 'order' => 5,
-                'rp' => "Птьяха",
-                'pp' => "Птьяха",
-                'dp' => "Птьяху",
+                'rp' => "Пыть-Яха",
+                'pp' => "Пыть-Яха",
+                'dp' => "Пыть-Яху",
             ],
 
             [

@@ -97,6 +97,25 @@ swiper-slide {
     height: auto;
 }
 
+
+.error-page {
+    margin: 200px auto;
+    text-align: center;
+    h1{
+        font-size: 82px;
+    }
+
+    .buttons {
+        max-width: 200px;
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+
 .city_list_modal .city_list_element {
     color:$main_color;
     &:hover {
