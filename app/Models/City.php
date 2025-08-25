@@ -13,6 +13,9 @@ class City extends Model
 {
     public $fillable = [
         'name',
+        'address',
+        'phone',
+        'ul',
         'is_default',
         'slug',
         'order',
