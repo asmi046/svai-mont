@@ -6,7 +6,7 @@
     </div>
     <div class="col right">
         <div class="top_contacts">
-            <a class="phone" href="tel:+7{{ phone_format($phone) }}">{{ $phone }}</a>
+            <a class="phone" href="tel:+7{{ phone_format(get_city_text('[city|phone]')) }}">{{ get_city_text('[city|phone]') }}</a>
             <div class="messenger">
                 <a class="msg_icon" href="{{ $tg_lnk }}">
                     <svg class="sprite_icon">

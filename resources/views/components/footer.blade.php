@@ -20,7 +20,7 @@
                     </a>
                 </div>
 
-                <a class="phone" href="tel:+7{{ phone_format($contacts['phone']->value ) }}" alt="{{ $contacts['site_name']->value }}">{{ $contacts['phone']->value }}</a>
+                <a class="phone" href="tel:+7{{ phone_format(get_city_text('[city|phone]') ) }}" alt="{{ $contacts['site_name']->value }}">{{ get_city_text('[city|phone]') }}</a>
             </div>
         </div>
 
@@ -49,7 +49,7 @@
 
             <div class="coll contacts">
                 <h4>Контактная информация</h4>
-                <p><strong>Адрес: </strong> {{ $contacts['adress']->value }}</p>
+                <p><strong>Адрес: </strong> {{ get_city_text('[city|address]') }}</p>
                 <p><strong>Время работы: </strong> {{ $contacts['work_time']->value }}</p>
                 <p><strong>e-mail: </strong> {{ $contacts['email']->value }}</p>
             </div>
